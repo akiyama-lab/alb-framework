@@ -113,7 +113,7 @@ git submodule update --init --recursive
 
 ## トレース
 
-ターミナルを3つ開き，以下の手順でトレースを行います．
+ターミナルを4つ開き，以下の手順でトレースを行います．
 ここでは，Autoware 1.5.0 を使用する例を示します．
 
 1. Autowareの起動
@@ -121,7 +121,6 @@ git submodule update --init --recursive
     CARETで無視するトピックやノードを設定し，Autowareを起動します．
 
     ```bash
-    export ROS_TRACE_DIR=~/alb-framework/caret_trace_result
     source ~/alb-framework/caret/setenv_caret.bash
     source ~/alb-framework/autoware-1.5.0/install/local_setup.bash
     ros2 launch autoware_launch e2e_simulator.launch.xml vehicle_model:=awsim_labs_vehicle sensor_model:=awsim_labs_sensor_kit map_path:=/home/akilab/autoware_map/nishishinjuku_autoware_map launch_vehicle_interface:=true
@@ -152,6 +151,7 @@ git submodule update --init --recursive
     シナリオを再開するために，以下のコマンドを実行します．
 
     ```bash
+    export ROS_TRACE_DIR=~/alb-framework/output/caret_trace_data
     ros2 topic pub --once /awsim/set_goal_trigger std_msgs/msg/Bool "{data: true}"
     ```
 
