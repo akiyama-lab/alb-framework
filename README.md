@@ -142,6 +142,7 @@ git submodule update --init --recursive
 
     ```bash
     source ~/alb-framework/caret/install/local_setup.bash
+    export ROS_TRACE_DIR=~/alb-framework/output/caret_trace_data
     ros2 caret record -s cutin-20-10-6
     ```
 
@@ -151,7 +152,6 @@ git submodule update --init --recursive
     シナリオを再開するために，以下のコマンドを実行します．
 
     ```bash
-    export ROS_TRACE_DIR=~/alb-framework/output/caret_trace_data
     ros2 topic pub --once /awsim/set_goal_trigger std_msgs/msg/Bool "{data: true}"
     ```
 
