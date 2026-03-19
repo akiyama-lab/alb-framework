@@ -1,0 +1,527 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Node: /control/trajectory_follower/controller_node_exe, report_cutin-30-10-2</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Node: /control/trajectory_follower/controller_node_exe</h1>
+      <h2>report_cutin-30-10-2</h2>
+
+      <p><a href="../../index.html">Back to Top</a>, <a href="./index.html">Back to Node List</a></p>
+      <hr />
+
+      
+        <h3>Frequency</h3>
+
+        
+          <iframe src="Frequency_control_trajectory_follower_controller_node_exe.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [Hz]</th>
+            <th>Median [Hz]</th>
+            <th>Min [Hz]</th>
+            <th>95%ile [Hz]</th>
+            <th>99%ile [Hz]</th>
+            <th>Max [Hz]</th>
+            <th>Std [Hz]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">0.000</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::motion::control::trajectory_follower_node::Controller::*(autoware::motion::control::trajectory_follower_node::Controller*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>30.0 [ms]</td>
+                  
+                
+                  <td class="text-end">29.200</td>
+                  <td class="text-end">31.000</td>
+                  <td class="text-end">14.000</td>
+                  <td class="text-end">34.000</td>
+                  <td class="text-end">34.000</td>
+                  <td class="text-end">34.000</td>
+                  <td class="text-end">5.492</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_planning_msgs::msg::Trajectory_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_planning_msgs::msg::Trajectory_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/planning/scenario_planning/trajectory</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/vehicle/status/steering_status</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_3</td>
+                
+                    <td>/localization/acceleration</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_4</td>
+                
+                    <td>/system/operation_mode/state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Frequency" aria-expanded="false" aria-controls="collapse_Frequency">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Frequency">
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_trajectory_follower_controller_node_exe_callback_0_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_trajectory_follower_controller_node_exe_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </div>
+
+        <hr />
+
+      
+        <h3>Period</h3>
+
+        
+          <iframe src="Period_control_trajectory_follower_controller_node_exe.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [ms]</th>
+            <th>Median [ms]</th>
+            <th>Min [ms]</th>
+            <th>95%ile [ms]</th>
+            <th>99%ile [ms]</th>
+            <th>Max [ms]</th>
+            <th>Std [ms]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td class="text-end">1002.984</td>
+                  <td class="text-end">999.569</td>
+                  <td class="text-end">932.076</td>
+                  <td class="text-end">1036.981</td>
+                  <td class="text-end">1104.238</td>
+                  <td class="text-end">1156.095</td>
+                  <td class="text-end">25.883</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::motion::control::trajectory_follower_node::Controller::*(autoware::motion::control::trajectory_follower_node::Controller*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>30.0 [ms]</td>
+                  
+                
+                  <td class="text-end">34.052</td>
+                  <td class="text-end">31.547</td>
+                  <td class="text-end">9.063</td>
+                  <td class="text-end">70.557</td>
+                  <td class="text-end">121.969</td>
+                  <td class="text-end">243.293</td>
+                  <td class="text-end">19.415</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_planning_msgs::msg::Trajectory_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_planning_msgs::msg::Trajectory_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/planning/scenario_planning/trajectory</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/vehicle/status/steering_status</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_3</td>
+                
+                    <td>/localization/acceleration</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_4</td>
+                
+                    <td>/system/operation_mode/state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Period" aria-expanded="false" aria-controls="collapse_Period">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Period">
+          
+            
+              <div class="col">
+                <iframe src="Period_control_trajectory_follower_controller_node_exe_callback_0_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_trajectory_follower_controller_node_exe_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </div>
+
+        <hr />
+
+      
+        <h3>Latency</h3>
+
+        
+          <iframe src="Latency_control_trajectory_follower_controller_node_exe.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [ms]</th>
+            <th>Median [ms]</th>
+            <th>Min [ms]</th>
+            <th>95%ile [ms]</th>
+            <th>99%ile [ms]</th>
+            <th>Max [ms]</th>
+            <th>Std [ms]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td class="text-end">0.388</td>
+                  <td class="text-end">0.280</td>
+                  <td class="text-end">0.090</td>
+                  <td class="text-end">0.879</td>
+                  <td class="text-end">1.427</td>
+                  <td class="text-end">1.686</td>
+                  <td class="text-end">0.301</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::motion::control::trajectory_follower_node::Controller::*(autoware::motion::control::trajectory_follower_node::Controller*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>30.0 [ms]</td>
+                  
+                
+                  <td class="text-end">3.002</td>
+                  <td class="text-end">2.208</td>
+                  <td class="text-end">0.020</td>
+                  <td class="text-end">7.633</td>
+                  <td class="text-end">9.030</td>
+                  <td class="text-end">13.217</td>
+                  <td class="text-end">2.345</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_planning_msgs::msg::Trajectory_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_planning_msgs::msg::Trajectory_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/planning/scenario_planning/trajectory</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/vehicle/status/steering_status</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_3</td>
+                
+                    <td>/localization/acceleration</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_4</td>
+                
+                    <td>/system/operation_mode/state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Latency" aria-expanded="false" aria-controls="collapse_Latency">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Latency">
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_trajectory_follower_controller_node_exe_callback_0_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_trajectory_follower_controller_node_exe_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </div>
+
+        <hr />
+
+      
+    </div>  <!-- container -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        // collapse after getting height (two clicks are needed for some reasons...)
+        $('.btn_collapse').click();
+        setTimeout(function(){
+          $('.btn_collapse').click();
+            }, 500);
+      }
+    </script>
+  </body>
+</html>

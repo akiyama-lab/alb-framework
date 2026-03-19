@@ -1,0 +1,266 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Path: component_sensing_0, report_cutin-30-10-5</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Path: component_sensing_0</h1>
+      <h2>report_cutin-30-10-5</h2>
+      <p><a href="../index.html">Back to Top </a>, <a href="./index.html">Back to Path List</a></p>
+      <hr />
+
+      
+
+      
+
+      
+        
+        <!-- don't use worst case -->
+        
+      
+
+      <h4>Node list in the path</h4>
+      <ul>
+        
+        <li>/sensing/lidar/right/crop_box_filter_self</li>
+        
+        <li>/sensing/lidar/right/crop_box_filter_mirror</li>
+        
+        <li>/sensing/lidar/right/distortion_corrector_node</li>
+        
+        <li>/sensing/lidar/right/ring_outlier_filter</li>
+        
+        <li>/sensing/lidar/concatenate_data</li>
+        
+      </ul>
+
+      
+      <h4>Message Flow (obstacle_stopに注目)</h4>
+      <div class="alert alert-info" role="alert">
+        <strong>Time Window:</strong>
+        
+          Trigger: 1768894109544025088 (3.0s before/after)
+        
+      </div>
+      
+      
+      
+      <iframe src="component_sensing_0_messageflow_short.html" frameborder="0" width="100%" height="330" scrolling="yes"></iframe>
+
+      <h4>Response Time</h4>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>component_sensing_0</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">1.925</td>
+              <td class="text-end">1.390</td>
+              <td class="text-end">0.648</td>
+              <td class="text-end">5.110</td>
+              <td class="text-end">6.464</td>
+              <td class="text-end">10.164</td>
+              <td class="text-end">1.335</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      
+      <h5>Response Time (Message Flow Window)</h5>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>component_sensing_0 (window)</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">1.667</td>
+              <td class="text-end">1.304</td>
+              <td class="text-end">0.648</td>
+              <td class="text-end">3.889</td>
+              <td class="text-end">4.004</td>
+              <td class="text-end">4.038</td>
+              <td class="text-end">0.927</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+
+      
+
+      <div class="row">
+        <div class="col">
+          
+          <iframe src="component_sensing_0_timeseries_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="component_sensing_0_timeseries_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+        <div class="col">
+          
+          <iframe src="component_sensing_0_hist_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="component_sensing_0_hist_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+      </div>
+
+
+      <h4>Response Time Details</h4>
+      <div>
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>Latency in Node / Topic </th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>/sensing/lidar/right/self_cropped/pointcloud_ex </td>
+              <td class="text-end">0.076</td>
+              <td class="text-end">0.062</td>
+              <td class="text-end">0.034</td>
+              <td class="text-end">0.183</td>
+              <td class="text-end">0.206</td>
+              <td class="text-end">0.276</td>
+              <td class="text-end">0.040</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/crop_box_filter_mirror/callback_0 </td>
+              <td class="text-end">0.193</td>
+              <td class="text-end">0.150</td>
+              <td class="text-end">0.063</td>
+              <td class="text-end">0.554</td>
+              <td class="text-end">0.620</td>
+              <td class="text-end">0.861</td>
+              <td class="text-end">0.132</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/mirror_cropped/pointcloud_ex </td>
+              <td class="text-end">0.039</td>
+              <td class="text-end">0.028</td>
+              <td class="text-end">0.012</td>
+              <td class="text-end">0.115</td>
+              <td class="text-end">0.134</td>
+              <td class="text-end">0.177</td>
+              <td class="text-end">0.029</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/distortion_corrector_node/callback_2 </td>
+              <td class="text-end">0.776</td>
+              <td class="text-end">0.527</td>
+              <td class="text-end">0.246</td>
+              <td class="text-end">2.521</td>
+              <td class="text-end">2.641</td>
+              <td class="text-end">7.441</td>
+              <td class="text-end">0.640</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/rectified/pointcloud_ex </td>
+              <td class="text-end">0.046</td>
+              <td class="text-end">0.030</td>
+              <td class="text-end">0.011</td>
+              <td class="text-end">0.143</td>
+              <td class="text-end">0.172</td>
+              <td class="text-end">0.451</td>
+              <td class="text-end">0.042</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/ring_outlier_filter/callback_0 </td>
+              <td class="text-end">0.224</td>
+              <td class="text-end">0.154</td>
+              <td class="text-end">0.080</td>
+              <td class="text-end">0.631</td>
+              <td class="text-end">0.739</td>
+              <td class="text-end">1.198</td>
+              <td class="text-end">0.168</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/pointcloud_before_sync </td>
+              <td class="text-end">0.529</td>
+              <td class="text-end">0.371</td>
+              <td class="text-end">0.126</td>
+              <td class="text-end">1.336</td>
+              <td class="text-end">2.380</td>
+              <td class="text-end">3.874</td>
+              <td class="text-end">0.434</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/concatenate_data/callback_4 </td>
+              <td class="text-end">0.042</td>
+              <td class="text-end">0.032</td>
+              <td class="text-end">0.004</td>
+              <td class="text-end">0.092</td>
+              <td class="text-end">0.158</td>
+              <td class="text-end">1.846</td>
+              <td class="text-end">0.104</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        
+        
+        <iframe src="component_sensing_0_stacked_bar_best.html" frameborder="0" width="100%" height="700" scrolling="yes"></iframe>
+        
+      </div>
+
+    </div>  <!-- container -->
+
+  </body>
+</html>

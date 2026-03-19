@@ -1,0 +1,410 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Path: e2e_planning-to-control, report_cutin-30-10-4</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Path: e2e_planning-to-control</h1>
+      <h2>report_cutin-30-10-4</h2>
+      <p><a href="../index.html">Back to Top </a>, <a href="./index.html">Back to Path List</a></p>
+      <hr />
+
+      
+
+      
+
+      
+        
+        <!-- don't use worst case -->
+        
+      
+
+      <h4>Node list in the path</h4>
+      <ul>
+        
+        <li>/planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner</li>
+        
+        <li>/planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner</li>
+        
+        <li>/planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother</li>
+        
+        <li>/planning/scenario_planning/lane_driving/motion_planning/path_optimizer</li>
+        
+        <li>/planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner</li>
+        
+        <li>/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay</li>
+        
+        <li>/planning/scenario_planning/scenario_selector</li>
+        
+        <li>/planning/scenario_planning/velocity_smoother</li>
+        
+        <li>/planning/planning_validator</li>
+        
+        <li>/control/trajectory_follower/controller_node_exe</li>
+        
+        <li>/control/vehicle_cmd_gate</li>
+        
+      </ul>
+
+      
+      <h4>Message Flow (obstacle_stopに注目)</h4>
+      <div class="alert alert-info" role="alert">
+        <strong>Time Window:</strong>
+        
+          Trigger: 1768893663388609792 (3.0s before/after)
+        
+      </div>
+      
+      
+      
+      <iframe src="e2e_planning-to-control_messageflow_short.html" frameborder="0" width="100%" height="546" scrolling="yes"></iframe>
+
+      <h4>Response Time</h4>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>e2e_planning-to-control</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">60.574</td>
+              <td class="text-end">54.003</td>
+              <td class="text-end">11.334</td>
+              <td class="text-end">127.750</td>
+              <td class="text-end">172.261</td>
+              <td class="text-end">212.350</td>
+              <td class="text-end">31.838</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      
+      <h5>Response Time (Message Flow Window)</h5>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>e2e_planning-to-control (window)</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">51.877</td>
+              <td class="text-end">50.494</td>
+              <td class="text-end">22.532</td>
+              <td class="text-end">77.286</td>
+              <td class="text-end">85.801</td>
+              <td class="text-end">89.714</td>
+              <td class="text-end">16.013</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+
+      
+
+      <div class="row">
+        <div class="col">
+          
+          <iframe src="e2e_planning-to-control_timeseries_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="e2e_planning-to-control_timeseries_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+        <div class="col">
+          
+          <iframe src="e2e_planning-to-control_hist_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="e2e_planning-to-control_hist_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+      </div>
+
+
+      <h4>Response Time Details</h4>
+      <div>
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>Latency in Node / Topic </th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_x </td>
+              <td class="text-end">11.534</td>
+              <td class="text-end">9.458</td>
+              <td class="text-end">3.245</td>
+              <td class="text-end">24.354</td>
+              <td class="text-end">27.839</td>
+              <td class="text-end">31.967</td>
+              <td class="text-end">6.162</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id </td>
+              <td class="text-end">0.258</td>
+              <td class="text-end">0.194</td>
+              <td class="text-end">0.050</td>
+              <td class="text-end">0.608</td>
+              <td class="text-end">0.897</td>
+              <td class="text-end">2.172</td>
+              <td class="text-end">0.203</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_14 </td>
+              <td class="text-end">5.242</td>
+              <td class="text-end">3.701</td>
+              <td class="text-end">1.114</td>
+              <td class="text-end">12.720</td>
+              <td class="text-end">14.823</td>
+              <td class="text-end">26.491</td>
+              <td class="text-end">3.781</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/behavior_planning/path </td>
+              <td class="text-end">0.412</td>
+              <td class="text-end">0.302</td>
+              <td class="text-end">0.100</td>
+              <td class="text-end">0.922</td>
+              <td class="text-end">1.345</td>
+              <td class="text-end">2.353</td>
+              <td class="text-end">0.285</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1 </td>
+              <td class="text-end">1.776</td>
+              <td class="text-end">1.422</td>
+              <td class="text-end">0.106</td>
+              <td class="text-end">3.947</td>
+              <td class="text-end">4.955</td>
+              <td class="text-end">7.637</td>
+              <td class="text-end">1.133</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/path_smoother/path </td>
+              <td class="text-end">0.305</td>
+              <td class="text-end">0.223</td>
+              <td class="text-end">0.046</td>
+              <td class="text-end">0.839</td>
+              <td class="text-end">1.221</td>
+              <td class="text-end">1.871</td>
+              <td class="text-end">0.255</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2 </td>
+              <td class="text-end">5.048</td>
+              <td class="text-end">3.378</td>
+              <td class="text-end">0.286</td>
+              <td class="text-end">13.913</td>
+              <td class="text-end">20.320</td>
+              <td class="text-end">30.150</td>
+              <td class="text-end">4.431</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory </td>
+              <td class="text-end">0.123</td>
+              <td class="text-end">0.098</td>
+              <td class="text-end">0.026</td>
+              <td class="text-end">0.304</td>
+              <td class="text-end">0.441</td>
+              <td class="text-end">0.648</td>
+              <td class="text-end">0.088</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6 </td>
+              <td class="text-end">4.346</td>
+              <td class="text-end">3.561</td>
+              <td class="text-end">1.030</td>
+              <td class="text-end">9.387</td>
+              <td class="text-end">15.144</td>
+              <td class="text-end">19.783</td>
+              <td class="text-end">2.721</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory </td>
+              <td class="text-end">0.106</td>
+              <td class="text-end">0.074</td>
+              <td class="text-end">0.025</td>
+              <td class="text-end">0.276</td>
+              <td class="text-end">0.466</td>
+              <td class="text-end">1.398</td>
+              <td class="text-end">0.110</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1 </td>
+              <td class="text-end">0.003</td>
+              <td class="text-end">0.002</td>
+              <td class="text-end">0.001</td>
+              <td class="text-end">0.006</td>
+              <td class="text-end">0.008</td>
+              <td class="text-end">0.012</td>
+              <td class="text-end">0.001</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/trajectory </td>
+              <td class="text-end">0.132</td>
+              <td class="text-end">0.103</td>
+              <td class="text-end">0.055</td>
+              <td class="text-end">0.295</td>
+              <td class="text-end">0.421</td>
+              <td class="text-end">2.577</td>
+              <td class="text-end">0.121</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/scenario_selector/callback_1 </td>
+              <td class="text-end">0.008</td>
+              <td class="text-end">0.006</td>
+              <td class="text-end">0.003</td>
+              <td class="text-end">0.014</td>
+              <td class="text-end">0.020</td>
+              <td class="text-end">0.055</td>
+              <td class="text-end">0.004</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/scenario_selector/trajectory </td>
+              <td class="text-end">0.152</td>
+              <td class="text-end">0.123</td>
+              <td class="text-end">0.069</td>
+              <td class="text-end">0.333</td>
+              <td class="text-end">0.445</td>
+              <td class="text-end">0.599</td>
+              <td class="text-end">0.081</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/velocity_smoother/callback_4 </td>
+              <td class="text-end">2.449</td>
+              <td class="text-end">1.873</td>
+              <td class="text-end">0.520</td>
+              <td class="text-end">6.045</td>
+              <td class="text-end">8.109</td>
+              <td class="text-end">11.613</td>
+              <td class="text-end">1.717</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/velocity_smoother/trajectory </td>
+              <td class="text-end">0.154</td>
+              <td class="text-end">0.124</td>
+              <td class="text-end">0.065</td>
+              <td class="text-end">0.330</td>
+              <td class="text-end">0.496</td>
+              <td class="text-end">1.565</td>
+              <td class="text-end">0.115</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/planning_validator/callback_3 </td>
+              <td class="text-end">0.330</td>
+              <td class="text-end">0.261</td>
+              <td class="text-end">0.131</td>
+              <td class="text-end">0.820</td>
+              <td class="text-end">1.159</td>
+              <td class="text-end">1.616</td>
+              <td class="text-end">0.213</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/trajectory </td>
+              <td class="text-end">27.660</td>
+              <td class="text-end">19.888</td>
+              <td class="text-end">1.268</td>
+              <td class="text-end">93.952</td>
+              <td class="text-end">133.893</td>
+              <td class="text-end">182.286</td>
+              <td class="text-end">27.779</td>
+            </tr>
+            
+            <tr>
+              <td>/control/trajectory_follower/control_cmd </td>
+              <td class="text-end">0.172</td>
+              <td class="text-end">0.087</td>
+              <td class="text-end">0.028</td>
+              <td class="text-end">0.461</td>
+              <td class="text-end">1.487</td>
+              <td class="text-end">2.309</td>
+              <td class="text-end">0.253</td>
+            </tr>
+            
+            <tr>
+              <td>/control/vehicle_cmd_gate/callback_20 </td>
+              <td class="text-end">0.364</td>
+              <td class="text-end">0.220</td>
+              <td class="text-end">0.088</td>
+              <td class="text-end">0.934</td>
+              <td class="text-end">1.212</td>
+              <td class="text-end">2.594</td>
+              <td class="text-end">0.297</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        
+        
+        <iframe src="e2e_planning-to-control_stacked_bar_best.html" frameborder="0" width="100%" height="1060" scrolling="yes"></iframe>
+        
+      </div>
+
+    </div>  <!-- container -->
+
+  </body>
+</html>

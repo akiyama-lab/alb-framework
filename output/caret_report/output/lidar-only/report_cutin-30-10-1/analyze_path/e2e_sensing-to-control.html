@@ -1,0 +1,652 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Path: e2e_sensing-to-control, report_cutin-30-10-1</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Path: e2e_sensing-to-control</h1>
+      <h2>report_cutin-30-10-1</h2>
+      <p><a href="../index.html">Back to Top </a>, <a href="./index.html">Back to Path List</a></p>
+      <hr />
+
+      
+
+      
+
+      
+        
+        <!-- don't use worst case -->
+        
+      
+
+      <h4>Node list in the path</h4>
+      <ul>
+        
+        <li>/sensing/lidar/right/crop_box_filter_self</li>
+        
+        <li>/sensing/lidar/right/crop_box_filter_mirror</li>
+        
+        <li>/sensing/lidar/right/distortion_corrector_node</li>
+        
+        <li>/sensing/lidar/right/ring_outlier_filter</li>
+        
+        <li>/sensing/lidar/concatenate_data</li>
+        
+        <li>/perception/object_recognition/detection/centerpoint/lidar_centerpoint</li>
+        
+        <li>/perception/object_recognition/detection/object_association_merger_alpha</li>
+        
+        <li>/perception/object_recognition/detection/object_association_merger_beta</li>
+        
+        <li>/perception/object_recognition/detection/object_lanelet_filter</li>
+        
+        <li>/perception/object_recognition/tracking/multi_object_tracker</li>
+        
+        <li>/perception/object_recognition/prediction/map_based_prediction</li>
+        
+        <li>/planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner</li>
+        
+        <li>/planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner</li>
+        
+        <li>/planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother</li>
+        
+        <li>/planning/scenario_planning/lane_driving/motion_planning/path_optimizer</li>
+        
+        <li>/planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner</li>
+        
+        <li>/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay</li>
+        
+        <li>/planning/scenario_planning/scenario_selector</li>
+        
+        <li>/planning/scenario_planning/velocity_smoother</li>
+        
+        <li>/planning/planning_validator</li>
+        
+        <li>/control/trajectory_follower/controller_node_exe</li>
+        
+        <li>/control/vehicle_cmd_gate</li>
+        
+      </ul>
+
+      
+      <h4>Message Flow (obstacle_stopに注目)</h4>
+      <div class="alert alert-info" role="alert">
+        <strong>Time Window:</strong>
+        
+          Trigger: 1768893109937807616 (3.0s before/after)
+        
+      </div>
+      
+      
+      
+      <iframe src="e2e_sensing-to-control_messageflow_short.html" frameborder="0" width="100%" height="942" scrolling="yes"></iframe>
+
+      <h4>Response Time</h4>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>e2e_sensing-to-control</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">188.785</td>
+              <td class="text-end">170.487</td>
+              <td class="text-end">83.328</td>
+              <td class="text-end">338.196</td>
+              <td class="text-end">433.186</td>
+              <td class="text-end">589.991</td>
+              <td class="text-end">67.372</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      
+      <h5>Response Time (Message Flow Window)</h5>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>e2e_sensing-to-control (window)</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">159.301</td>
+              <td class="text-end">158.410</td>
+              <td class="text-end">124.564</td>
+              <td class="text-end">189.497</td>
+              <td class="text-end">218.319</td>
+              <td class="text-end">230.973</td>
+              <td class="text-end">19.060</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+
+      
+
+      <div class="row">
+        <div class="col">
+          
+          <iframe src="e2e_sensing-to-control_timeseries_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="e2e_sensing-to-control_timeseries_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+        <div class="col">
+          
+          <iframe src="e2e_sensing-to-control_hist_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="e2e_sensing-to-control_hist_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+      </div>
+
+
+      <h4>Response Time Details</h4>
+      <div>
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>Latency in Node / Topic </th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>/sensing/lidar/right/self_cropped/pointcloud_ex </td>
+              <td class="text-end">0.078</td>
+              <td class="text-end">0.065</td>
+              <td class="text-end">0.033</td>
+              <td class="text-end">0.183</td>
+              <td class="text-end">0.224</td>
+              <td class="text-end">0.583</td>
+              <td class="text-end">0.046</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/crop_box_filter_mirror/callback_0 </td>
+              <td class="text-end">0.185</td>
+              <td class="text-end">0.146</td>
+              <td class="text-end">0.067</td>
+              <td class="text-end">0.497</td>
+              <td class="text-end">0.595</td>
+              <td class="text-end">1.826</td>
+              <td class="text-end">0.144</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/mirror_cropped/pointcloud_ex </td>
+              <td class="text-end">0.038</td>
+              <td class="text-end">0.028</td>
+              <td class="text-end">0.011</td>
+              <td class="text-end">0.110</td>
+              <td class="text-end">0.128</td>
+              <td class="text-end">0.198</td>
+              <td class="text-end">0.028</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/distortion_corrector_node/callback_2 </td>
+              <td class="text-end">0.765</td>
+              <td class="text-end">0.522</td>
+              <td class="text-end">0.243</td>
+              <td class="text-end">2.225</td>
+              <td class="text-end">2.590</td>
+              <td class="text-end">2.819</td>
+              <td class="text-end">0.593</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/rectified/pointcloud_ex </td>
+              <td class="text-end">0.046</td>
+              <td class="text-end">0.030</td>
+              <td class="text-end">0.010</td>
+              <td class="text-end">0.145</td>
+              <td class="text-end">0.198</td>
+              <td class="text-end">0.259</td>
+              <td class="text-end">0.042</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/ring_outlier_filter/callback_0 </td>
+              <td class="text-end">0.463</td>
+              <td class="text-end">0.314</td>
+              <td class="text-end">0.159</td>
+              <td class="text-end">1.264</td>
+              <td class="text-end">1.488</td>
+              <td class="text-end">1.616</td>
+              <td class="text-end">0.343</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/right/pointcloud_before_sync </td>
+              <td class="text-end">0.551</td>
+              <td class="text-end">0.376</td>
+              <td class="text-end">0.112</td>
+              <td class="text-end">1.535</td>
+              <td class="text-end">2.683</td>
+              <td class="text-end">3.048</td>
+              <td class="text-end">0.471</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/concatenate_data/callback_4 </td>
+              <td class="text-end">4.125</td>
+              <td class="text-end">3.233</td>
+              <td class="text-end">0.400</td>
+              <td class="text-end">9.770</td>
+              <td class="text-end">12.379</td>
+              <td class="text-end">15.993</td>
+              <td class="text-end">2.815</td>
+            </tr>
+            
+            <tr>
+              <td>/sensing/lidar/concatenated/pointcloud </td>
+              <td class="text-end">2.083</td>
+              <td class="text-end">0.140</td>
+              <td class="text-end">0.050</td>
+              <td class="text-end">1.076</td>
+              <td class="text-end">63.567</td>
+              <td class="text-end">81.028</td>
+              <td class="text-end">10.254</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_3 </td>
+              <td class="text-end">13.448</td>
+              <td class="text-end">7.823</td>
+              <td class="text-end">2.552</td>
+              <td class="text-end">46.326</td>
+              <td class="text-end">84.816</td>
+              <td class="text-end">95.367</td>
+              <td class="text-end">14.447</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/centerpoint/objects </td>
+              <td class="text-end">0.409</td>
+              <td class="text-end">0.328</td>
+              <td class="text-end">0.074</td>
+              <td class="text-end">0.904</td>
+              <td class="text-end">1.611</td>
+              <td class="text-end">3.669</td>
+              <td class="text-end">0.329</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_association_merger_alpha/callback_1 </td>
+              <td class="text-end">7.537</td>
+              <td class="text-end">5.861</td>
+              <td class="text-end">0.016</td>
+              <td class="text-end">20.129</td>
+              <td class="text-end">25.904</td>
+              <td class="text-end">28.633</td>
+              <td class="text-end">6.614</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/temporary_merged_objects </td>
+              <td class="text-end">0.217</td>
+              <td class="text-end">0.171</td>
+              <td class="text-end">0.038</td>
+              <td class="text-end">0.484</td>
+              <td class="text-end">0.626</td>
+              <td class="text-end">1.017</td>
+              <td class="text-end">0.148</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_association_merger_beta/callback_1 </td>
+              <td class="text-end">0.113</td>
+              <td class="text-end">0.040</td>
+              <td class="text-end">0.010</td>
+              <td class="text-end">0.503</td>
+              <td class="text-end">1.374</td>
+              <td class="text-end">3.283</td>
+              <td class="text-end">0.258</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/objects_before_filter </td>
+              <td class="text-end">0.240</td>
+              <td class="text-end">0.199</td>
+              <td class="text-end">0.062</td>
+              <td class="text-end">0.514</td>
+              <td class="text-end">0.707</td>
+              <td class="text-end">1.093</td>
+              <td class="text-end">0.149</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_lanelet_filter/callback_0 </td>
+              <td class="text-end">0.353</td>
+              <td class="text-end">0.276</td>
+              <td class="text-end">0.032</td>
+              <td class="text-end">0.804</td>
+              <td class="text-end">1.132</td>
+              <td class="text-end">1.391</td>
+              <td class="text-end">0.236</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/objects </td>
+              <td class="text-end">0.279</td>
+              <td class="text-end">0.205</td>
+              <td class="text-end">0.062</td>
+              <td class="text-end">0.623</td>
+              <td class="text-end">1.032</td>
+              <td class="text-end">2.076</td>
+              <td class="text-end">0.222</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/tracking/multi_object_tracker/callback_3 </td>
+              <td class="text-end">34.905</td>
+              <td class="text-end">16.599</td>
+              <td class="text-end">0.266</td>
+              <td class="text-end">118.497</td>
+              <td class="text-end">176.048</td>
+              <td class="text-end">267.304</td>
+              <td class="text-end">41.599</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/tracking/objects </td>
+              <td class="text-end">0.354</td>
+              <td class="text-end">0.249</td>
+              <td class="text-end">0.079</td>
+              <td class="text-end">0.924</td>
+              <td class="text-end">1.955</td>
+              <td class="text-end">3.899</td>
+              <td class="text-end">0.383</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/prediction/map_based_prediction/callback_1 </td>
+              <td class="text-end">0.233</td>
+              <td class="text-end">0.064</td>
+              <td class="text-end">0.026</td>
+              <td class="text-end">1.124</td>
+              <td class="text-end">2.304</td>
+              <td class="text-end">3.061</td>
+              <td class="text-end">0.439</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/objects </td>
+              <td class="text-end">73.935</td>
+              <td class="text-end">79.019</td>
+              <td class="text-end">4.905</td>
+              <td class="text-end">114.840</td>
+              <td class="text-end">162.100</td>
+              <td class="text-end">284.819</td>
+              <td class="text-end">31.461</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id </td>
+              <td class="text-end">0.290</td>
+              <td class="text-end">0.207</td>
+              <td class="text-end">0.055</td>
+              <td class="text-end">0.656</td>
+              <td class="text-end">1.229</td>
+              <td class="text-end">2.921</td>
+              <td class="text-end">0.268</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_14 </td>
+              <td class="text-end">6.123</td>
+              <td class="text-end">4.789</td>
+              <td class="text-end">1.075</td>
+              <td class="text-end">13.326</td>
+              <td class="text-end">15.643</td>
+              <td class="text-end">18.778</td>
+              <td class="text-end">4.045</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/behavior_planning/path </td>
+              <td class="text-end">0.472</td>
+              <td class="text-end">0.375</td>
+              <td class="text-end">0.087</td>
+              <td class="text-end">1.117</td>
+              <td class="text-end">1.562</td>
+              <td class="text-end">1.920</td>
+              <td class="text-end">0.331</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1 </td>
+              <td class="text-end">1.923</td>
+              <td class="text-end">1.769</td>
+              <td class="text-end">0.161</td>
+              <td class="text-end">4.063</td>
+              <td class="text-end">4.863</td>
+              <td class="text-end">6.052</td>
+              <td class="text-end">1.135</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/path_smoother/path </td>
+              <td class="text-end">0.320</td>
+              <td class="text-end">0.245</td>
+              <td class="text-end">0.034</td>
+              <td class="text-end">0.884</td>
+              <td class="text-end">1.266</td>
+              <td class="text-end">1.797</td>
+              <td class="text-end">0.266</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2 </td>
+              <td class="text-end">4.669</td>
+              <td class="text-end">3.115</td>
+              <td class="text-end">0.166</td>
+              <td class="text-end">12.317</td>
+              <td class="text-end">17.200</td>
+              <td class="text-end">27.710</td>
+              <td class="text-end">4.001</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory </td>
+              <td class="text-end">0.135</td>
+              <td class="text-end">0.101</td>
+              <td class="text-end">0.027</td>
+              <td class="text-end">0.338</td>
+              <td class="text-end">0.525</td>
+              <td class="text-end">1.147</td>
+              <td class="text-end">0.108</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6 </td>
+              <td class="text-end">4.375</td>
+              <td class="text-end">3.707</td>
+              <td class="text-end">0.914</td>
+              <td class="text-end">9.316</td>
+              <td class="text-end">13.832</td>
+              <td class="text-end">17.634</td>
+              <td class="text-end">2.567</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory </td>
+              <td class="text-end">0.119</td>
+              <td class="text-end">0.078</td>
+              <td class="text-end">0.025</td>
+              <td class="text-end">0.312</td>
+              <td class="text-end">0.670</td>
+              <td class="text-end">1.531</td>
+              <td class="text-end">0.134</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1 </td>
+              <td class="text-end">0.003</td>
+              <td class="text-end">0.002</td>
+              <td class="text-end">0.001</td>
+              <td class="text-end">0.006</td>
+              <td class="text-end">0.007</td>
+              <td class="text-end">0.026</td>
+              <td class="text-end">0.002</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/lane_driving/trajectory </td>
+              <td class="text-end">0.139</td>
+              <td class="text-end">0.108</td>
+              <td class="text-end">0.051</td>
+              <td class="text-end">0.298</td>
+              <td class="text-end">0.483</td>
+              <td class="text-end">0.977</td>
+              <td class="text-end">0.091</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/scenario_selector/callback_1 </td>
+              <td class="text-end">0.009</td>
+              <td class="text-end">0.007</td>
+              <td class="text-end">0.002</td>
+              <td class="text-end">0.017</td>
+              <td class="text-end">0.037</td>
+              <td class="text-end">0.123</td>
+              <td class="text-end">0.008</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/scenario_selector/trajectory </td>
+              <td class="text-end">0.162</td>
+              <td class="text-end">0.130</td>
+              <td class="text-end">0.058</td>
+              <td class="text-end">0.336</td>
+              <td class="text-end">0.440</td>
+              <td class="text-end">1.800</td>
+              <td class="text-end">0.106</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/velocity_smoother/callback_4 </td>
+              <td class="text-end">2.297</td>
+              <td class="text-end">1.865</td>
+              <td class="text-end">0.342</td>
+              <td class="text-end">5.326</td>
+              <td class="text-end">7.710</td>
+              <td class="text-end">12.375</td>
+              <td class="text-end">1.548</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/velocity_smoother/trajectory </td>
+              <td class="text-end">0.160</td>
+              <td class="text-end">0.126</td>
+              <td class="text-end">0.059</td>
+              <td class="text-end">0.358</td>
+              <td class="text-end">0.599</td>
+              <td class="text-end">1.320</td>
+              <td class="text-end">0.113</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/planning_validator/callback_3 </td>
+              <td class="text-end">0.354</td>
+              <td class="text-end">0.257</td>
+              <td class="text-end">0.129</td>
+              <td class="text-end">0.892</td>
+              <td class="text-end">1.282</td>
+              <td class="text-end">1.753</td>
+              <td class="text-end">0.251</td>
+            </tr>
+            
+            <tr>
+              <td>/planning/scenario_planning/trajectory </td>
+              <td class="text-end">26.397</td>
+              <td class="text-end">18.608</td>
+              <td class="text-end">1.167</td>
+              <td class="text-end">90.340</td>
+              <td class="text-end">147.344</td>
+              <td class="text-end">224.451</td>
+              <td class="text-end">29.047</td>
+            </tr>
+            
+            <tr>
+              <td>/control/trajectory_follower/control_cmd </td>
+              <td class="text-end">0.153</td>
+              <td class="text-end">0.071</td>
+              <td class="text-end">0.025</td>
+              <td class="text-end">0.398</td>
+              <td class="text-end">1.309</td>
+              <td class="text-end">3.294</td>
+              <td class="text-end">0.249</td>
+            </tr>
+            
+            <tr>
+              <td>/control/vehicle_cmd_gate/callback_20 </td>
+              <td class="text-end">0.329</td>
+              <td class="text-end">0.197</td>
+              <td class="text-end">0.077</td>
+              <td class="text-end">0.897</td>
+              <td class="text-end">1.152</td>
+              <td class="text-end">2.400</td>
+              <td class="text-end">0.282</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        
+        
+        <iframe src="e2e_sensing-to-control_stacked_bar_best.html" frameborder="0" width="100%" height="1720" scrolling="yes"></iframe>
+        
+      </div>
+
+    </div>  <!-- container -->
+
+  </body>
+</html>

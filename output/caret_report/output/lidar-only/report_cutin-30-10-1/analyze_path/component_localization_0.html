@@ -1,0 +1,312 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Path: component_localization_0, report_cutin-30-10-1</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Path: component_localization_0</h1>
+      <h2>report_cutin-30-10-1</h2>
+      <p><a href="../index.html">Back to Top </a>, <a href="./index.html">Back to Path List</a></p>
+      <hr />
+
+      
+
+      
+
+      
+        
+      
+
+      <h4>Node list in the path</h4>
+      <ul>
+        
+        <li>/sensing/lidar/concatenate_data</li>
+        
+        <li>/localization/util/crop_box_filter_measurement_range</li>
+        
+        <li>/localization/util/voxel_grid_downsample_filter</li>
+        
+        <li>/localization/util/random_downsample_filter</li>
+        
+        <li>/localization/pose_estimator/ndt_scan_matcher</li>
+        
+        <li>/localization/pose_twist_fusion_filter/ekf_localizer</li>
+        
+        <li>/localization/pose_twist_fusion_filter/stop_filter</li>
+        
+      </ul>
+
+      
+      <h4>Message Flow (obstacle_stopに注目)</h4>
+      <div class="alert alert-info" role="alert">
+        <strong>Time Window:</strong>
+        
+          Trigger: 1768893109937807616 (3.0s before/after)
+        
+      </div>
+      
+      
+      
+      <iframe src="component_localization_0_messageflow_short.html" frameborder="0" width="100%" height="402" scrolling="yes"></iframe>
+
+      <h4>Response Time</h4>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>component_localization_0</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">28.183</td>
+              <td class="text-end">22.563</td>
+              <td class="text-end">3.892</td>
+              <td class="text-end">76.322</td>
+              <td class="text-end">136.002</td>
+              <td class="text-end">221.344</td>
+              <td class="text-end">24.425</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      
+      <h5>Response Time (Message Flow Window)</h5>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>component_localization_0 (window)</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">22.878</td>
+              <td class="text-end">22.858</td>
+              <td class="text-end">5.923</td>
+              <td class="text-end">38.941</td>
+              <td class="text-end">44.504</td>
+              <td class="text-end">51.267</td>
+              <td class="text-end">9.392</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+
+      
+
+      <div class="row">
+        <div class="col">
+          
+          <iframe src="component_localization_0_timeseries_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="component_localization_0_timeseries_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+        <div class="col">
+          
+          <iframe src="component_localization_0_hist_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="component_localization_0_hist_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+      </div>
+
+
+      <h4>Response Time Details</h4>
+      <div>
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>Latency in Node / Topic </th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>/sensing/lidar/concatenated/pointcloud </td>
+              <td class="text-end">0.206</td>
+              <td class="text-end">0.109</td>
+              <td class="text-end">0.039</td>
+              <td class="text-end">0.474</td>
+              <td class="text-end">1.196</td>
+              <td class="text-end">13.327</td>
+              <td class="text-end">0.603</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/util/crop_box_filter_measurement_range/callback_0 </td>
+              <td class="text-end">0.761</td>
+              <td class="text-end">0.617</td>
+              <td class="text-end">0.199</td>
+              <td class="text-end">1.867</td>
+              <td class="text-end">2.160</td>
+              <td class="text-end">3.819</td>
+              <td class="text-end">0.494</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/util/measurement_range/pointcloud </td>
+              <td class="text-end">0.211</td>
+              <td class="text-end">0.136</td>
+              <td class="text-end">0.008</td>
+              <td class="text-end">0.620</td>
+              <td class="text-end">1.007</td>
+              <td class="text-end">2.263</td>
+              <td class="text-end">0.234</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/util/voxel_grid_downsample_filter/callback_0 </td>
+              <td class="text-end">2.048</td>
+              <td class="text-end">1.517</td>
+              <td class="text-end">0.572</td>
+              <td class="text-end">5.108</td>
+              <td class="text-end">6.012</td>
+              <td class="text-end">7.579</td>
+              <td class="text-end">1.397</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/util/voxel_grid_downsample/pointcloud </td>
+              <td class="text-end">0.100</td>
+              <td class="text-end">0.047</td>
+              <td class="text-end">0.014</td>
+              <td class="text-end">0.311</td>
+              <td class="text-end">0.898</td>
+              <td class="text-end">1.568</td>
+              <td class="text-end">0.151</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/util/random_downsample_filter/callback_0 </td>
+              <td class="text-end">0.055</td>
+              <td class="text-end">0.039</td>
+              <td class="text-end">0.014</td>
+              <td class="text-end">0.142</td>
+              <td class="text-end">0.197</td>
+              <td class="text-end">0.318</td>
+              <td class="text-end">0.042</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/util/downsample/pointcloud </td>
+              <td class="text-end">0.230</td>
+              <td class="text-end">0.155</td>
+              <td class="text-end">0.057</td>
+              <td class="text-end">0.526</td>
+              <td class="text-end">1.177</td>
+              <td class="text-end">2.690</td>
+              <td class="text-end">0.209</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/pose_estimator/ndt_scan_matcher/callback_2 </td>
+              <td class="text-end">3.769</td>
+              <td class="text-end">2.606</td>
+              <td class="text-end">0.737</td>
+              <td class="text-end">9.215</td>
+              <td class="text-end">11.728</td>
+              <td class="text-end">18.872</td>
+              <td class="text-end">2.784</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/pose_estimator/pose_with_covariance </td>
+              <td class="text-end">0.396</td>
+              <td class="text-end">0.103</td>
+              <td class="text-end">0.035</td>
+              <td class="text-end">2.281</td>
+              <td class="text-end">4.890</td>
+              <td class="text-end">6.477</td>
+              <td class="text-end">0.919</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/pose_twist_fusion_filter/ekf_localizer/callback_1 </td>
+              <td class="text-end">19.813</td>
+              <td class="text-end">13.293</td>
+              <td class="text-end">0.987</td>
+              <td class="text-end">71.108</td>
+              <td class="text-end">131.482</td>
+              <td class="text-end">217.746</td>
+              <td class="text-end">24.441</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/pose_twist_fusion_filter/kinematic_state </td>
+              <td class="text-end">0.143</td>
+              <td class="text-end">0.092</td>
+              <td class="text-end">0.043</td>
+              <td class="text-end">0.294</td>
+              <td class="text-end">0.428</td>
+              <td class="text-end">5.912</td>
+              <td class="text-end">0.227</td>
+            </tr>
+            
+            <tr>
+              <td>/localization/pose_twist_fusion_filter/stop_filter/callback_0 </td>
+              <td class="text-end">0.450</td>
+              <td class="text-end">0.265</td>
+              <td class="text-end">0.126</td>
+              <td class="text-end">1.027</td>
+              <td class="text-end">1.391</td>
+              <td class="text-end">2.227</td>
+              <td class="text-end">0.338</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        
+        
+        <iframe src="component_localization_0_stacked_bar_best.html" frameborder="0" width="100%" height="820" scrolling="yes"></iframe>
+        
+      </div>
+
+    </div>  <!-- container -->
+
+  </body>
+</html>

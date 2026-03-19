@@ -1,0 +1,806 @@
+/localization/localization_error_monitor:
+  filename_timeseries:
+    Frequency: Frequency_localization_localization_error_monitor
+    Period: Period_localization_localization_error_monitor
+    Latency: Latency_localization_localization_error_monitor
+  callbacks:
+    /localization/localization_error_monitor/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::localization_error_monitor::LocalizationErrorMonitor::*(autoware::localization_error_monitor::LocalizationErrorMonitor*,
+        std::_Placeholder<1>))(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: 42.818
+        std: 9.111
+        min: 17.000
+        max: 51.000
+        p50: 47.000
+        p95: 50.000
+        p99: 50.240
+        filename_hist: Frequency_localization_localization_error_monitor_callback_0_hist
+      Period:
+        avg: 23.250
+        std: 16.829
+        min: 4.578
+        max: 224.242
+        p50: 21.109
+        p95: 45.614
+        p99: 105.768
+        filename_hist: Period_localization_localization_error_monitor_callback_0_hist
+      Latency:
+        avg: 0.402
+        std: 0.285
+        min: 0.097
+        max: 1.589
+        p50: 0.267
+        p95: 0.942
+        p99: 1.099
+        filename_hist: Latency_localization_localization_error_monitor_callback_0_hist
+/localization/pose_estimator/ndt_scan_matcher:
+  filename_timeseries:
+    Frequency: Frequency_localization_pose_estimator_ndt_scan_matcher
+    Period: Period_localization_pose_estimator_ndt_scan_matcher
+    Latency: Latency_localization_pose_estimator_ndt_scan_matcher
+  callbacks:
+    /localization/pose_estimator/ndt_scan_matcher/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::ndt_scan_matcher::NDTScanMatcher::*(autoware::ndt_scan_matcher::NDTScanMatcher*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_localization_pose_estimator_ndt_scan_matcher_callback_0_hist
+      Period:
+        avg: 999.983
+        std: 26.959
+        min: 897.974
+        max: 1108.599
+        p50: 999.318
+        p95: 1038.471
+        p99: 1086.851
+        filename_hist: Period_localization_pose_estimator_ndt_scan_matcher_callback_0_hist
+      Latency:
+        avg: 0.516
+        std: 0.539
+        min: 0.134
+        max: 4.260
+        p50: 0.314
+        p95: 1.212
+        p99: 2.088
+        filename_hist: Latency_localization_pose_estimator_ndt_scan_matcher_callback_0_hist
+    /localization/pose_estimator/ndt_scan_matcher/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::ndt_scan_matcher::NDTScanMatcher::*(autoware::ndt_scan_matcher::NDTScanMatcher*,
+        std::_Placeholder<1>))(std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/pose_twist_fusion_filter/biased_pose_with_covariance
+      Frequency:
+        avg: 42.737
+        std: 9.128
+        min: 16.000
+        max: 50.000
+        p50: 47.000
+        p95: 50.000
+        p99: 50.000
+        filename_hist: Frequency_localization_pose_estimator_ndt_scan_matcher_callback_1_hist
+      Period:
+        avg: 23.297
+        std: 16.897
+        min: 5.046
+        max: 224.437
+        p50: 21.133
+        p95: 46.098
+        p99: 105.885
+        filename_hist: Period_localization_pose_estimator_ndt_scan_matcher_callback_1_hist
+      Latency:
+        avg: 0.412
+        std: 0.296
+        min: 0.095
+        max: 1.986
+        p50: 0.272
+        p95: 0.993
+        p99: 1.179
+        filename_hist: Latency_localization_pose_estimator_ndt_scan_matcher_callback_1_hist
+    /localization/pose_estimator/ndt_scan_matcher/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::ndt_scan_matcher::NDTScanMatcher::*(autoware::ndt_scan_matcher::NDTScanMatcher*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/util/downsample/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.000
+        min: 10.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_localization_pose_estimator_ndt_scan_matcher_callback_2_hist
+      Period:
+        avg: 100.033
+        std: 20.720
+        min: 36.941
+        max: 190.481
+        p50: 100.637
+        p95: 133.162
+        p99: 151.586
+        filename_hist: Period_localization_pose_estimator_ndt_scan_matcher_callback_2_hist
+      Latency:
+        avg: 3.676
+        std: 2.712
+        min: 0.135
+        max: 14.507
+        p50: 2.665
+        p95: 9.390
+        p99: 12.137
+        filename_hist: Latency_localization_pose_estimator_ndt_scan_matcher_callback_2_hist
+/localization/pose_twist_fusion_filter/ekf_localizer:
+  filename_timeseries:
+    Frequency: Frequency_localization_pose_twist_fusion_filter_ekf_localizer
+    Period: Period_localization_pose_twist_fusion_filter_ekf_localizer
+    Latency: Latency_localization_pose_twist_fusion_filter_ekf_localizer
+  callbacks:
+    /localization/pose_twist_fusion_filter/ekf_localizer/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::ekf_localizer::EKFLocalizer::*(autoware::ekf_localizer::EKFLocalizer*))()>
+      callback_type: timer_callback
+      period_ns: 20000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 42.605
+        std: 9.335
+        min: 17.000
+        max: 50.000
+        p50: 46.000
+        p95: 50.000
+        p99: 50.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_ekf_localizer_callback_0_hist
+      Period:
+        avg: 23.311
+        std: 16.359
+        min: 9.359
+        max: 231.558
+        p50: 21.170
+        p95: 47.385
+        p99: 103.566
+        filename_hist: Period_localization_pose_twist_fusion_filter_ekf_localizer_callback_0_hist
+      Latency:
+        avg: 2.579
+        std: 1.893
+        min: 0.669
+        max: 15.353
+        p50: 1.791
+        p95: 6.307
+        p99: 9.588
+        filename_hist: Latency_localization_pose_twist_fusion_filter_ekf_localizer_callback_0_hist
+    /localization/pose_twist_fusion_filter/ekf_localizer/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::ekf_localizer::EKFLocalizer::*(autoware::ekf_localizer::EKFLocalizer*,
+        std::_Placeholder<1>))(std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void>
+        > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/pose_estimator/pose_with_covariance
+      Frequency:
+        avg: 9.500
+        std: 1.249
+        min: 4.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_ekf_localizer_callback_1_hist
+      Period:
+        avg: 105.054
+        std: 28.334
+        min: 42.994
+        max: 355.977
+        p50: 101.659
+        p95: 151.880
+        p99: 196.046
+        filename_hist: Period_localization_pose_twist_fusion_filter_ekf_localizer_callback_1_hist
+      Latency:
+        avg: 0.237
+        std: 0.202
+        min: 0.062
+        max: 1.444
+        p50: 0.145
+        p95: 0.658
+        p99: 0.892
+        filename_hist: Latency_localization_pose_twist_fusion_filter_ekf_localizer_callback_1_hist
+    /localization/pose_twist_fusion_filter/ekf_localizer/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::ekf_localizer::EKFLocalizer::*(autoware::ekf_localizer::EKFLocalizer*,
+        std::_Placeholder<1>))(std::shared_ptr<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/twist_estimator/twist_with_covariance
+      Frequency:
+        avg: 19.974
+        std: 0.565
+        min: 18.000
+        max: 21.000
+        p50: 20.000
+        p95: 21.000
+        p99: 21.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_ekf_localizer_callback_2_hist
+      Period:
+        avg: 50.071
+        std: 16.928
+        min: 3.392
+        max: 167.869
+        p50: 48.509
+        p95: 80.122
+        p99: 99.763
+        filename_hist: Period_localization_pose_twist_fusion_filter_ekf_localizer_callback_2_hist
+      Latency:
+        avg: 0.197
+        std: 0.142
+        min: 0.057
+        max: 1.060
+        p50: 0.144
+        p95: 0.550
+        p99: 0.719
+        filename_hist: Latency_localization_pose_twist_fusion_filter_ekf_localizer_callback_2_hist
+/localization/pose_twist_fusion_filter/pose_instability_detector:
+  filename_timeseries:
+    Frequency: Frequency_localization_pose_twist_fusion_filter_pose_instability_detector
+    Period: Period_localization_pose_twist_fusion_filter_pose_instability_detector
+    Latency: Latency_localization_pose_twist_fusion_filter_pose_instability_detector
+  callbacks:
+    /localization/pose_twist_fusion_filter/pose_instability_detector/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::pose_instability_detector::PoseInstabilityDetector::*(autoware::pose_instability_detector::PoseInstabilityDetector*))()>
+      callback_type: timer_callback
+      period_ns: 500000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 2.000
+        std: 0.000
+        min: 2.000
+        max: 2.000
+        p50: 2.000
+        p95: 2.000
+        p99: 2.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_pose_instability_detector_callback_0_hist
+      Period:
+        avg: 499.985
+        std: 26.242
+        min: 388.129
+        max: 611.286
+        p50: 499.671
+        p95: 540.675
+        p99: 589.934
+        filename_hist: Period_localization_pose_twist_fusion_filter_pose_instability_detector_callback_0_hist
+      Latency:
+        avg: 0.457
+        std: 0.291
+        min: 0.146
+        max: 1.685
+        p50: 0.355
+        p95: 1.173
+        p99: 1.309
+        filename_hist: Latency_localization_pose_twist_fusion_filter_pose_instability_detector_callback_0_hist
+    /localization/pose_twist_fusion_filter/pose_instability_detector/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pose_instability_detector::PoseInstabilityDetector::*(autoware::pose_instability_detector::PoseInstabilityDetector*,
+        std::_Placeholder<1>))(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: 42.776
+        std: 9.276
+        min: 15.000
+        max: 50.000
+        p50: 47.000
+        p95: 50.000
+        p99: 50.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_pose_instability_detector_callback_1_hist
+      Period:
+        avg: 23.289
+        std: 16.922
+        min: 4.396
+        max: 223.693
+        p50: 21.107
+        p95: 46.314
+        p99: 106.108
+        filename_hist: Period_localization_pose_twist_fusion_filter_pose_instability_detector_callback_1_hist
+      Latency:
+        avg: 0.003
+        std: 0.005
+        min: 0.001
+        max: 0.120
+        p50: 0.003
+        p95: 0.006
+        p99: 0.015
+        filename_hist: Latency_localization_pose_twist_fusion_filter_pose_instability_detector_callback_1_hist
+    /localization/pose_twist_fusion_filter/pose_instability_detector/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::pose_instability_detector::PoseInstabilityDetector::*(autoware::pose_instability_detector::PoseInstabilityDetector*,
+        std::_Placeholder<1>))(std::shared_ptr<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/twist_estimator/twist_with_covariance
+      Frequency:
+        avg: 20.000
+        std: 0.400
+        min: 19.000
+        max: 21.000
+        p50: 20.000
+        p95: 21.000
+        p99: 21.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_pose_instability_detector_callback_2_hist
+      Period:
+        avg: 50.076
+        std: 16.844
+        min: 3.406
+        max: 167.825
+        p50: 48.542
+        p95: 80.064
+        p99: 99.206
+        filename_hist: Period_localization_pose_twist_fusion_filter_pose_instability_detector_callback_2_hist
+      Latency:
+        avg: 0.002
+        std: 0.002
+        min: 0.001
+        max: 0.048
+        p50: 0.002
+        p95: 0.005
+        p99: 0.007
+        filename_hist: Latency_localization_pose_twist_fusion_filter_pose_instability_detector_callback_2_hist
+/localization/pose_twist_fusion_filter/stop_filter:
+  filename_timeseries:
+    Frequency: Frequency_localization_pose_twist_fusion_filter_stop_filter
+    Period: Period_localization_pose_twist_fusion_filter_stop_filter
+    Latency: Latency_localization_pose_twist_fusion_filter_stop_filter
+  callbacks:
+    /localization/pose_twist_fusion_filter/stop_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::stop_filter::StopFilter::*(autoware::stop_filter::StopFilter*,
+        std::_Placeholder<1>))(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/pose_twist_fusion_filter/kinematic_state
+      Frequency:
+        avg: 42.675
+        std: 9.388
+        min: 16.000
+        max: 50.000
+        p50: 47.000
+        p95: 50.000
+        p99: 50.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_stop_filter_callback_0_hist
+      Period:
+        avg: 23.268
+        std: 16.838
+        min: 4.411
+        max: 224.323
+        p50: 21.130
+        p95: 45.741
+        p99: 105.586
+        filename_hist: Period_localization_pose_twist_fusion_filter_stop_filter_callback_0_hist
+      Latency:
+        avg: 0.410
+        std: 0.298
+        min: 0.107
+        max: 2.484
+        p50: 0.271
+        p95: 0.982
+        p99: 1.180
+        filename_hist: Latency_localization_pose_twist_fusion_filter_stop_filter_callback_0_hist
+/localization/pose_twist_fusion_filter/twist2accel:
+  filename_timeseries:
+    Frequency: Frequency_localization_pose_twist_fusion_filter_twist2accel
+    Period: Period_localization_pose_twist_fusion_filter_twist2accel
+    Latency: Latency_localization_pose_twist_fusion_filter_twist2accel
+  callbacks:
+    /localization/pose_twist_fusion_filter/twist2accel/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::twist2accel::Twist2Accel::*(autoware::twist2accel::Twist2Accel*,
+        std::_Placeholder<1>))(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: 42.675
+        std: 9.230
+        min: 17.000
+        max: 50.000
+        p50: 47.000
+        p95: 50.000
+        p99: 50.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_twist2accel_callback_0_hist
+      Period:
+        avg: 23.281
+        std: 16.909
+        min: 4.178
+        max: 223.218
+        p50: 21.097
+        p95: 46.126
+        p99: 106.191
+        filename_hist: Period_localization_pose_twist_fusion_filter_twist2accel_callback_0_hist
+      Latency:
+        avg: 0.331
+        std: 0.249
+        min: 0.081
+        max: 2.107
+        p50: 0.212
+        p95: 0.804
+        p99: 0.962
+        filename_hist: Latency_localization_pose_twist_fusion_filter_twist2accel_callback_0_hist
+    /localization/pose_twist_fusion_filter/twist2accel/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::twist2accel::Twist2Accel::*(autoware::twist2accel::Twist2Accel*,
+        std::_Placeholder<1>))(std::shared_ptr<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/twist_estimator/twist_with_covariance
+      Frequency:
+        avg: 19.987
+        std: 0.618
+        min: 19.000
+        max: 21.000
+        p50: 20.000
+        p95: 21.000
+        p99: 21.000
+        filename_hist: Frequency_localization_pose_twist_fusion_filter_twist2accel_callback_1_hist
+      Period:
+        avg: 50.064
+        std: 16.838
+        min: 3.409
+        max: 167.844
+        p50: 48.584
+        p95: 80.048
+        p99: 99.194
+        filename_hist: Period_localization_pose_twist_fusion_filter_twist2accel_callback_1_hist
+      Latency:
+        avg: 0.002
+        std: 0.002
+        min: 0.000
+        max: 0.067
+        p50: 0.002
+        p95: 0.004
+        p99: 0.006
+        filename_hist: Latency_localization_pose_twist_fusion_filter_twist2accel_callback_1_hist
+/localization/twist_estimator/gyro_odometer:
+  filename_timeseries:
+    Frequency: Frequency_localization_twist_estimator_gyro_odometer
+    Period: Period_localization_twist_estimator_gyro_odometer
+    Latency: Latency_localization_twist_estimator_gyro_odometer
+  callbacks:
+    /localization/twist_estimator/gyro_odometer/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::gyro_odometer::GyroOdometerNode::*(autoware::gyro_odometer::GyroOdometerNode*,
+        std::_Placeholder<1>))(std::shared_ptr<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/vehicle_velocity_converter/twist_with_covariance
+      Frequency:
+        avg: 19.974
+        std: 0.516
+        min: 18.000
+        max: 21.000
+        p50: 20.000
+        p95: 21.000
+        p99: 21.000
+        filename_hist: Frequency_localization_twist_estimator_gyro_odometer_callback_0_hist
+      Period:
+        avg: 50.008
+        std: 16.716
+        min: 3.405
+        max: 133.936
+        p50: 48.531
+        p95: 80.063
+        p99: 99.184
+        filename_hist: Period_localization_twist_estimator_gyro_odometer_callback_0_hist
+      Latency:
+        avg: 0.399
+        std: 0.328
+        min: 0.097
+        max: 3.137
+        p50: 0.285
+        p95: 1.126
+        p99: 1.603
+        filename_hist: Latency_localization_twist_estimator_gyro_odometer_callback_0_hist
+    /localization/twist_estimator/gyro_odometer/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::gyro_odometer::GyroOdometerNode::*(autoware::gyro_odometer::GyroOdometerNode*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/imu/imu_data
+      Frequency:
+        avg: 19.974
+        std: 0.516
+        min: 18.000
+        max: 21.000
+        p50: 20.000
+        p95: 21.000
+        p99: 21.000
+        filename_hist: Frequency_localization_twist_estimator_gyro_odometer_callback_1_hist
+      Period:
+        avg: 50.009
+        std: 16.543
+        min: 3.134
+        max: 133.834
+        p50: 48.273
+        p95: 80.536
+        p99: 99.108
+        filename_hist: Period_localization_twist_estimator_gyro_odometer_callback_1_hist
+      Latency:
+        avg: 0.242
+        std: 0.179
+        min: 0.078
+        max: 2.267
+        p50: 0.185
+        p95: 0.610
+        p99: 0.888
+        filename_hist: Latency_localization_twist_estimator_gyro_odometer_callback_1_hist
+/localization/util/crop_box_filter_measurement_range:
+  filename_timeseries:
+    Frequency: Frequency_localization_util_crop_box_filter_measurement_range
+    Period: Period_localization_util_crop_box_filter_measurement_range
+    Latency: Latency_localization_util_crop_box_filter_measurement_range
+  callbacks:
+    /localization/util/crop_box_filter_measurement_range/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/concatenated/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.173
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.330
+        filename_hist: Frequency_localization_util_crop_box_filter_measurement_range_callback_0_hist
+      Period:
+        avg: 100.000
+        std: 20.907
+        min: 35.682
+        max: 190.709
+        p50: 100.337
+        p95: 134.928
+        p99: 151.053
+        filename_hist: Period_localization_util_crop_box_filter_measurement_range_callback_0_hist
+      Latency:
+        avg: 0.692
+        std: 0.435
+        min: 0.201
+        max: 2.595
+        p50: 0.555
+        p95: 1.631
+        p99: 2.061
+        filename_hist: Latency_localization_util_crop_box_filter_measurement_range_callback_0_hist
+/localization/util/default_adapi/helpers/autoware_automatic_pose_initializer:
+  filename_timeseries:
+    Frequency: Frequency_localization_util_default_adapi_helpers_autoware_automatic_pose_initializer
+    Period: Period_localization_util_default_adapi_helpers_autoware_automatic_pose_initializer
+    Latency: Latency_localization_util_default_adapi_helpers_autoware_automatic_pose_initializer
+  callbacks:
+    /localization/util/default_adapi/helpers/autoware_automatic_pose_initializer/callback_0:
+      callback_legend: timer_0
+      callback_symbol: autoware::automatic_pose_initializer::AutomaticPoseInitializer::AutomaticPoseInitializer(rclcpp::NodeOptions
+        const&)::{lambda()#2}
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 0.987
+        std: 0.115
+        min: 0.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_localization_util_default_adapi_helpers_autoware_automatic_pose_initializer_callback_0_hist
+      Period:
+        avg: 1014.528
+        std: 22.786
+        min: 1000.467
+        max: 1100.577
+        p50: 1006.604
+        p95: 1072.509
+        p99: 1097.319
+        filename_hist: Period_localization_util_default_adapi_helpers_autoware_automatic_pose_initializer_callback_0_hist
+      Latency:
+        avg: 0.008
+        std: 0.006
+        min: 0.003
+        max: 0.038
+        p50: 0.006
+        p95: 0.019
+        p99: 0.034
+        filename_hist: Latency_localization_util_default_adapi_helpers_autoware_automatic_pose_initializer_callback_0_hist
+/localization/util/pose_initializer:
+  filename_timeseries:
+    Frequency: Frequency_localization_util_pose_initializer
+    Period: Period_localization_util_pose_initializer
+    Latency: Latency_localization_util_pose_initializer
+  callbacks:
+    /localization/util/pose_initializer/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pose_initializer::GnssModule::*(autoware::pose_initializer::GnssModule*,
+        std::_Placeholder<1>))(std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/gnss/pose_with_covariance
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_localization_util_pose_initializer_callback_0_hist
+      Period:
+        avg: 999.976
+        std: 19.282
+        min: 926.116
+        max: 1055.862
+        p50: 1000.213
+        p95: 1035.784
+        p99: 1051.278
+        filename_hist: Period_localization_util_pose_initializer_callback_0_hist
+      Latency:
+        avg: 0.003
+        std: 0.001
+        min: 0.001
+        max: 0.007
+        p50: 0.002
+        p95: 0.006
+        p99: 0.007
+        filename_hist: Latency_localization_util_pose_initializer_callback_0_hist
+    /localization/util/pose_initializer/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::pose_initializer::StopCheckModule::*(autoware::pose_initializer::StopCheckModule*,
+        std::_Placeholder<1>))(std::shared_ptr<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/vehicle_velocity_converter/twist_with_covariance
+      Frequency:
+        avg: 19.987
+        std: 0.600
+        min: 19.000
+        max: 22.000
+        p50: 20.000
+        p95: 21.000
+        p99: 21.250
+        filename_hist: Frequency_localization_util_pose_initializer_callback_1_hist
+      Period:
+        avg: 50.020
+        std: 16.722
+        min: 3.408
+        max: 133.910
+        p50: 48.518
+        p95: 80.060
+        p99: 99.180
+        filename_hist: Period_localization_util_pose_initializer_callback_1_hist
+      Latency:
+        avg: 0.006
+        std: 0.007
+        min: 0.002
+        max: 0.145
+        p50: 0.005
+        p95: 0.012
+        p99: 0.020
+        filename_hist: Latency_localization_util_pose_initializer_callback_1_hist
+/localization/util/random_downsample_filter:
+  filename_timeseries:
+    Frequency: Frequency_localization_util_random_downsample_filter
+    Period: Period_localization_util_random_downsample_filter
+    Latency: Latency_localization_util_random_downsample_filter
+  callbacks:
+    /localization/util/random_downsample_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/util/voxel_grid_downsample/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.173
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.330
+        filename_hist: Frequency_localization_util_random_downsample_filter_callback_0_hist
+      Period:
+        avg: 99.995
+        std: 21.467
+        min: 36.836
+        max: 190.397
+        p50: 100.597
+        p95: 135.217
+        p99: 153.742
+        filename_hist: Period_localization_util_random_downsample_filter_callback_0_hist
+      Latency:
+        avg: 0.117
+        std: 0.083
+        min: 0.034
+        max: 0.965
+        p50: 0.088
+        p95: 0.299
+        p99: 0.383
+        filename_hist: Latency_localization_util_random_downsample_filter_callback_0_hist
+/localization/util/voxel_grid_downsample_filter:
+  filename_timeseries:
+    Frequency: Frequency_localization_util_voxel_grid_downsample_filter
+    Period: Period_localization_util_voxel_grid_downsample_filter
+    Latency: Latency_localization_util_voxel_grid_downsample_filter
+  callbacks:
+    /localization/util/voxel_grid_downsample_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/util/measurement_range/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.173
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.330
+        filename_hist: Frequency_localization_util_voxel_grid_downsample_filter_callback_0_hist
+      Period:
+        avg: 99.998
+        std: 21.026
+        min: 36.431
+        max: 190.021
+        p50: 100.546
+        p95: 134.749
+        p99: 151.110
+        filename_hist: Period_localization_util_voxel_grid_downsample_filter_callback_0_hist
+      Latency:
+        avg: 1.803
+        std: 1.185
+        min: 0.596
+        max: 6.239
+        p50: 1.375
+        p95: 4.498
+        p99: 5.666
+        filename_hist: Latency_localization_util_voxel_grid_downsample_filter_callback_0_hist

@@ -1,0 +1,253 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Path: component_perception(detection_lidar)_0, report_cutin-30-20-1</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Path: component_perception(detection_lidar)_0</h1>
+      <h2>report_cutin-30-20-1</h2>
+      <p><a href="../index.html">Back to Top </a>, <a href="./index.html">Back to Path List</a></p>
+      <hr />
+
+      
+
+      
+
+      
+        
+      
+
+      <h4>Node list in the path</h4>
+      <ul>
+        
+        <li>/sensing/lidar/concatenate_data</li>
+        
+        <li>/perception/object_recognition/detection/centerpoint/lidar_centerpoint</li>
+        
+        <li>/perception/object_recognition/detection/object_association_merger_alpha</li>
+        
+        <li>/perception/object_recognition/detection/object_association_merger_beta</li>
+        
+        <li>/perception/object_recognition/detection/object_lanelet_filter</li>
+        
+        <li>/perception/object_recognition/tracking/multi_object_tracker</li>
+        
+      </ul>
+
+      
+      <h4>Message Flow (obstacle_stopに注目)</h4>
+      <div class="alert alert-info" role="alert">
+        <strong>Time Window:</strong>
+        
+          Trigger: 1768899867229115904 (3.0s before/after)
+        
+      </div>
+      
+      
+      
+      <iframe src="component_perception(detection_lidar)_0_messageflow_short.html" frameborder="0" width="100%" height="366" scrolling="yes"></iframe>
+
+      <h4>Response Time</h4>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>component_perception(detection_lidar)_0</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">26.748</td>
+              <td class="text-end">18.128</td>
+              <td class="text-end">5.284</td>
+              <td class="text-end">90.186</td>
+              <td class="text-end">124.788</td>
+              <td class="text-end">205.995</td>
+              <td class="text-end">26.587</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      
+
+      
+
+      <div class="row">
+        <div class="col">
+          
+          <iframe src="component_perception(detection_lidar)_0_timeseries_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+        </div>
+        <div class="col">
+          
+          <iframe src="component_perception(detection_lidar)_0_hist_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+        </div>
+      </div>
+
+
+      <h4>Response Time Details</h4>
+      <div>
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>Latency in Node / Topic </th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>/sensing/lidar/concatenated/pointcloud </td>
+              <td class="text-end">2.307</td>
+              <td class="text-end">0.088</td>
+              <td class="text-end">0.027</td>
+              <td class="text-end">0.639</td>
+              <td class="text-end">73.777</td>
+              <td class="text-end">170.134</td>
+              <td class="text-end">12.928</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_3 </td>
+              <td class="text-end">16.953</td>
+              <td class="text-end">7.492</td>
+              <td class="text-end">2.348</td>
+              <td class="text-end">73.879</td>
+              <td class="text-end">110.613</td>
+              <td class="text-end">196.346</td>
+              <td class="text-end">23.726</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/centerpoint/objects </td>
+              <td class="text-end">0.299</td>
+              <td class="text-end">0.212</td>
+              <td class="text-end">0.050</td>
+              <td class="text-end">0.683</td>
+              <td class="text-end">1.222</td>
+              <td class="text-end">2.020</td>
+              <td class="text-end">0.237</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_association_merger_alpha/callback_1 </td>
+              <td class="text-end">6.010</td>
+              <td class="text-end">4.425</td>
+              <td class="text-end">0.015</td>
+              <td class="text-end">17.327</td>
+              <td class="text-end">20.511</td>
+              <td class="text-end">25.959</td>
+              <td class="text-end">5.460</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/temporary_merged_objects </td>
+              <td class="text-end">0.186</td>
+              <td class="text-end">0.133</td>
+              <td class="text-end">0.042</td>
+              <td class="text-end">0.435</td>
+              <td class="text-end">0.595</td>
+              <td class="text-end">1.591</td>
+              <td class="text-end">0.139</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_association_merger_beta/callback_1 </td>
+              <td class="text-end">0.070</td>
+              <td class="text-end">0.029</td>
+              <td class="text-end">0.009</td>
+              <td class="text-end">0.279</td>
+              <td class="text-end">0.727</td>
+              <td class="text-end">1.733</td>
+              <td class="text-end">0.140</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/objects_before_filter </td>
+              <td class="text-end">0.209</td>
+              <td class="text-end">0.153</td>
+              <td class="text-end">0.059</td>
+              <td class="text-end">0.449</td>
+              <td class="text-end">0.586</td>
+              <td class="text-end">1.437</td>
+              <td class="text-end">0.137</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_lanelet_filter/callback_0 </td>
+              <td class="text-end">0.321</td>
+              <td class="text-end">0.236</td>
+              <td class="text-end">0.030</td>
+              <td class="text-end">0.789</td>
+              <td class="text-end">1.187</td>
+              <td class="text-end">1.448</td>
+              <td class="text-end">0.242</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/objects </td>
+              <td class="text-end">0.226</td>
+              <td class="text-end">0.144</td>
+              <td class="text-end">0.060</td>
+              <td class="text-end">0.551</td>
+              <td class="text-end">0.704</td>
+              <td class="text-end">3.371</td>
+              <td class="text-end">0.208</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/tracking/multi_object_tracker/callback_3 </td>
+              <td class="text-end">0.167</td>
+              <td class="text-end">0.107</td>
+              <td class="text-end">0.025</td>
+              <td class="text-end">0.547</td>
+              <td class="text-end">0.923</td>
+              <td class="text-end">1.454</td>
+              <td class="text-end">0.185</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        
+        
+        <iframe src="component_perception(detection_lidar)_0_stacked_bar_best.html" frameborder="0" width="100%" height="760" scrolling="yes"></iframe>
+        
+      </div>
+
+    </div>  <!-- container -->
+
+  </body>
+</html>

@@ -1,0 +1,2907 @@
+/system/aggregator:
+  filename_timeseries:
+    Frequency: Frequency_system_aggregator
+    Period: Period_system_aggregator
+    Latency: Latency_system_aggregator
+  callbacks:
+    /system/aggregator/callback_0:
+      callback_legend: timer_0
+      callback_symbol: autoware::diagnostic_graph_aggregator::AggregatorNode::AggregatorNode(rclcpp::NodeOptions
+        const&)::{lambda()#1}
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.940
+        std: 0.451
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.900
+        p99: 11.000
+        filename_hist: Frequency_system_aggregator_callback_0_hist
+      Period:
+        avg: 100.574
+        std: 20.137
+        min: 9.334
+        max: 218.173
+        p50: 99.130
+        p95: 132.421
+        p99: 165.914
+        filename_hist: Period_system_aggregator_callback_0_hist
+      Latency:
+        avg: 1.130
+        std: 0.709
+        min: 0.335
+        max: 4.479
+        p50: 0.884
+        p95: 2.748
+        p99: 3.236
+        filename_hist: Latency_system_aggregator_callback_0_hist
+/system/component_state_diagnostics:
+  filename_timeseries: {}
+  callbacks: {}
+/system/component_state_monitor/component:
+  filename_timeseries:
+    Frequency: Frequency_system_component_state_monitor_component
+    Period: Period_system_component_state_monitor_component
+    Latency: Latency_system_component_state_monitor_component
+  callbacks:
+    /system/component_state_monitor/component/callback_0:
+      callback_legend: timer_0
+      callback_symbol: autoware::component_state_monitor::StateMonitor::StateMonitor(rclcpp::NodeOptions
+        const&)::{lambda()#1}
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.893
+        std: 0.466
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_component_state_monitor_component_callback_0_hist
+      Period:
+        avg: 101.046
+        std: 21.546
+        min: 8.534
+        max: 240.292
+        p50: 99.341
+        p95: 139.379
+        p99: 177.595
+        filename_hist: Period_system_component_state_monitor_component_callback_0_hist
+      Latency:
+        avg: 0.019
+        std: 0.034
+        min: 0.007
+        max: 0.946
+        p50: 0.015
+        p95: 0.032
+        p99: 0.057
+        filename_hist: Latency_system_component_state_monitor_component_callback_0_hist
+/system/duplicated_node_checker:
+  filename_timeseries:
+    Frequency: Frequency_system_duplicated_node_checker
+    Period: Period_system_duplicated_node_checker
+    Latency: Latency_system_duplicated_node_checker
+  callbacks:
+    /system/duplicated_node_checker/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_duplicated_node_checker_callback_0_hist
+      Period:
+        avg: 1000.014
+        std: 24.453
+        min: 917.459
+        max: 1079.227
+        p50: 1000.258
+        p95: 1034.231
+        p99: 1076.947
+        filename_hist: Period_system_duplicated_node_checker_callback_0_hist
+      Latency:
+        avg: 1.043
+        std: 0.617
+        min: 0.415
+        max: 2.735
+        p50: 0.741
+        p95: 2.175
+        p99: 2.623
+        filename_hist: Latency_system_duplicated_node_checker_callback_0_hist
+    /system/duplicated_node_checker/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::duplicated_node_checker::DuplicatedNodeChecker::*(autoware::duplicated_node_checker::DuplicatedNodeChecker*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.916
+        std: 0.356
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.180
+        filename_hist: Frequency_system_duplicated_node_checker_callback_1_hist
+      Period:
+        avg: 100.816
+        std: 20.221
+        min: 5.615
+        max: 198.555
+        p50: 99.457
+        p95: 136.336
+        p99: 170.019
+        filename_hist: Period_system_duplicated_node_checker_callback_1_hist
+      Latency:
+        avg: 0.848
+        std: 0.522
+        min: 0.234
+        max: 3.330
+        p50: 0.648
+        p95: 1.991
+        p99: 2.443
+        filename_hist: Latency_system_duplicated_node_checker_callback_1_hist
+/system/hazard_status_converter:
+  filename_timeseries: {}
+  callbacks:
+    /system/hazard_status_converter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<tier4_system_msgs::msg::EmergencyHoldingState_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<tier4_system_msgs::msg::EmergencyHoldingState_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/emergency_holding
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/system/mrm_comfortable_stop_operator:
+  filename_timeseries:
+    Frequency: Frequency_system_mrm_comfortable_stop_operator
+    Period: Period_system_mrm_comfortable_stop_operator
+    Latency: Latency_system_mrm_comfortable_stop_operator
+  callbacks:
+    /system/mrm_comfortable_stop_operator/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::mrm_comfortable_stop_operator::MrmComfortableStopOperator::*(autoware::mrm_comfortable_stop_operator::MrmComfortableStopOperator*))()
+        const>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.881
+        std: 0.450
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_mrm_comfortable_stop_operator_callback_0_hist
+      Period:
+        avg: 101.158
+        std: 19.329
+        min: 9.205
+        max: 222.453
+        p50: 99.339
+        p95: 135.907
+        p99: 171.684
+        filename_hist: Period_system_mrm_comfortable_stop_operator_callback_0_hist
+      Latency:
+        avg: 0.078
+        std: 0.133
+        min: 0.023
+        max: 3.464
+        p50: 0.055
+        p95: 0.152
+        p99: 0.267
+        filename_hist: Latency_system_mrm_comfortable_stop_operator_callback_0_hist
+/system/mrm_emergency_stop_operator:
+  filename_timeseries:
+    Frequency: Frequency_system_mrm_emergency_stop_operator
+    Period: Period_system_mrm_emergency_stop_operator
+    Latency: Latency_system_mrm_emergency_stop_operator
+  callbacks:
+    /system/mrm_emergency_stop_operator/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::mrm_emergency_stop_operator::MrmEmergencyStopOperator::*(autoware::mrm_emergency_stop_operator::MrmEmergencyStopOperator*))()>
+      callback_type: timer_callback
+      period_ns: 33333333.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 27.398
+        std: 4.173
+        min: 14.000
+        max: 30.000
+        p50: 30.000
+        p95: 30.000
+        p99: 30.000
+        filename_hist: Frequency_system_mrm_emergency_stop_operator_callback_0_hist
+      Period:
+        avg: 36.359
+        std: 16.926
+        min: 7.800
+        max: 178.886
+        p50: 32.520
+        p95: 61.271
+        p99: 123.860
+        filename_hist: Period_system_mrm_emergency_stop_operator_callback_0_hist
+      Latency:
+        avg: 0.380
+        std: 0.260
+        min: 0.089
+        max: 3.039
+        p50: 0.289
+        p95: 0.901
+        p99: 1.267
+        filename_hist: Latency_system_mrm_emergency_stop_operator_callback_0_hist
+    /system/mrm_emergency_stop_operator/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::mrm_emergency_stop_operator::MrmEmergencyStopOperator::*(autoware::mrm_emergency_stop_operator::MrmEmergencyStopOperator*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_control_msgs::msg::Control_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/command/control_cmd
+      Frequency:
+        avg: 29.515
+        std: 5.393
+        min: 14.000
+        max: 34.000
+        p50: 33.000
+        p95: 34.000
+        p99: 34.000
+        filename_hist: Frequency_system_mrm_emergency_stop_operator_callback_1_hist
+      Period:
+        avg: 33.720
+        std: 19.043
+        min: 3.807
+        max: 164.684
+        p50: 31.558
+        p95: 66.932
+        p99: 127.650
+        filename_hist: Period_system_mrm_emergency_stop_operator_callback_1_hist
+      Latency:
+        avg: 0.002
+        std: 0.002
+        min: 0.000
+        max: 0.053
+        p50: 0.002
+        p95: 0.004
+        p99: 0.005
+        filename_hist: Latency_system_mrm_emergency_stop_operator_callback_1_hist
+/system/mrm_handler:
+  filename_timeseries:
+    Frequency: Frequency_system_mrm_handler
+    Period: Period_system_mrm_handler
+    Latency: Latency_system_mrm_handler
+  callbacks:
+    /system/mrm_handler/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::mrm_handler::MrmHandler::*(autoware::mrm_handler::MrmHandler*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.952
+        std: 0.379
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_mrm_handler_callback_0_hist
+      Period:
+        avg: 100.468
+        std: 19.620
+        min: 10.013
+        max: 206.215
+        p50: 99.204
+        p95: 133.188
+        p99: 168.006
+        filename_hist: Period_system_mrm_handler_callback_0_hist
+      Latency:
+        avg: 0.586
+        std: 0.542
+        min: 0.120
+        max: 6.658
+        p50: 0.416
+        p95: 1.597
+        p99: 2.634
+        filename_hist: Latency_system_mrm_handler_callback_0_hist
+    /system/mrm_handler/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/mrm_handler/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_vehicle_msgs::msg::ControlModeReport_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_vehicle_msgs::msg::ControlModeReport_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /vehicle/status/control_mode
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/mrm_handler/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<tier4_system_msgs::msg::MrmBehaviorStatus_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<tier4_system_msgs::msg::MrmBehaviorStatus_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/mrm/pull_over_manager/status
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/mrm_handler/callback_4:
+      callback_legend: subscription_3
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<tier4_system_msgs::msg::MrmBehaviorStatus_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<tier4_system_msgs::msg::MrmBehaviorStatus_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/mrm/comfortable_stop/status
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/mrm_handler/callback_5:
+      callback_legend: subscription_4
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<tier4_system_msgs::msg::MrmBehaviorStatus_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<tier4_system_msgs::msg::MrmBehaviorStatus_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/mrm/emergency_stop/status
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/mrm_handler/callback_6:
+      callback_legend: subscription_5
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_vehicle_msgs::msg::GearCommand_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_vehicle_msgs::msg::GearCommand_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/command/gear_cmd
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/mrm_handler/callback_7:
+      callback_legend: subscription_6
+      callback_symbol: std::_Bind<void (autoware::mrm_handler::MrmHandler::*(autoware::mrm_handler::MrmHandler*,
+        std::_Placeholder<1>))(std::shared_ptr<tier4_system_msgs::msg::OperationModeAvailability_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/operation_mode/availability
+      Frequency:
+        avg: 9.940
+        std: 0.394
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_mrm_handler_callback_7_hist
+      Period:
+        avg: 100.584
+        std: 20.412
+        min: 8.852
+        max: 220.315
+        p50: 99.222
+        p95: 134.289
+        p99: 167.743
+        filename_hist: Period_system_mrm_handler_callback_7_hist
+      Latency:
+        avg: 0.005
+        std: 0.004
+        min: 0.001
+        max: 0.066
+        p50: 0.004
+        p95: 0.012
+        p99: 0.020
+        filename_hist: Latency_system_mrm_handler_callback_7_hist
+/system/processing_time_checker:
+  filename_timeseries:
+    Frequency: Frequency_system_processing_time_checker
+    Period: Period_system_processing_time_checker
+    Latency: Latency_system_processing_time_checker
+  callbacks:
+    /system/processing_time_checker/callback_00:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::processing_time_checker::ProcessingTimeChecker::*(autoware::processing_time_checker::ProcessingTimeChecker*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.889
+        std: 0.354
+        min: 8.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_system_processing_time_checker_callback_00_hist
+      Period:
+        avg: 101.084
+        std: 19.679
+        min: 10.473
+        max: 204.224
+        p50: 99.162
+        p95: 138.354
+        p99: 167.202
+        filename_hist: Period_system_processing_time_checker_callback_00_hist
+      Latency:
+        avg: 0.122
+        std: 0.089
+        min: 0.026
+        max: 1.028
+        p50: 0.092
+        p95: 0.282
+        p99: 0.405
+        filename_hist: Latency_system_processing_time_checker_callback_00_hist
+    /system/processing_time_checker/callback_01:
+      callback_legend: subscription_0
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/control_evaluator/debug/processing_time_ms
+      Frequency:
+        avg: 9.938
+        std: 0.398
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_01_hist
+      Period:
+        avg: 100.589
+        std: 20.001
+        min: 8.561
+        max: 216.856
+        p50: 99.025
+        p95: 136.857
+        p99: 162.041
+        filename_hist: Period_system_processing_time_checker_callback_01_hist
+      Latency:
+        avg: 0.004
+        std: 0.004
+        min: 0.000
+        max: 0.062
+        p50: 0.003
+        p95: 0.007
+        p99: 0.018
+        filename_hist: Latency_system_processing_time_checker_callback_01_hist
+    /system/processing_time_checker/callback_02:
+      callback_legend: subscription_1
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/control_validator/debug/processing_time_ms
+      Frequency:
+        avg: 29.463
+        std: 5.366
+        min: 14.000
+        max: 34.000
+        p50: 33.000
+        p95: 34.000
+        p99: 34.000
+        filename_hist: Frequency_system_processing_time_checker_callback_02_hist
+      Period:
+        avg: 33.734
+        std: 19.106
+        min: 4.113
+        max: 164.811
+        p50: 31.524
+        p95: 66.871
+        p99: 127.297
+        filename_hist: Period_system_processing_time_checker_callback_02_hist
+      Latency:
+        avg: 0.003
+        std: 0.002
+        min: 0.000
+        max: 0.029
+        p50: 0.002
+        p95: 0.006
+        p99: 0.007
+        filename_hist: Latency_system_processing_time_checker_callback_02_hist
+    /system/processing_time_checker/callback_03:
+      callback_legend: subscription_2
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/trajectory_follower/controller_node_exe/lateral/debug/processing_time_ms
+      Frequency:
+        avg: 29.463
+        std: 5.349
+        min: 14.000
+        max: 34.000
+        p50: 32.000
+        p95: 34.000
+        p99: 34.000
+        filename_hist: Frequency_system_processing_time_checker_callback_03_hist
+      Period:
+        avg: 33.732
+        std: 18.868
+        min: 5.191
+        max: 165.160
+        p50: 31.534
+        p95: 67.021
+        p99: 127.109
+        filename_hist: Period_system_processing_time_checker_callback_03_hist
+      Latency:
+        avg: 0.003
+        std: 0.003
+        min: 0.000
+        max: 0.073
+        p50: 0.002
+        p95: 0.007
+        p99: 0.008
+        filename_hist: Latency_system_processing_time_checker_callback_03_hist
+    /system/processing_time_checker/callback_04:
+      callback_legend: subscription_3
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/trajectory_follower/controller_node_exe/longitudinal/debug/processing_time_ms
+      Frequency:
+        avg: 29.463
+        std: 5.349
+        min: 14.000
+        max: 34.000
+        p50: 32.000
+        p95: 34.000
+        p99: 34.000
+        filename_hist: Frequency_system_processing_time_checker_callback_04_hist
+      Period:
+        avg: 33.732
+        std: 18.913
+        min: 4.717
+        max: 164.807
+        p50: 31.546
+        p95: 67.172
+        p99: 126.879
+        filename_hist: Period_system_processing_time_checker_callback_04_hist
+      Latency:
+        avg: 0.003
+        std: 0.003
+        min: 0.000
+        max: 0.081
+        p50: 0.002
+        p95: 0.006
+        p99: 0.008
+        filename_hist: Latency_system_processing_time_checker_callback_04_hist
+    /system/processing_time_checker/callback_05:
+      callback_legend: subscription_4
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/vehicle_cmd_gate/debug/processing_time_ms
+      Frequency:
+        avg: 9.877
+        std: 0.367
+        min: 8.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_system_processing_time_checker_callback_05_hist
+      Period:
+        avg: 101.200
+        std: 21.322
+        min: 6.457
+        max: 230.192
+        p50: 99.258
+        p95: 135.153
+        p99: 171.726
+        filename_hist: Period_system_processing_time_checker_callback_05_hist
+      Latency:
+        avg: 0.004
+        std: 0.021
+        min: 0.001
+        max: 0.600
+        p50: 0.003
+        p95: 0.007
+        p99: 0.008
+        filename_hist: Latency_system_processing_time_checker_callback_05_hist
+    /system/processing_time_checker/callback_06:
+      callback_legend: subscription_5
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/prediction/map_based_prediction/debug/processing_time_ms
+      Frequency:
+        avg: 9.691
+        std: 0.903
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_06_hist
+      Period:
+        avg: 103.049
+        std: 19.590
+        min: 81.656
+        max: 239.993
+        p50: 96.724
+        p95: 142.384
+        p99: 181.930
+        filename_hist: Period_system_processing_time_checker_callback_06_hist
+      Latency:
+        avg: 0.003
+        std: 0.002
+        min: 0.001
+        max: 0.034
+        p50: 0.002
+        p95: 0.006
+        p99: 0.010
+        filename_hist: Latency_system_processing_time_checker_callback_06_hist
+    /system/processing_time_checker/callback_07:
+      callback_legend: subscription_6
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/tracking/multi_object_tracker/debug/processing_time_ms
+      Frequency:
+        avg: 9.691
+        std: 0.903
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_07_hist
+      Period:
+        avg: 103.050
+        std: 19.487
+        min: 83.462
+        max: 239.243
+        p50: 96.462
+        p95: 142.595
+        p99: 183.170
+        filename_hist: Period_system_processing_time_checker_callback_07_hist
+      Latency:
+        avg: 0.003
+        std: 0.005
+        min: 0.001
+        max: 0.133
+        p50: 0.003
+        p95: 0.007
+        p99: 0.017
+        filename_hist: Latency_system_processing_time_checker_callback_07_hist
+    /system/processing_time_checker/callback_08:
+      callback_legend: subscription_7
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/mission_planner/debug/processing_time_ms
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/processing_time_checker/callback_09:
+      callback_legend: subscription_8
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route_selector/debug/processing_time_ms
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/processing_time_checker/callback_10:
+      callback_legend: subscription_9
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_evaluator/debug/processing_time_ms
+      Frequency:
+        avg: 9.938
+        std: 0.398
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_10_hist
+      Period:
+        avg: 100.589
+        std: 20.072
+        min: 7.451
+        max: 219.425
+        p50: 99.113
+        p95: 136.688
+        p99: 163.387
+        filename_hist: Period_system_processing_time_checker_callback_10_hist
+      Latency:
+        avg: 0.003
+        std: 0.003
+        min: 0.000
+        max: 0.050
+        p50: 0.002
+        p95: 0.006
+        p99: 0.008
+        filename_hist: Latency_system_processing_time_checker_callback_10_hist
+    /system/processing_time_checker/callback_11:
+      callback_legend: subscription_10
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_validator/debug/processing_time_ms
+      Frequency:
+        avg: 9.925
+        std: 0.437
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_11_hist
+      Period:
+        avg: 100.693
+        std: 32.607
+        min: 3.765
+        max: 232.648
+        p50: 102.076
+        p95: 150.535
+        p99: 185.961
+        filename_hist: Period_system_processing_time_checker_callback_11_hist
+      Latency:
+        avg: 0.002
+        std: 0.001
+        min: 0.000
+        max: 0.013
+        p50: 0.002
+        p95: 0.005
+        p99: 0.007
+        filename_hist: Latency_system_processing_time_checker_callback_11_hist
+    /system/processing_time_checker/callback_12:
+      callback_legend: subscription_11
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/debug/processing_time_ms
+      Frequency:
+        avg: 9.926
+        std: 0.498
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_12_hist
+      Period:
+        avg: 100.576
+        std: 28.129
+        min: 7.614
+        max: 233.388
+        p50: 101.455
+        p95: 144.035
+        p99: 183.137
+        filename_hist: Period_system_processing_time_checker_callback_12_hist
+      Latency:
+        avg: 0.003
+        std: 0.002
+        min: 0.000
+        max: 0.025
+        p50: 0.002
+        p95: 0.006
+        p99: 0.008
+        filename_hist: Latency_system_processing_time_checker_callback_12_hist
+    /system/processing_time_checker/callback_13:
+      callback_legend: subscription_12
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/debug/dynamic_obstacle_stop/processing_time_ms
+      Frequency:
+        avg: 9.925
+        std: 0.502
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_13_hist
+      Period:
+        avg: 100.666
+        std: 31.628
+        min: 5.352
+        max: 234.205
+        p50: 102.482
+        p95: 150.817
+        p99: 186.066
+        filename_hist: Period_system_processing_time_checker_callback_13_hist
+      Latency:
+        avg: 0.002
+        std: 0.003
+        min: 0.000
+        max: 0.068
+        p50: 0.001
+        p95: 0.004
+        p99: 0.007
+        filename_hist: Latency_system_processing_time_checker_callback_13_hist
+    /system/processing_time_checker/callback_14:
+      callback_legend: subscription_13
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/debug/obstacle_velocity_limiter/processing_time_ms
+      Frequency:
+        avg: 9.925
+        std: 0.502
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_14_hist
+      Period:
+        avg: 100.666
+        std: 31.603
+        min: 5.344
+        max: 234.236
+        p50: 102.540
+        p95: 150.766
+        p99: 186.070
+        filename_hist: Period_system_processing_time_checker_callback_14_hist
+      Latency:
+        avg: 0.002
+        std: 0.002
+        min: 0.000
+        max: 0.037
+        p50: 0.001
+        p95: 0.005
+        p99: 0.007
+        filename_hist: Latency_system_processing_time_checker_callback_14_hist
+    /system/processing_time_checker/callback_15:
+      callback_legend: subscription_14
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/debug/out_of_lane/processing_time_ms
+      Frequency:
+        avg: 9.925
+        std: 0.502
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_15_hist
+      Period:
+        avg: 100.666
+        std: 31.547
+        min: 5.318
+        max: 234.251
+        p50: 102.482
+        p95: 150.763
+        p99: 186.017
+        filename_hist: Period_system_processing_time_checker_callback_15_hist
+      Latency:
+        avg: 0.002
+        std: 0.002
+        min: 0.000
+        max: 0.022
+        p50: 0.002
+        p95: 0.006
+        p99: 0.007
+        filename_hist: Latency_system_processing_time_checker_callback_15_hist
+    /system/processing_time_checker/callback_16:
+      callback_legend: subscription_15
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/debug/processing_time_ms
+      Frequency:
+        avg: 9.925
+        std: 0.502
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_16_hist
+      Period:
+        avg: 100.667
+        std: 31.773
+        min: 5.495
+        max: 234.135
+        p50: 102.389
+        p95: 150.535
+        p99: 186.081
+        filename_hist: Period_system_processing_time_checker_callback_16_hist
+      Latency:
+        avg: 0.002
+        std: 0.002
+        min: 0.000
+        max: 0.020
+        p50: 0.001
+        p95: 0.005
+        p99: 0.007
+        filename_hist: Latency_system_processing_time_checker_callback_16_hist
+    /system/processing_time_checker/callback_17:
+      callback_legend: subscription_16
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/obstacle_cruise_planner/debug/processing_time_ms
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /system/processing_time_checker/callback_18:
+      callback_legend: subscription_17
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/debug/processing_time_ms
+      Frequency:
+        avg: 9.926
+        std: 0.498
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_18_hist
+      Period:
+        avg: 100.556
+        std: 30.038
+        min: 3.056
+        max: 234.929
+        p50: 101.707
+        p95: 145.542
+        p99: 184.997
+        filename_hist: Period_system_processing_time_checker_callback_18_hist
+      Latency:
+        avg: 0.002
+        std: 0.002
+        min: 0.000
+        max: 0.031
+        p50: 0.002
+        p95: 0.005
+        p99: 0.007
+        filename_hist: Latency_system_processing_time_checker_callback_18_hist
+    /system/processing_time_checker/callback_19:
+      callback_legend: subscription_18
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/parking/costmap_generator/debug/processing_time_ms
+      Frequency:
+        avg: 9.901
+        std: 0.374
+        min: 8.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_system_processing_time_checker_callback_19_hist
+      Period:
+        avg: 100.946
+        std: 21.504
+        min: 10.427
+        max: 239.523
+        p50: 99.264
+        p95: 136.035
+        p99: 178.946
+        filename_hist: Period_system_processing_time_checker_callback_19_hist
+      Latency:
+        avg: 0.003
+        std: 0.002
+        min: 0.001
+        max: 0.026
+        p50: 0.003
+        p95: 0.006
+        p99: 0.008
+        filename_hist: Latency_system_processing_time_checker_callback_19_hist
+    /system/processing_time_checker/callback_20:
+      callback_legend: subscription_19
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/scenario_selector/debug/processing_time_ms
+      Frequency:
+        avg: 9.900
+        std: 0.386
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.310
+        filename_hist: Frequency_system_processing_time_checker_callback_20_hist
+      Period:
+        avg: 100.967
+        std: 23.772
+        min: 10.632
+        max: 225.217
+        p50: 99.707
+        p95: 143.140
+        p99: 178.017
+        filename_hist: Period_system_processing_time_checker_callback_20_hist
+      Latency:
+        avg: 0.003
+        std: 0.002
+        min: 0.000
+        max: 0.047
+        p50: 0.002
+        p95: 0.005
+        p99: 0.008
+        filename_hist: Latency_system_processing_time_checker_callback_20_hist
+    /system/processing_time_checker/callback_21:
+      callback_legend: subscription_20
+      callback_symbol: autoware::processing_time_checker::ProcessingTimeChecker::ProcessingTimeChecker(rclcpp::NodeOptions
+        const&)::{lambda(autoware_internal_debug_msgs::msg::Float64Stamped_<std::allocator<void>
+        > const&)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/velocity_smoother/debug/processing_time_ms
+      Frequency:
+        avg: 9.925
+        std: 0.437
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_processing_time_checker_callback_21_hist
+      Period:
+        avg: 100.691
+        std: 32.400
+        min: 4.225
+        max: 232.365
+        p50: 102.015
+        p95: 150.278
+        p99: 185.985
+        filename_hist: Period_system_processing_time_checker_callback_21_hist
+      Latency:
+        avg: 0.002
+        std: 0.004
+        min: 0.000
+        max: 0.061
+        p50: 0.002
+        p95: 0.005
+        p99: 0.007
+        filename_hist: Latency_system_processing_time_checker_callback_21_hist
+/system/service_log_checker:
+  filename_timeseries:
+    Frequency: Frequency_system_service_log_checker
+    Period: Period_system_service_log_checker
+    Latency: Latency_system_service_log_checker
+  callbacks:
+    /system/service_log_checker/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_service_log_checker_callback_0_hist
+      Period:
+        avg: 1000.015
+        std: 24.316
+        min: 921.096
+        max: 1078.594
+        p50: 1000.653
+        p95: 1033.284
+        p99: 1078.027
+        filename_hist: Period_system_service_log_checker_callback_0_hist
+      Latency:
+        avg: 0.340
+        std: 0.295
+        min: 0.089
+        max: 2.217
+        p50: 0.256
+        p95: 0.763
+        p99: 1.343
+        filename_hist: Latency_system_service_log_checker_callback_0_hist
+    /system/service_log_checker/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::component_interface_tools::ServiceLogChecker::*(autoware::component_interface_tools::ServiceLogChecker*,
+        std::_Placeholder<1>))(std::shared_ptr<tier4_system_msgs::msg::ServiceLog_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /service_log
+      Frequency:
+        avg: 0.065
+        std: 0.508
+        min: 0.000
+        max: 4.000
+        p50: 0.000
+        p95: 0.000
+        p99: 1.560
+        filename_hist: Frequency_system_service_log_checker_callback_1_hist
+      Period:
+        avg: 4566.204
+        std: 15654.039
+        min: 0.032
+        max: 58743.552
+        p50: 0.858
+        p95: 23921.086
+        p99: 51779.059
+        filename_hist: Period_system_service_log_checker_callback_1_hist
+      Latency:
+        avg: 0.046
+        std: 0.062
+        min: 0.000
+        max: 0.189
+        p50: 0.004
+        p95: 0.145
+        p99: 0.180
+        filename_hist: Latency_system_service_log_checker_callback_1_hist
+/system/topic_state_monitor_control_command_control_cmd:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_control_command_control_cmd
+    Period: Period_system_topic_state_monitor_control_command_control_cmd
+    Latency: Latency_system_topic_state_monitor_control_command_control_cmd
+  callbacks:
+    /system/topic_state_monitor_control_command_control_cmd/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_control_command_control_cmd_callback_0_hist
+      Period:
+        avg: 1000.101
+        std: 29.890
+        min: 919.074
+        max: 1119.718
+        p50: 1001.049
+        p95: 1048.438
+        p99: 1090.122
+        filename_hist: Period_system_topic_state_monitor_control_command_control_cmd_callback_0_hist
+      Latency:
+        avg: 0.547
+        std: 0.393
+        min: 0.149
+        max: 2.153
+        p50: 0.370
+        p95: 1.248
+        p99: 1.578
+        filename_hist: Latency_system_topic_state_monitor_control_command_control_cmd_callback_0_hist
+    /system/topic_state_monitor_control_command_control_cmd/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.893
+        std: 0.381
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.170
+        filename_hist: Frequency_system_topic_state_monitor_control_command_control_cmd_callback_1_hist
+      Period:
+        avg: 101.047
+        std: 20.584
+        min: 9.462
+        max: 228.377
+        p50: 98.970
+        p95: 134.740
+        p99: 171.274
+        filename_hist: Period_system_topic_state_monitor_control_command_control_cmd_callback_1_hist
+      Latency:
+        avg: 0.448
+        std: 0.321
+        min: 0.082
+        max: 2.453
+        p50: 0.320
+        p95: 1.066
+        p99: 1.434
+        filename_hist: Latency_system_topic_state_monitor_control_command_control_cmd_callback_1_hist
+    /system/topic_state_monitor_control_command_control_cmd/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/command/control_cmd
+      Frequency:
+        avg: 29.500
+        std: 5.216
+        min: 15.000
+        max: 34.000
+        p50: 32.000
+        p95: 34.000
+        p99: 34.000
+        filename_hist: Frequency_system_topic_state_monitor_control_command_control_cmd_callback_2_hist
+      Period:
+        avg: 33.742
+        std: 19.018
+        min: 4.063
+        max: 164.714
+        p50: 31.569
+        p95: 67.046
+        p99: 127.622
+        filename_hist: Period_system_topic_state_monitor_control_command_control_cmd_callback_2_hist
+      Latency:
+        avg: 0.005
+        std: 0.007
+        min: 0.001
+        max: 0.244
+        p50: 0.003
+        p95: 0.009
+        p99: 0.015
+        filename_hist: Latency_system_topic_state_monitor_control_command_control_cmd_callback_2_hist
+/system/topic_state_monitor_initialpose3d:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_initialpose3d
+    Period: Period_system_topic_state_monitor_initialpose3d
+    Latency: Latency_system_topic_state_monitor_initialpose3d
+  callbacks:
+    /system/topic_state_monitor_initialpose3d/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.609
+        min: 0.000
+        max: 2.000
+        p50: 1.000
+        p95: 2.000
+        p99: 2.000
+        filename_hist: Frequency_system_topic_state_monitor_initialpose3d_callback_0_hist
+      Period:
+        avg: 1000.016
+        std: 24.840
+        min: 917.544
+        max: 1081.463
+        p50: 1000.124
+        p95: 1032.742
+        p99: 1081.325
+        filename_hist: Period_system_topic_state_monitor_initialpose3d_callback_0_hist
+      Latency:
+        avg: 0.416
+        std: 0.318
+        min: 0.094
+        max: 1.906
+        p50: 0.305
+        p95: 0.970
+        p99: 1.445
+        filename_hist: Latency_system_topic_state_monitor_initialpose3d_callback_0_hist
+    /system/topic_state_monitor_initialpose3d/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.917
+        std: 0.387
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_initialpose3d_callback_1_hist
+      Period:
+        avg: 100.812
+        std: 20.065
+        min: 9.598
+        max: 198.504
+        p50: 99.431
+        p95: 136.736
+        p99: 170.866
+        filename_hist: Period_system_topic_state_monitor_initialpose3d_callback_1_hist
+      Latency:
+        avg: 0.380
+        std: 0.291
+        min: 0.061
+        max: 4.287
+        p50: 0.301
+        p95: 0.838
+        p99: 1.221
+        filename_hist: Latency_system_topic_state_monitor_initialpose3d_callback_1_hist
+/system/topic_state_monitor_mission_planning_route:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_mission_planning_route
+    Period: Period_system_topic_state_monitor_mission_planning_route
+    Latency: Latency_system_topic_state_monitor_mission_planning_route
+  callbacks:
+    /system/topic_state_monitor_mission_planning_route/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_mission_planning_route_callback_0_hist
+      Period:
+        avg: 1000.024
+        std: 24.391
+        min: 918.879
+        max: 1077.830
+        p50: 1000.526
+        p95: 1032.748
+        p99: 1077.396
+        filename_hist: Period_system_topic_state_monitor_mission_planning_route_callback_0_hist
+      Latency:
+        avg: 0.426
+        std: 0.613
+        min: 0.112
+        max: 5.594
+        p50: 0.308
+        p95: 0.884
+        p99: 1.958
+        filename_hist: Latency_system_topic_state_monitor_mission_planning_route_callback_0_hist
+    /system/topic_state_monitor_mission_planning_route/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.917
+        std: 0.278
+        min: 9.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_system_topic_state_monitor_mission_planning_route_callback_1_hist
+      Period:
+        avg: 100.817
+        std: 20.215
+        min: 7.567
+        max: 200.464
+        p50: 99.542
+        p95: 134.762
+        p99: 170.192
+        filename_hist: Period_system_topic_state_monitor_mission_planning_route_callback_1_hist
+      Latency:
+        avg: 0.377
+        std: 0.257
+        min: 0.075
+        max: 2.449
+        p50: 0.292
+        p95: 0.897
+        p99: 1.206
+        filename_hist: Latency_system_topic_state_monitor_mission_planning_route_callback_1_hist
+    /system/topic_state_monitor_mission_planning_route/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/system/topic_state_monitor_object_recognition_objects:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_object_recognition_objects
+    Period: Period_system_topic_state_monitor_object_recognition_objects
+    Latency: Latency_system_topic_state_monitor_object_recognition_objects
+  callbacks:
+    /system/topic_state_monitor_object_recognition_objects/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_object_recognition_objects_callback_0_hist
+      Period:
+        avg: 1000.011
+        std: 24.290
+        min: 921.253
+        max: 1078.923
+        p50: 1000.422
+        p95: 1030.846
+        p99: 1077.892
+        filename_hist: Period_system_topic_state_monitor_object_recognition_objects_callback_0_hist
+      Latency:
+        avg: 0.413
+        std: 0.297
+        min: 0.100
+        max: 1.759
+        p50: 0.311
+        p95: 1.030
+        p99: 1.273
+        filename_hist: Latency_system_topic_state_monitor_object_recognition_objects_callback_0_hist
+    /system/topic_state_monitor_object_recognition_objects/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.952
+        std: 0.727
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_object_recognition_objects_callback_1_hist
+      Period:
+        avg: 100.576
+        std: 20.633
+        min: 8.563
+        max: 227.346
+        p50: 99.130
+        p95: 133.442
+        p99: 169.527
+        filename_hist: Period_system_topic_state_monitor_object_recognition_objects_callback_1_hist
+      Latency:
+        avg: 0.383
+        std: 0.253
+        min: 0.078
+        max: 2.580
+        p50: 0.297
+        p95: 0.896
+        p99: 1.378
+        filename_hist: Latency_system_topic_state_monitor_object_recognition_objects_callback_1_hist
+    /system/topic_state_monitor_object_recognition_objects/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/objects
+      Frequency:
+        avg: 9.702
+        std: 0.929
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_object_recognition_objects_callback_2_hist
+      Period:
+        avg: 102.971
+        std: 19.360
+        min: 81.296
+        max: 241.209
+        p50: 96.825
+        p95: 142.025
+        p99: 182.939
+        filename_hist: Period_system_topic_state_monitor_object_recognition_objects_callback_2_hist
+      Latency:
+        avg: 0.005
+        std: 0.006
+        min: 0.001
+        max: 0.136
+        p50: 0.004
+        p95: 0.009
+        p99: 0.025
+        filename_hist: Latency_system_topic_state_monitor_object_recognition_objects_callback_2_hist
+/system/topic_state_monitor_obstacle_segmentation_pointcloud:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_obstacle_segmentation_pointcloud
+    Period: Period_system_topic_state_monitor_obstacle_segmentation_pointcloud
+    Latency: Latency_system_topic_state_monitor_obstacle_segmentation_pointcloud
+  callbacks:
+    /system/topic_state_monitor_obstacle_segmentation_pointcloud/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_0_hist
+      Period:
+        avg: 999.890
+        std: 21.672
+        min: 923.124
+        max: 1062.049
+        p50: 1000.244
+        p95: 1031.483
+        p99: 1061.557
+        filename_hist: Period_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_0_hist
+      Latency:
+        avg: 0.383
+        std: 0.239
+        min: 0.141
+        max: 1.181
+        p50: 0.310
+        p95: 0.930
+        p99: 1.113
+        filename_hist: Latency_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_0_hist
+    /system/topic_state_monitor_obstacle_segmentation_pointcloud/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.940
+        std: 0.394
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_1_hist
+      Period:
+        avg: 100.587
+        std: 19.675
+        min: 9.181
+        max: 216.836
+        p50: 99.381
+        p95: 132.976
+        p99: 162.592
+        filename_hist: Period_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_1_hist
+      Latency:
+        avg: 0.390
+        std: 0.256
+        min: 0.075
+        max: 2.304
+        p50: 0.307
+        p95: 0.926
+        p99: 1.285
+        filename_hist: Latency_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_1_hist
+    /system/topic_state_monitor_obstacle_segmentation_pointcloud/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.644
+        min: 8.000
+        max: 13.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.360
+        filename_hist: Frequency_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_2_hist
+      Period:
+        avg: 100.014
+        std: 30.952
+        min: 1.519
+        max: 303.595
+        p50: 100.100
+        p95: 145.997
+        p99: 191.507
+        filename_hist: Period_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_2_hist
+      Latency:
+        avg: 0.005
+        std: 0.006
+        min: 0.001
+        max: 0.101
+        p50: 0.004
+        p95: 0.010
+        p99: 0.015
+        filename_hist: Latency_system_topic_state_monitor_obstacle_segmentation_pointcloud_callback_2_hist
+/system/topic_state_monitor_pointcloud_map:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_pointcloud_map
+    Period: Period_system_topic_state_monitor_pointcloud_map
+    Latency: Latency_system_topic_state_monitor_pointcloud_map
+  callbacks:
+    /system/topic_state_monitor_pointcloud_map/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_pointcloud_map_callback_0_hist
+      Period:
+        avg: 1000.018
+        std: 24.517
+        min: 920.485
+        max: 1080.582
+        p50: 1000.167
+        p95: 1031.453
+        p99: 1078.353
+        filename_hist: Period_system_topic_state_monitor_pointcloud_map_callback_0_hist
+      Latency:
+        avg: 0.383
+        std: 0.296
+        min: 0.107
+        max: 1.692
+        p50: 0.268
+        p95: 0.902
+        p99: 1.438
+        filename_hist: Latency_system_topic_state_monitor_pointcloud_map_callback_0_hist
+    /system/topic_state_monitor_pointcloud_map/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.916
+        std: 0.320
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.180
+        filename_hist: Frequency_system_topic_state_monitor_pointcloud_map_callback_1_hist
+      Period:
+        avg: 100.806
+        std: 20.462
+        min: 6.758
+        max: 231.789
+        p50: 98.992
+        p95: 133.405
+        p99: 170.713
+        filename_hist: Period_system_topic_state_monitor_pointcloud_map_callback_1_hist
+      Latency:
+        avg: 0.447
+        std: 0.300
+        min: 0.118
+        max: 1.924
+        p50: 0.322
+        p95: 1.025
+        p99: 1.356
+        filename_hist: Latency_system_topic_state_monitor_pointcloud_map_callback_1_hist
+/system/topic_state_monitor_pose_twist_fusion_filter_pose:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_pose_twist_fusion_filter_pose
+    Period: Period_system_topic_state_monitor_pose_twist_fusion_filter_pose
+    Latency: Latency_system_topic_state_monitor_pose_twist_fusion_filter_pose
+  callbacks:
+    /system/topic_state_monitor_pose_twist_fusion_filter_pose/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_0_hist
+      Period:
+        avg: 999.889
+        std: 21.531
+        min: 919.972
+        max: 1061.632
+        p50: 1000.215
+        p95: 1032.369
+        p99: 1061.443
+        filename_hist: Period_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_0_hist
+      Latency:
+        avg: 0.373
+        std: 0.218
+        min: 0.131
+        max: 1.072
+        p50: 0.318
+        p95: 0.883
+        p99: 1.052
+        filename_hist: Latency_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_0_hist
+    /system/topic_state_monitor_pose_twist_fusion_filter_pose/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.940
+        std: 0.238
+        min: 9.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_1_hist
+      Period:
+        avg: 100.575
+        std: 19.585
+        min: 10.642
+        max: 216.831
+        p50: 99.301
+        p95: 132.645
+        p99: 161.682
+        filename_hist: Period_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_1_hist
+      Latency:
+        avg: 0.388
+        std: 0.258
+        min: 0.074
+        max: 3.049
+        p50: 0.311
+        p95: 0.910
+        p99: 1.173
+        filename_hist: Latency_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_1_hist
+    /system/topic_state_monitor_pose_twist_fusion_filter_pose/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/pose_twist_fusion_filter/pose
+      Frequency:
+        avg: 44.119
+        std: 8.501
+        min: 17.000
+        max: 50.000
+        p50: 49.000
+        p95: 50.000
+        p99: 50.000
+        filename_hist: Frequency_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_2_hist
+      Period:
+        avg: 22.556
+        std: 15.114
+        min: 1.793
+        max: 169.575
+        p50: 21.136
+        p95: 33.442
+        p99: 110.195
+        filename_hist: Period_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_2_hist
+      Latency:
+        avg: 0.004
+        std: 0.004
+        min: 0.001
+        max: 0.086
+        p50: 0.003
+        p95: 0.009
+        p99: 0.012
+        filename_hist: Latency_system_topic_state_monitor_pose_twist_fusion_filter_pose_callback_2_hist
+/system/topic_state_monitor_scenario_planning_trajectory:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_scenario_planning_trajectory
+    Period: Period_system_topic_state_monitor_scenario_planning_trajectory
+    Latency: Latency_system_topic_state_monitor_scenario_planning_trajectory
+  callbacks:
+    /system/topic_state_monitor_scenario_planning_trajectory/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_scenario_planning_trajectory_callback_0_hist
+      Period:
+        avg: 1000.039
+        std: 25.479
+        min: 918.669
+        max: 1107.247
+        p50: 1000.430
+        p95: 1038.160
+        p99: 1079.745
+        filename_hist: Period_system_topic_state_monitor_scenario_planning_trajectory_callback_0_hist
+      Latency:
+        avg: 0.495
+        std: 0.362
+        min: 0.100
+        max: 1.623
+        p50: 0.332
+        p95: 1.181
+        p99: 1.594
+        filename_hist: Latency_system_topic_state_monitor_scenario_planning_trajectory_callback_0_hist
+    /system/topic_state_monitor_scenario_planning_trajectory/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.893
+        std: 0.491
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_scenario_planning_trajectory_callback_1_hist
+      Period:
+        avg: 101.053
+        std: 20.726
+        min: 8.386
+        max: 228.744
+        p50: 98.997
+        p95: 135.587
+        p99: 170.976
+        filename_hist: Period_system_topic_state_monitor_scenario_planning_trajectory_callback_1_hist
+      Latency:
+        avg: 0.442
+        std: 0.322
+        min: 0.047
+        max: 2.494
+        p50: 0.315
+        p95: 1.018
+        p99: 1.589
+        filename_hist: Latency_system_topic_state_monitor_scenario_planning_trajectory_callback_1_hist
+    /system/topic_state_monitor_scenario_planning_trajectory/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/trajectory
+      Frequency:
+        avg: 9.926
+        std: 0.434
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.650
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_scenario_planning_trajectory_callback_2_hist
+      Period:
+        avg: 100.668
+        std: 32.592
+        min: 3.819
+        max: 232.586
+        p50: 102.103
+        p95: 150.070
+        p99: 186.006
+        filename_hist: Period_system_topic_state_monitor_scenario_planning_trajectory_callback_2_hist
+      Latency:
+        avg: 0.004
+        std: 0.003
+        min: 0.001
+        max: 0.029
+        p50: 0.003
+        p95: 0.009
+        p99: 0.012
+        filename_hist: Latency_system_topic_state_monitor_scenario_planning_trajectory_callback_2_hist
+/system/topic_state_monitor_system_emergency_control_cmd:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_system_emergency_control_cmd
+    Period: Period_system_topic_state_monitor_system_emergency_control_cmd
+    Latency: Latency_system_topic_state_monitor_system_emergency_control_cmd
+  callbacks:
+    /system/topic_state_monitor_system_emergency_control_cmd/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_system_emergency_control_cmd_callback_0_hist
+      Period:
+        avg: 1000.018
+        std: 24.349
+        min: 920.249
+        max: 1078.936
+        p50: 1000.691
+        p95: 1032.786
+        p99: 1076.338
+        filename_hist: Period_system_topic_state_monitor_system_emergency_control_cmd_callback_0_hist
+      Latency:
+        avg: 0.373
+        std: 0.260
+        min: 0.111
+        max: 1.508
+        p50: 0.295
+        p95: 0.834
+        p99: 1.344
+        filename_hist: Latency_system_topic_state_monitor_system_emergency_control_cmd_callback_0_hist
+    /system/topic_state_monitor_system_emergency_control_cmd/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.916
+        std: 0.320
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.180
+        filename_hist: Frequency_system_topic_state_monitor_system_emergency_control_cmd_callback_1_hist
+      Period:
+        avg: 100.813
+        std: 20.342
+        min: 10.028
+        max: 228.508
+        p50: 98.885
+        p95: 132.088
+        p99: 170.843
+        filename_hist: Period_system_topic_state_monitor_system_emergency_control_cmd_callback_1_hist
+      Latency:
+        avg: 0.435
+        std: 0.290
+        min: 0.089
+        max: 2.059
+        p50: 0.318
+        p95: 0.964
+        p99: 1.245
+        filename_hist: Latency_system_topic_state_monitor_system_emergency_control_cmd_callback_1_hist
+    /system/topic_state_monitor_system_emergency_control_cmd/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/emergency/control_cmd
+      Frequency:
+        avg: 27.398
+        std: 4.129
+        min: 15.000
+        max: 30.000
+        p50: 30.000
+        p95: 30.000
+        p99: 30.000
+        filename_hist: Frequency_system_topic_state_monitor_system_emergency_control_cmd_callback_2_hist
+      Period:
+        avg: 36.345
+        std: 16.987
+        min: 7.062
+        max: 178.833
+        p50: 32.542
+        p95: 61.235
+        p99: 124.512
+        filename_hist: Period_system_topic_state_monitor_system_emergency_control_cmd_callback_2_hist
+      Latency:
+        avg: 0.004
+        std: 0.005
+        min: 0.001
+        max: 0.122
+        p50: 0.004
+        p95: 0.009
+        p99: 0.018
+        filename_hist: Latency_system_topic_state_monitor_system_emergency_control_cmd_callback_2_hist
+/system/topic_state_monitor_traffic_light_recognition_traffic_signals:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_traffic_light_recognition_traffic_signals
+    Period: Period_system_topic_state_monitor_traffic_light_recognition_traffic_signals
+    Latency: Latency_system_topic_state_monitor_traffic_light_recognition_traffic_signals
+  callbacks:
+    /system/topic_state_monitor_traffic_light_recognition_traffic_signals/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_0_hist
+      Period:
+        avg: 1000.017
+        std: 24.186
+        min: 919.493
+        max: 1077.253
+        p50: 1000.180
+        p95: 1031.778
+        p99: 1077.193
+        filename_hist: Period_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_0_hist
+      Latency:
+        avg: 0.368
+        std: 0.286
+        min: 0.091
+        max: 1.966
+        p50: 0.307
+        p95: 0.825
+        p99: 1.567
+        filename_hist: Latency_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_0_hist
+    /system/topic_state_monitor_traffic_light_recognition_traffic_signals/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.881
+        std: 0.751
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_1_hist
+      Period:
+        avg: 101.160
+        std: 20.793
+        min: 11.014
+        max: 238.925
+        p50: 99.421
+        p95: 135.503
+        p99: 176.410
+        filename_hist: Period_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_1_hist
+      Latency:
+        avg: 0.386
+        std: 0.277
+        min: 0.058
+        max: 2.754
+        p50: 0.284
+        p95: 0.940
+        p99: 1.287
+        filename_hist: Latency_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_1_hist
+    /system/topic_state_monitor_traffic_light_recognition_traffic_signals/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_signals
+      Frequency:
+        avg: 18.060
+        std: 1.045
+        min: 16.000
+        max: 21.000
+        p50: 18.000
+        p95: 20.000
+        p99: 20.170
+        filename_hist: Frequency_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_2_hist
+      Period:
+        avg: 55.296
+        std: 28.718
+        min: 0.524
+        max: 288.794
+        p50: 54.765
+        p95: 101.362
+        p99: 115.358
+        filename_hist: Period_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_2_hist
+      Latency:
+        avg: 0.005
+        std: 0.014
+        min: 0.001
+        max: 0.518
+        p50: 0.004
+        p95: 0.010
+        p99: 0.018
+        filename_hist: Latency_system_topic_state_monitor_traffic_light_recognition_traffic_signals_callback_2_hist
+/system/topic_state_monitor_trajectory_follower_control_cmd:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_trajectory_follower_control_cmd
+    Period: Period_system_topic_state_monitor_trajectory_follower_control_cmd
+    Latency: Latency_system_topic_state_monitor_trajectory_follower_control_cmd
+  callbacks:
+    /system/topic_state_monitor_trajectory_follower_control_cmd/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_trajectory_follower_control_cmd_callback_0_hist
+      Period:
+        avg: 1000.030
+        std: 26.129
+        min: 896.377
+        max: 1070.035
+        p50: 999.845
+        p95: 1057.723
+        p99: 1067.997
+        filename_hist: Period_system_topic_state_monitor_trajectory_follower_control_cmd_callback_0_hist
+      Latency:
+        avg: 0.336
+        std: 0.209
+        min: 0.120
+        max: 1.121
+        p50: 0.254
+        p95: 0.794
+        p99: 1.043
+        filename_hist: Latency_system_topic_state_monitor_trajectory_follower_control_cmd_callback_0_hist
+    /system/topic_state_monitor_trajectory_follower_control_cmd/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.917
+        std: 0.354
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_trajectory_follower_control_cmd_callback_1_hist
+      Period:
+        avg: 100.812
+        std: 19.806
+        min: 9.858
+        max: 204.367
+        p50: 99.439
+        p95: 134.568
+        p99: 167.011
+        filename_hist: Period_system_topic_state_monitor_trajectory_follower_control_cmd_callback_1_hist
+      Latency:
+        avg: 0.381
+        std: 0.246
+        min: 0.103
+        max: 2.248
+        p50: 0.298
+        p95: 0.867
+        p99: 1.202
+        filename_hist: Latency_system_topic_state_monitor_trajectory_follower_control_cmd_callback_1_hist
+    /system/topic_state_monitor_trajectory_follower_control_cmd/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/trajectory_follower/control_cmd
+      Frequency:
+        avg: 29.515
+        std: 5.135
+        min: 15.000
+        max: 34.000
+        p50: 32.000
+        p95: 34.000
+        p99: 34.000
+        filename_hist: Frequency_system_topic_state_monitor_trajectory_follower_control_cmd_callback_2_hist
+      Period:
+        avg: 33.719
+        std: 18.939
+        min: 0.486
+        max: 164.757
+        p50: 31.536
+        p95: 67.047
+        p99: 127.049
+        filename_hist: Period_system_topic_state_monitor_trajectory_follower_control_cmd_callback_2_hist
+      Latency:
+        avg: 0.005
+        std: 0.005
+        min: 0.001
+        max: 0.164
+        p50: 0.003
+        p95: 0.010
+        p99: 0.012
+        filename_hist: Latency_system_topic_state_monitor_trajectory_follower_control_cmd_callback_2_hist
+/system/topic_state_monitor_transform_map_to_base_link:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_transform_map_to_base_link
+    Period: Period_system_topic_state_monitor_transform_map_to_base_link
+    Latency: Latency_system_topic_state_monitor_transform_map_to_base_link
+  callbacks:
+    /system/topic_state_monitor_transform_map_to_base_link/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_transform_map_to_base_link_callback_0_hist
+      Period:
+        avg: 1000.033
+        std: 12.179
+        min: 960.464
+        max: 1040.852
+        p50: 1000.020
+        p95: 1018.474
+        p99: 1039.728
+        filename_hist: Period_system_topic_state_monitor_transform_map_to_base_link_callback_0_hist
+      Latency:
+        avg: 0.391
+        std: 0.246
+        min: 0.121
+        max: 1.277
+        p50: 0.285
+        p95: 0.895
+        p99: 1.062
+        filename_hist: Latency_system_topic_state_monitor_transform_map_to_base_link_callback_0_hist
+    /system/topic_state_monitor_transform_map_to_base_link/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.867
+        std: 0.463
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_transform_map_to_base_link_callback_1_hist
+      Period:
+        avg: 101.278
+        std: 20.171
+        min: 8.933
+        max: 217.288
+        p50: 99.111
+        p95: 136.397
+        p99: 170.499
+        filename_hist: Period_system_topic_state_monitor_transform_map_to_base_link_callback_1_hist
+      Latency:
+        avg: 0.426
+        std: 0.332
+        min: 0.105
+        max: 4.275
+        p50: 0.290
+        p95: 1.010
+        p99: 1.392
+        filename_hist: Latency_system_topic_state_monitor_transform_map_to_base_link_callback_1_hist
+/system/topic_state_monitor_vector_map:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_vector_map
+    Period: Period_system_topic_state_monitor_vector_map
+    Latency: Latency_system_topic_state_monitor_vector_map
+  callbacks:
+    /system/topic_state_monitor_vector_map/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_vector_map_callback_0_hist
+      Period:
+        avg: 1000.018
+        std: 24.336
+        min: 917.880
+        max: 1078.115
+        p50: 1000.333
+        p95: 1032.198
+        p99: 1077.273
+        filename_hist: Period_system_topic_state_monitor_vector_map_callback_0_hist
+      Latency:
+        avg: 0.428
+        std: 0.402
+        min: 0.088
+        max: 2.226
+        p50: 0.290
+        p95: 1.311
+        p99: 1.858
+        filename_hist: Latency_system_topic_state_monitor_vector_map_callback_0_hist
+    /system/topic_state_monitor_vector_map/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.881
+        std: 0.361
+        min: 8.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_system_topic_state_monitor_vector_map_callback_1_hist
+      Period:
+        avg: 101.163
+        std: 20.158
+        min: 8.275
+        max: 218.270
+        p50: 99.146
+        p95: 137.578
+        p99: 172.037
+        filename_hist: Period_system_topic_state_monitor_vector_map_callback_1_hist
+      Latency:
+        avg: 0.424
+        std: 0.297
+        min: 0.086
+        max: 1.929
+        p50: 0.303
+        p95: 1.005
+        p99: 1.391
+        filename_hist: Latency_system_topic_state_monitor_vector_map_callback_1_hist
+/system/topic_state_monitor_vehicle_status_steering_status:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_vehicle_status_steering_status
+    Period: Period_system_topic_state_monitor_vehicle_status_steering_status
+    Latency: Latency_system_topic_state_monitor_vehicle_status_steering_status
+  callbacks:
+    /system/topic_state_monitor_vehicle_status_steering_status/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_vehicle_status_steering_status_callback_0_hist
+      Period:
+        avg: 999.975
+        std: 24.907
+        min: 908.935
+        max: 1100.443
+        p50: 1000.050
+        p95: 1031.512
+        p99: 1089.569
+        filename_hist: Period_system_topic_state_monitor_vehicle_status_steering_status_callback_0_hist
+      Latency:
+        avg: 0.410
+        std: 0.297
+        min: 0.157
+        max: 1.784
+        p50: 0.275
+        p95: 1.026
+        p99: 1.215
+        filename_hist: Latency_system_topic_state_monitor_vehicle_status_steering_status_callback_0_hist
+    /system/topic_state_monitor_vehicle_status_steering_status/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.917
+        std: 0.318
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.170
+        filename_hist: Frequency_system_topic_state_monitor_vehicle_status_steering_status_callback_1_hist
+      Period:
+        avg: 100.807
+        std: 21.508
+        min: 9.678
+        max: 213.069
+        p50: 99.218
+        p95: 140.131
+        p99: 175.117
+        filename_hist: Period_system_topic_state_monitor_vehicle_status_steering_status_callback_1_hist
+      Latency:
+        avg: 0.366
+        std: 0.300
+        min: 0.087
+        max: 5.596
+        p50: 0.281
+        p95: 0.845
+        p99: 1.219
+        filename_hist: Latency_system_topic_state_monitor_vehicle_status_steering_status_callback_1_hist
+    /system/topic_state_monitor_vehicle_status_steering_status/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /vehicle/status/steering_status
+      Frequency:
+        avg: 20.000
+        std: 0.538
+        min: 19.000
+        max: 21.000
+        p50: 20.000
+        p95: 21.000
+        p99: 21.000
+        filename_hist: Frequency_system_topic_state_monitor_vehicle_status_steering_status_callback_2_hist
+      Period:
+        avg: 50.012
+        std: 16.569
+        min: 2.006
+        max: 336.060
+        p50: 48.499
+        p95: 74.333
+        p99: 95.957
+        filename_hist: Period_system_topic_state_monitor_vehicle_status_steering_status_callback_2_hist
+      Latency:
+        avg: 0.004
+        std: 0.004
+        min: 0.001
+        max: 0.117
+        p50: 0.004
+        p95: 0.008
+        p99: 0.013
+        filename_hist: Latency_system_topic_state_monitor_vehicle_status_steering_status_callback_2_hist
+/system/topic_state_monitor_vehicle_status_velocity_status:
+  filename_timeseries:
+    Frequency: Frequency_system_topic_state_monitor_vehicle_status_velocity_status
+    Period: Period_system_topic_state_monitor_vehicle_status_velocity_status
+    Latency: Latency_system_topic_state_monitor_vehicle_status_velocity_status
+  callbacks:
+    /system/topic_state_monitor_vehicle_status_velocity_status/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_system_topic_state_monitor_vehicle_status_velocity_status_callback_0_hist
+      Period:
+        avg: 1000.029
+        std: 24.129
+        min: 920.445
+        max: 1077.078
+        p50: 1000.486
+        p95: 1031.609
+        p99: 1076.476
+        filename_hist: Period_system_topic_state_monitor_vehicle_status_velocity_status_callback_0_hist
+      Latency:
+        avg: 0.404
+        std: 0.297
+        min: 0.103
+        max: 1.795
+        p50: 0.314
+        p95: 0.978
+        p99: 1.340
+        filename_hist: Latency_system_topic_state_monitor_vehicle_status_velocity_status_callback_0_hist
+    /system/topic_state_monitor_vehicle_status_velocity_status/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::topic_state_monitor::TopicStateMonitorNode::*(autoware::topic_state_monitor::TopicStateMonitorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.881
+        std: 0.568
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_system_topic_state_monitor_vehicle_status_velocity_status_callback_1_hist
+      Period:
+        avg: 101.164
+        std: 20.758
+        min: 10.256
+        max: 240.228
+        p50: 99.388
+        p95: 136.053
+        p99: 176.901
+        filename_hist: Period_system_topic_state_monitor_vehicle_status_velocity_status_callback_1_hist
+      Latency:
+        avg: 0.389
+        std: 0.289
+        min: 0.072
+        max: 4.182
+        p50: 0.278
+        p95: 0.932
+        p99: 1.343
+        filename_hist: Latency_system_topic_state_monitor_vehicle_status_velocity_status_callback_1_hist
+    /system/topic_state_monitor_vehicle_status_velocity_status/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: autoware::topic_state_monitor::TopicStateMonitorNode::TopicStateMonitorNode(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<rclcpp::SerializedMessage>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /vehicle/status/velocity_status
+      Frequency:
+        avg: 20.000
+        std: 0.466
+        min: 19.000
+        max: 21.000
+        p50: 20.000
+        p95: 21.000
+        p99: 21.000
+        filename_hist: Frequency_system_topic_state_monitor_vehicle_status_velocity_status_callback_2_hist
+      Period:
+        avg: 50.002
+        std: 16.666
+        min: 1.842
+        max: 336.106
+        p50: 48.426
+        p95: 74.338
+        p99: 96.510
+        filename_hist: Period_system_topic_state_monitor_vehicle_status_velocity_status_callback_2_hist
+      Latency:
+        avg: 0.004
+        std: 0.005
+        min: 0.001
+        max: 0.174
+        p50: 0.003
+        p95: 0.007
+        p99: 0.010
+        filename_hist: Latency_system_topic_state_monitor_vehicle_status_velocity_status_callback_2_hist

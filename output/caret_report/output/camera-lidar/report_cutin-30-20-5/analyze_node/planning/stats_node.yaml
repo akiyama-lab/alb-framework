@@ -1,0 +1,4972 @@
+/planning/mission_planning/glog_component:
+  filename_timeseries: {}
+  callbacks: {}
+/planning/mission_planning/goal_pose_visualizer:
+  filename_timeseries: {}
+  callbacks:
+    /planning/mission_planning/goal_pose_visualizer/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::mission_planner_universe::GoalPoseVisualizer::*(autoware::mission_planner_universe::GoalPoseVisualizer*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/planning/mission_planning/mission_planner:
+  filename_timeseries:
+    Frequency: Frequency_planning_mission_planning_mission_planner
+    Period: Period_planning_mission_planning_mission_planner
+    Latency: Latency_planning_mission_planning_mission_planner
+  callbacks:
+    /planning/mission_planning/mission_planner/callback_0:
+      callback_legend: timer_0
+      callback_symbol: autoware::mission_planner_universe::MissionPlanner::MissionPlanner(rclcpp::NodeOptions
+        const&)::{lambda()#1}
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/mission_planning/mission_planner/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::motion_utils::VehicleStopChecker::*(autoware::motion_utils::VehicleStopChecker*,
+        std::_Placeholder<1>))(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: 43.578
+        std: 9.709
+        min: 17.000
+        max: 50.000
+        p50: 49.500
+        p95: 50.000
+        p99: 50.000
+        filename_hist: Frequency_planning_mission_planning_mission_planner_callback_1_hist
+      Period:
+        avg: 22.806
+        std: 17.426
+        min: 4.731
+        max: 249.455
+        p50: 21.121
+        p95: 31.385
+        p99: 115.383
+        filename_hist: Period_planning_mission_planning_mission_planner_callback_1_hist
+      Latency:
+        avg: 0.010
+        std: 0.012
+        min: 0.003
+        max: 0.425
+        p50: 0.007
+        p95: 0.019
+        p99: 0.032
+        filename_hist: Latency_planning_mission_planning_mission_planner_callback_1_hist
+    /planning/mission_planning/mission_planner/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<tier4_planning_msgs::msg::RerouteAvailability_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<tier4_planning_msgs::msg::RerouteAvailability_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/output/is_reroute_available
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/mission_planning/mission_planner/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (autoware::mission_planner_universe::MissionPlanner::*(autoware::mission_planner_universe::MissionPlanner*,
+        std::_Placeholder<1>))(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: 43.578
+        std: 9.709
+        min: 17.000
+        max: 50.000
+        p50: 49.500
+        p95: 50.000
+        p99: 50.000
+        filename_hist: Frequency_planning_mission_planning_mission_planner_callback_3_hist
+      Period:
+        avg: 22.806
+        std: 17.439
+        min: 4.581
+        max: 249.662
+        p50: 21.123
+        p95: 31.300
+        p99: 115.356
+        filename_hist: Period_planning_mission_planning_mission_planner_callback_3_hist
+      Latency:
+        avg: 0.006
+        std: 0.006
+        min: 0.001
+        max: 0.198
+        p50: 0.004
+        p95: 0.013
+        p99: 0.018
+        filename_hist: Latency_planning_mission_planning_mission_planner_callback_3_hist
+    /planning/mission_planning/mission_planner/callback_4:
+      callback_legend: subscription_3
+      callback_symbol: std::_Bind<void (autoware::mission_planner_universe::MissionPlanner::*(autoware::mission_planner_universe::MissionPlanner*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/operation_mode/state
+      Frequency:
+        avg: 0.017
+        std: 0.131
+        min: 0.000
+        max: 1.000
+        p50: 0.000
+        p95: 0.000
+        p99: 0.430
+        filename_hist: Frequency_planning_mission_planning_mission_planner_callback_4_hist
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: 0.002
+        max: 0.002
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: Latency_planning_mission_planning_mission_planner_callback_4_hist
+    /planning/mission_planning/mission_planner/callback_5:
+      callback_legend: subscription_4
+      callback_symbol: std::_Bind<void (autoware::mission_planner_universe::MissionPlanner::*(autoware::mission_planner_universe::MissionPlanner*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::PoseWithUuidStamped_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/modified_goal
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/planning/mission_planning/route_selector:
+  filename_timeseries: {}
+  callbacks:
+    /planning/mission_planning/route_selector/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::mission_planner_universe::RouteSelector::*(autoware::mission_planner_universe::RouteSelector*,
+        std::_Placeholder<1>))(std::shared_ptr<tier4_planning_msgs::msg::RouteState_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/mission_planning/route_selector/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::mission_planner_universe::RouteSelector::*(autoware::mission_planner_universe::RouteSelector*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/planning/planning_evaluator:
+  filename_timeseries:
+    Frequency: Frequency_planning_planning_evaluator
+    Period: Period_planning_planning_evaluator
+    Latency: Latency_planning_planning_evaluator
+  callbacks:
+    /planning/planning_evaluator/callback_00:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (planning_diagnostics::PlanningEvaluatorNode::*(planning_diagnostics::PlanningEvaluatorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.769
+        std: 0.761
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_planning_evaluator_callback_00_hist
+      Period:
+        avg: 102.288
+        std: 24.917
+        min: 11.388
+        max: 270.217
+        p50: 99.304
+        p95: 142.193
+        p99: 202.001
+        filename_hist: Period_planning_planning_evaluator_callback_00_hist
+      Latency:
+        avg: 1.149
+        std: 0.966
+        min: 0.141
+        max: 6.791
+        p50: 0.865
+        p95: 3.170
+        p99: 4.582
+        filename_hist: Latency_planning_planning_evaluator_callback_00_hist
+    /planning/planning_evaluator/callback_01:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/trajectory
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_02:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_03:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/objects
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_04:
+      callback_legend: subscription_3
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_planning_msgs::msg::PoseWithUuidStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_planning_msgs::msg::PoseWithUuidStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/modified_goal
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_05:
+      callback_legend: subscription_4
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_06:
+      callback_legend: subscription_5
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Newest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_07:
+      callback_legend: subscription_6
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/acceleration
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_08:
+      callback_legend: subscription_7
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_vehicle_msgs::msg::SteeringReport_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_vehicle_msgs::msg::SteeringReport_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /vehicle/status/steering_status
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_09:
+      callback_legend: subscription_8
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_vehicle_msgs::msg::TurnIndicatorsReport_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_vehicle_msgs::msg::TurnIndicatorsReport_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /vehicle/status/turn_indicators_status
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_10:
+      callback_legend: subscription_9
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/virtual_traffic_light
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_11:
+      callback_legend: subscription_10
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/stop_line
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_12:
+      callback_legend: subscription_11
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/lane_change_left
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_13:
+      callback_legend: subscription_12
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/intersection
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_14:
+      callback_legend: subscription_13
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/dynamic_obstacle_avoidance
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_15:
+      callback_legend: subscription_14
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/goal_planner
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_16:
+      callback_legend: subscription_15
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/dynamic_obstacle_stop
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_17:
+      callback_legend: subscription_16
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/behavior_path_planner
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_18:
+      callback_legend: subscription_17
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/motion_velocity_planner
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_19:
+      callback_legend: subscription_18
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/walkway
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_20:
+      callback_legend: subscription_19
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/static_obstacle_avoidance
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_21:
+      callback_legend: subscription_20
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/blind_spot
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_22:
+      callback_legend: subscription_21
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/avoidance_by_lane_change
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_23:
+      callback_legend: subscription_22
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/no_drivable_lane
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_24:
+      callback_legend: subscription_23
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/lane_change_right
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_25:
+      callback_legend: subscription_24
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/no_stopping_area
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_26:
+      callback_legend: subscription_25
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/surround_obstacle_checker
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_27:
+      callback_legend: subscription_26
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/obstacle_cruise
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_28:
+      callback_legend: subscription_27
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/obstacle_stop_planner
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_29:
+      callback_legend: subscription_28
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/obstacle_cruise_planner
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_30:
+      callback_legend: subscription_29
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/obstacle_slow_down
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_31:
+      callback_legend: subscription_30
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/obstacle_stop
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_32:
+      callback_legend: subscription_31
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/crosswalk
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_33:
+      callback_legend: subscription_32
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/out_of_lane
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_34:
+      callback_legend: subscription_33
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/merge_from_private
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_35:
+      callback_legend: subscription_34
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/run_out
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_36:
+      callback_legend: subscription_35
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/detection_area
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_37:
+      callback_legend: subscription_36
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/side_shift
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_38:
+      callback_legend: subscription_37
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/start_planner
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_39:
+      callback_legend: subscription_38
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/occlusion_spot
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_evaluator/callback_40:
+      callback_legend: subscription_39
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::PlanningFactorArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/planning_factors/traffic_light
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/planning/planning_validator:
+  filename_timeseries:
+    Frequency: Frequency_planning_planning_validator
+    Period: Period_planning_planning_validator
+    Latency: Latency_planning_planning_validator
+  callbacks:
+    /planning/planning_validator/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_planning_planning_validator_callback_0_hist
+      Period:
+        avg: 999.904
+        std: 53.884
+        min: 808.555
+        max: 1180.326
+        p50: 999.480
+        p95: 1080.126
+        p99: 1158.117
+        filename_hist: Period_planning_planning_validator_callback_0_hist
+      Latency:
+        avg: 0.639
+        std: 0.472
+        min: 0.161
+        max: 2.284
+        p50: 0.480
+        p95: 1.567
+        p99: 2.134
+        filename_hist: Latency_planning_planning_validator_callback_0_hist
+    /planning/planning_validator/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_validator/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/acceleration
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/planning_validator/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (autoware::planning_validator::PlanningValidator::*(autoware::planning_validator::PlanningValidator*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/velocity_smoother/trajectory
+      Frequency:
+        avg: 9.632
+        std: 0.945
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_planning_validator_callback_3_hist
+      Period:
+        avg: 103.733
+        std: 36.260
+        min: 2.721
+        max: 284.591
+        p50: 102.094
+        p95: 156.976
+        p99: 230.246
+        filename_hist: Period_planning_planning_validator_callback_3_hist
+      Latency:
+        avg: 0.713
+        std: 0.537
+        min: 0.226
+        max: 3.764
+        p50: 0.491
+        p95: 1.892
+        p99: 2.675
+        filename_hist: Latency_planning_planning_validator_callback_3_hist
+/planning/remaining_distance_time_calculator:
+  filename_timeseries:
+    Frequency: Frequency_planning_remaining_distance_time_calculator
+    Period: Period_planning_remaining_distance_time_calculator
+    Latency: Latency_planning_remaining_distance_time_calculator
+  callbacks:
+    /planning/remaining_distance_time_calculator/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode::*(autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.796
+        std: 0.716
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_remaining_distance_time_calculator_callback_0_hist
+      Period:
+        avg: 102.018
+        std: 24.683
+        min: 10.913
+        max: 270.997
+        p50: 99.255
+        p95: 139.301
+        p99: 200.462
+        filename_hist: Period_planning_remaining_distance_time_calculator_callback_0_hist
+      Latency:
+        avg: 4.144
+        std: 3.299
+        min: 0.001
+        max: 17.208
+        p50: 3.383
+        p95: 9.911
+        p99: 11.649
+        filename_hist: Latency_planning_remaining_distance_time_calculator_callback_0_hist
+    /planning/remaining_distance_time_calculator/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode::*(autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const> const&)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: 43.774
+        std: 9.663
+        min: 17.000
+        max: 51.000
+        p50: 49.000
+        p95: 50.000
+        p99: 50.080
+        filename_hist: Frequency_planning_remaining_distance_time_calculator_callback_1_hist
+      Period:
+        avg: 22.741
+        std: 17.407
+        min: 0.786
+        max: 248.042
+        p50: 21.114
+        p95: 31.332
+        p99: 116.167
+        filename_hist: Period_planning_remaining_distance_time_calculator_callback_1_hist
+      Latency:
+        avg: 0.003
+        std: 0.011
+        min: 0.000
+        max: 0.551
+        p50: 0.002
+        p95: 0.006
+        p99: 0.008
+        filename_hist: Latency_planning_remaining_distance_time_calculator_callback_1_hist
+    /planning/remaining_distance_time_calculator/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode::*(autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const> const&)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/remaining_distance_time_calculator/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode::*(autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        > const> const&)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/current_max_velocity
+      Frequency:
+        avg: 9.551
+        std: 1.132
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_remaining_distance_time_calculator_callback_3_hist
+      Period:
+        avg: 104.647
+        std: 34.680
+        min: 2.788
+        max: 283.451
+        p50: 102.276
+        p95: 156.601
+        p99: 228.167
+        filename_hist: Period_planning_remaining_distance_time_calculator_callback_3_hist
+      Latency:
+        avg: 0.003
+        std: 0.002
+        min: 0.000
+        max: 0.027
+        p50: 0.002
+        p95: 0.005
+        p99: 0.008
+        filename_hist: Latency_planning_remaining_distance_time_calculator_callback_3_hist
+    /planning/remaining_distance_time_calculator/callback_4:
+      callback_legend: subscription_3
+      callback_symbol: std::_Bind<void (autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode::*(autoware::remaining_distance_time_calculator::RemainingDistanceTimeCalculatorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_internal_planning_msgs::msg::Scenario_<std::allocator<void>
+        > const> const&)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/scenario
+      Frequency:
+        avg: 9.803
+        std: 0.856
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_remaining_distance_time_calculator_callback_4_hist
+      Period:
+        avg: 101.935
+        std: 28.516
+        min: 0.351
+        max: 266.611
+        p50: 99.555
+        p95: 151.311
+        p99: 199.636
+        filename_hist: Period_planning_remaining_distance_time_calculator_callback_4_hist
+      Latency:
+        avg: 0.004
+        std: 0.004
+        min: 0.001
+        max: 0.094
+        p50: 0.003
+        p95: 0.008
+        p99: 0.015
+        filename_hist: Latency_planning_remaining_distance_time_calculator_callback_4_hist
+/planning/scenario_planning/external_velocity_limit_selector:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_external_velocity_limit_selector
+    Period: Period_planning_scenario_planning_external_velocity_limit_selector
+    Latency: Latency_planning_scenario_planning_external_velocity_limit_selector
+  callbacks:
+    /planning/scenario_planning/external_velocity_limit_selector/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::external_velocity_limit_selector::ExternalVelocityLimitSelectorNode::*(autoware::external_velocity_limit_selector::ExternalVelocityLimitSelectorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/max_velocity_default
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/external_velocity_limit_selector/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::external_velocity_limit_selector::ExternalVelocityLimitSelectorNode::*(autoware::external_velocity_limit_selector::ExternalVelocityLimitSelectorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/max_velocity_candidates
+      Frequency:
+        avg: 3.125
+        std: 4.533
+        min: 0.000
+        max: 10.000
+        p50: 0.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_planning_scenario_planning_external_velocity_limit_selector_callback_1_hist
+      Period:
+        avg: 279.799
+        std: 1629.425
+        min: 2.845
+        max: 15031.805
+        p50: 100.492
+        p95: 183.192
+        p99: 2785.301
+        filename_hist: Period_planning_scenario_planning_external_velocity_limit_selector_callback_1_hist
+      Latency:
+        avg: 0.268
+        std: 0.230
+        min: 0.085
+        max: 1.251
+        p50: 0.174
+        p95: 0.789
+        p99: 1.152
+        filename_hist: Latency_planning_scenario_planning_external_velocity_limit_selector_callback_1_hist
+    /planning/scenario_planning/external_velocity_limit_selector/callback_2:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (autoware::external_velocity_limit_selector::ExternalVelocityLimitSelectorNode::*(autoware::external_velocity_limit_selector::ExternalVelocityLimitSelectorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_internal_planning_msgs::msg::VelocityLimitClearCommand_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/clear_velocity_limit
+      Frequency:
+        avg: 0.062
+        std: 0.250
+        min: 0.000
+        max: 1.000
+        p50: 0.000
+        p95: 0.250
+        p99: 0.850
+        filename_hist: Frequency_planning_scenario_planning_external_velocity_limit_selector_callback_2_hist
+      Period:
+        avg: '---'
+        std: '---'
+        min: 15155.063
+        max: 15155.063
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: Period_planning_scenario_planning_external_velocity_limit_selector_callback_2_hist
+      Latency:
+        avg: 0.495
+        std: 0.511
+        min: 0.134
+        max: 0.856
+        p50: 0.495
+        p95: 0.820
+        p99: 0.849
+        filename_hist: Latency_planning_scenario_planning_external_velocity_limit_selector_callback_2_hist
+/planning/scenario_planning/glog_component:
+  filename_timeseries: {}
+  callbacks: {}
+/planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner
+    Period: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner
+    Latency: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner
+  callbacks:
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_00:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.747
+        std: 0.892
+        min: 4.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_00_hist
+      Period:
+        avg: 102.514
+        std: 31.388
+        min: 8.416
+        max: 732.206
+        p50: 99.406
+        p95: 138.159
+        p99: 205.519
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_00_hist
+      Latency:
+        avg: 0.075
+        std: 0.096
+        min: 0.007
+        max: 1.365
+        p50: 0.047
+        p95: 0.172
+        p99: 0.454
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_00_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_01:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.713
+        std: 0.939
+        min: 4.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_01_hist
+      Period:
+        avg: 102.870
+        std: 31.983
+        min: 13.697
+        max: 722.376
+        p50: 99.510
+        p95: 138.215
+        p99: 211.888
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_01_hist
+      Latency:
+        avg: 0.059
+        std: 0.064
+        min: 0.006
+        max: 0.893
+        p50: 0.043
+        p95: 0.134
+        p99: 0.299
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_01_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_02:
+      callback_legend: timer_2
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.782
+        std: 0.882
+        min: 4.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_02_hist
+      Period:
+        avg: 102.165
+        std: 31.885
+        min: 7.073
+        max: 743.203
+        p50: 99.113
+        p95: 136.521
+        p99: 193.622
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_02_hist
+      Latency:
+        avg: 0.057
+        std: 0.088
+        min: 0.006
+        max: 0.966
+        p50: 0.036
+        p95: 0.144
+        p99: 0.539
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_02_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_03:
+      callback_legend: timer_3
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.724
+        std: 1.008
+        min: 5.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_03_hist
+      Period:
+        avg: 102.752
+        std: 33.361
+        min: 16.778
+        max: 764.875
+        p50: 99.033
+        p95: 143.753
+        p99: 208.453
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_03_hist
+      Latency:
+        avg: 0.061
+        std: 0.078
+        min: 0.006
+        max: 1.025
+        p50: 0.042
+        p95: 0.140
+        p99: 0.445
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_03_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_04:
+      callback_legend: timer_4
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.690
+        std: 0.968
+        min: 4.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_04_hist
+      Period:
+        avg: 103.107
+        std: 34.598
+        min: 11.640
+        max: 786.511
+        p50: 99.473
+        p95: 144.881
+        p99: 215.134
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_04_hist
+      Latency:
+        avg: 0.060
+        std: 0.085
+        min: 0.007
+        max: 1.663
+        p50: 0.041
+        p95: 0.133
+        p99: 0.288
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_04_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_05:
+      callback_legend: timer_5
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.640
+        std: 1.005
+        min: 4.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_05_hist
+      Period:
+        avg: 103.575
+        std: 32.017
+        min: 19.586
+        max: 713.375
+        p50: 99.538
+        p95: 144.023
+        p99: 214.727
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_05_hist
+      Latency:
+        avg: 0.058
+        std: 0.073
+        min: 0.005
+        max: 1.539
+        p50: 0.043
+        p95: 0.135
+        p99: 0.304
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_05_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_06:
+      callback_legend: timer_6
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.736
+        std: 0.946
+        min: 5.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_06_hist
+      Period:
+        avg: 102.634
+        std: 34.238
+        min: 12.394
+        max: 765.531
+        p50: 99.264
+        p95: 145.334
+        p99: 216.353
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_06_hist
+      Latency:
+        avg: 0.048
+        std: 0.096
+        min: 0.006
+        max: 1.530
+        p50: 0.031
+        p95: 0.116
+        p99: 0.380
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_06_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_07:
+      callback_legend: timer_7
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.724
+        std: 0.949
+        min: 5.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_07_hist
+      Period:
+        avg: 102.751
+        std: 34.294
+        min: 12.480
+        max: 765.693
+        p50: 99.395
+        p95: 145.225
+        p99: 216.412
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_07_hist
+      Latency:
+        avg: 0.030
+        std: 0.036
+        min: 0.005
+        max: 0.417
+        p50: 0.020
+        p95: 0.086
+        p99: 0.153
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_07_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_08:
+      callback_legend: timer_8
+      callback_symbol: std::_Bind<void (autoware::behavior_path_planner::BehaviorPathPlannerNode::*(autoware::behavior_path_planner::BehaviorPathPlannerNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.632
+        std: 1.024
+        min: 4.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_08_hist
+      Period:
+        avg: 103.695
+        std: 31.570
+        min: 19.637
+        max: 714.778
+        p50: 99.430
+        p95: 145.064
+        p99: 206.729
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_08_hist
+      Latency:
+        avg: 10.736
+        std: 24.997
+        min: 0.057
+        max: 710.660
+        p50: 8.409
+        p95: 25.511
+        p99: 28.712
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_08_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_09:
+      callback_legend: timer_9
+      callback_symbol: std::_Bind<void (autoware::behavior_path_planner::StartPlannerModule::*(autoware::behavior_path_planner::StartPlannerModule*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_09_hist
+      Period:
+        avg: 999.985
+        std: 29.636
+        min: 881.448
+        max: 1113.893
+        p50: 1001.049
+        p95: 1040.717
+        p99: 1083.849
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_09_hist
+      Latency:
+        avg: 0.037
+        std: 0.022
+        min: 0.015
+        max: 0.152
+        p50: 0.034
+        p95: 0.059
+        p99: 0.141
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_09_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_10:
+      callback_legend: timer_10
+      callback_symbol: autoware::behavior_path_planner::GoalPlannerModule::GoalPlannerModule(std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rclcpp::Node&, std::shared_ptr<autoware::behavior_path_planner::GoalPlannerParameters>
+        const&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>,
+        std::allocator<char> >, std::shared_ptr<autoware::rtc_interface::RTCInterface>,
+        std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>,
+        std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<autoware::rtc_interface::RTCInterface>
+        > > > const&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>,
+        std::allocator<char> >, std::shared_ptr<autoware::objects_of_interest_marker_interface::ObjectsOfInterestMarkerInterface>,
+        std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>,
+        std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<autoware::objects_of_interest_marker_interface::ObjectsOfInterestMarkerInterface>
+        > > >&, std::shared_ptr<autoware::planning_factor_interface::PlanningFactorInterface>)::{lambda()#1}
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_10_hist
+      Period:
+        avg: 999.984
+        std: 29.645
+        min: 881.404
+        max: 1113.891
+        p50: 1000.990
+        p95: 1040.714
+        p99: 1083.856
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_10_hist
+      Latency:
+        avg: 0.030
+        std: 0.043
+        min: 0.006
+        max: 0.301
+        p50: 0.018
+        p95: 0.084
+        p99: 0.201
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_10_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_11:
+      callback_legend: timer_11
+      callback_symbol: autoware::behavior_path_planner::GoalPlannerModule::GoalPlannerModule(std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rclcpp::Node&, std::shared_ptr<autoware::behavior_path_planner::GoalPlannerParameters>
+        const&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>,
+        std::allocator<char> >, std::shared_ptr<autoware::rtc_interface::RTCInterface>,
+        std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>,
+        std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<autoware::rtc_interface::RTCInterface>
+        > > > const&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>,
+        std::allocator<char> >, std::shared_ptr<autoware::objects_of_interest_marker_interface::ObjectsOfInterestMarkerInterface>,
+        std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>,
+        std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<autoware::objects_of_interest_marker_interface::ObjectsOfInterestMarkerInterface>
+        > > >&, std::shared_ptr<autoware::planning_factor_interface::PlanningFactorInterface>)::{lambda()#2}
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_11_hist
+      Period:
+        avg: 999.984
+        std: 29.775
+        min: 880.164
+        max: 1115.203
+        p50: 1001.106
+        p95: 1040.715
+        p99: 1084.261
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_11_hist
+      Latency:
+        avg: 0.011
+        std: 0.004
+        min: 0.007
+        max: 0.025
+        p50: 0.010
+        p95: 0.020
+        p99: 0.024
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_path_planner_callback_11_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_12:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Newest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_13:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_14:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/acceleration
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_15:
+      callback_legend: subscription_3
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::Scenario_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::Scenario_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/scenario
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_16:
+      callback_legend: subscription_4
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/objects
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_17:
+      callback_legend: subscription_5
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/occupancy_grid_map/map
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_18:
+      callback_legend: subscription_6
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/parking/costmap_generator/occupancy_grid
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_19:
+      callback_legend: subscription_7
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_signals
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_20:
+      callback_legend: subscription_8
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<tier4_planning_msgs::msg::LateralOffset_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<tier4_planning_msgs::msg::LateralOffset_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/input/lateral_offset
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_21:
+      callback_legend: subscription_9
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/operation_mode/state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_22:
+      callback_legend: subscription_10
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/max_velocity
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner
+    Period: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner
+    Latency: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner
+  callbacks:
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_00:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.756
+        std: 0.839
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_00_hist
+      Period:
+        avg: 102.400
+        std: 34.587
+        min: 9.183
+        max: 766.229
+        p50: 99.313
+        p95: 141.835
+        p99: 204.282
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_00_hist
+      Latency:
+        avg: 0.060
+        std: 0.149
+        min: 0.005
+        max: 3.595
+        p50: 0.037
+        p95: 0.134
+        p99: 0.432
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_00_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_01:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.628
+        std: 0.921
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_01_hist
+      Period:
+        avg: 103.695
+        std: 33.824
+        min: 5.811
+        max: 797.333
+        p50: 99.617
+        p95: 145.884
+        p99: 208.441
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_01_hist
+      Latency:
+        avg: 0.057
+        std: 0.077
+        min: 0.007
+        max: 1.677
+        p50: 0.040
+        p95: 0.133
+        p99: 0.273
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_01_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_02:
+      callback_legend: timer_2
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.605
+        std: 0.997
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.750
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_02_hist
+      Period:
+        avg: 103.943
+        std: 35.244
+        min: 10.738
+        max: 787.300
+        p50: 99.433
+        p95: 150.216
+        p99: 214.367
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_02_hist
+      Latency:
+        avg: 0.052
+        std: 0.058
+        min: 0.006
+        max: 0.785
+        p50: 0.038
+        p95: 0.127
+        p99: 0.273
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_02_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_03:
+      callback_legend: timer_3
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.605
+        std: 0.997
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.750
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_03_hist
+      Period:
+        avg: 103.943
+        std: 35.187
+        min: 11.234
+        max: 787.004
+        p50: 99.687
+        p95: 150.305
+        p99: 214.201
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_03_hist
+      Latency:
+        avg: 0.037
+        std: 0.045
+        min: 0.006
+        max: 0.676
+        p50: 0.024
+        p95: 0.099
+        p99: 0.161
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_03_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_04:
+      callback_legend: timer_4
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.721
+        std: 0.777
+        min: 6.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_04_hist
+      Period:
+        avg: 102.750
+        std: 33.095
+        min: 7.267
+        max: 735.554
+        p50: 99.252
+        p95: 146.356
+        p99: 196.335
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_04_hist
+      Latency:
+        avg: 0.055
+        std: 0.054
+        min: 0.006
+        max: 0.954
+        p50: 0.041
+        p95: 0.139
+        p99: 0.213
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_04_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_05:
+      callback_legend: timer_5
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.791
+        std: 0.769
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_05_hist
+      Period:
+        avg: 102.047
+        std: 31.709
+        min: 4.605
+        max: 725.511
+        p50: 99.282
+        p95: 142.370
+        p99: 196.197
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_05_hist
+      Latency:
+        avg: 0.049
+        std: 0.112
+        min: 0.006
+        max: 2.954
+        p50: 0.030
+        p95: 0.133
+        p99: 0.253
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_05_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_06:
+      callback_legend: timer_6
+      callback_symbol: std::_Bind<void (autoware::rtc_interface::RTCInterface::*(autoware::rtc_interface::RTCInterface*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.651
+        std: 0.891
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_06_hist
+      Period:
+        avg: 103.469
+        std: 34.515
+        min: 5.667
+        max: 808.836
+        p50: 99.447
+        p95: 144.811
+        p99: 214.947
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_06_hist
+      Latency:
+        avg: 0.045
+        std: 0.070
+        min: 0.006
+        max: 1.151
+        p50: 0.032
+        p95: 0.114
+        p99: 0.275
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_06_hist
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_07:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/objects
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_08:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/pointcloud
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_09:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_10:
+      callback_legend: subscription_3
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/acceleration
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_11:
+      callback_legend: subscription_4
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_signals
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_12:
+      callback_legend: subscription_5
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/occupancy_grid_map/map
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_13:
+      callback_legend: subscription_6
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/max_velocity_default
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_14:
+      callback_legend: subscription_7
+      callback_symbol: std::_Bind<void (autoware::behavior_velocity_planner::BehaviorVelocityPlannerNode::*(autoware::behavior_velocity_planner::BehaviorVelocityPlannerNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_internal_planning_msgs::msg::PathWithLaneId_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id
+      Frequency:
+        avg: 9.629
+        std: 0.951
+        min: 5.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_14_hist
+      Period:
+        avg: 103.589
+        std: 29.331
+        min: 6.767
+        max: 268.713
+        p50: 100.761
+        p95: 154.466
+        p99: 220.612
+        filename_hist: Period_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_14_hist
+      Latency:
+        avg: 5.675
+        std: 4.205
+        min: 1.257
+        max: 30.154
+        p50: 3.937
+        p95: 13.797
+        p99: 16.618
+        filename_hist: Latency_planning_scenario_planning_lane_driving_behavior_planning_behavior_velocity_planner_callback_14_hist
+/planning/scenario_planning/lane_driving/behavior_planning/glog_component:
+  filename_timeseries: {}
+  callbacks: {}
+/planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_lane_driving_motion_planning_elastic_band_smoother
+    Period: Period_planning_scenario_planning_lane_driving_motion_planning_elastic_band_smoother
+    Latency: Latency_planning_scenario_planning_lane_driving_motion_planning_elastic_band_smoother
+  callbacks:
+    /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::path_smoother::ElasticBandSmoother::*(autoware::path_smoother::ElasticBandSmoother*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::Path_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/behavior_planning/path
+      Frequency:
+        avg: 9.623
+        std: 0.909
+        min: 5.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_motion_planning_elastic_band_smoother_callback_1_hist
+      Period:
+        avg: 103.587
+        std: 31.704
+        min: 6.320
+        max: 270.467
+        p50: 101.466
+        p95: 155.127
+        p99: 221.745
+        filename_hist: Period_planning_scenario_planning_lane_driving_motion_planning_elastic_band_smoother_callback_1_hist
+      Latency:
+        avg: 1.827
+        std: 1.173
+        min: 0.099
+        max: 7.725
+        p50: 1.500
+        p95: 4.105
+        p99: 5.284
+        filename_hist: Latency_planning_scenario_planning_lane_driving_motion_planning_elastic_band_smoother_callback_1_hist
+/planning/scenario_planning/lane_driving/motion_planning/glog_component:
+  filename_timeseries: {}
+  callbacks: {}
+/planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_lane_driving_motion_planning_motion_velocity_planner
+    Period: Period_planning_scenario_planning_lane_driving_motion_planning_motion_velocity_planner
+    Latency: Latency_planning_scenario_planning_lane_driving_motion_planning_motion_velocity_planner
+  callbacks:
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/objects
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/pointcloud
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_2:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_3:
+      callback_legend: subscription_3
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/acceleration
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_4:
+      callback_legend: subscription_4
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/occupancy_grid_map/map
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_5:
+      callback_legend: subscription_5
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_signals
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6:
+      callback_legend: subscription_6
+      callback_symbol: std::_Bind<void (autoware::motion_velocity_planner::MotionVelocityPlannerNode::*(autoware::motion_velocity_planner::MotionVelocityPlannerNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory
+      Frequency:
+        avg: 9.623
+        std: 0.859
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_motion_planning_motion_velocity_planner_callback_6_hist
+      Period:
+        avg: 103.643
+        std: 33.876
+        min: 2.583
+        max: 275.226
+        p50: 101.903
+        p95: 157.602
+        p99: 223.071
+        filename_hist: Period_planning_scenario_planning_lane_driving_motion_planning_motion_velocity_planner_callback_6_hist
+      Latency:
+        avg: 4.754
+        std: 3.108
+        min: 1.072
+        max: 20.777
+        p50: 3.908
+        p95: 11.218
+        p99: 15.892
+        filename_hist: Latency_planning_scenario_planning_lane_driving_motion_planning_motion_velocity_planner_callback_6_hist
+/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay
+    Period: Period_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay
+    Latency: Latency_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay
+  callbacks:
+    /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (topic_tools::ToolBaseNode::*(topic_tools::RelayNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 10.000
+        std: 0.000
+        min: 10.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay_callback_0_hist
+      Period:
+        avg: 100.003
+        std: 0.259
+        min: 98.089
+        max: 102.208
+        p50: 100.001
+        p95: 100.335
+        p99: 100.857
+        filename_hist: Period_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay_callback_0_hist
+      Latency:
+        avg: 0.529
+        std: 0.274
+        min: 0.191
+        max: 2.088
+        p50: 0.451
+        p95: 1.084
+        p99: 1.358
+        filename_hist: Latency_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay_callback_0_hist
+    /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (topic_tools::ToolBaseNode::*(topic_tools::ToolBaseNode*,
+        std::_Placeholder<1>))(std::shared_ptr<rclcpp::SerializedMessage>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory
+      Frequency:
+        avg: 9.623
+        std: 0.987
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay_callback_1_hist
+      Period:
+        avg: 103.642
+        std: 35.534
+        min: 2.572
+        max: 283.135
+        p50: 102.152
+        p95: 156.295
+        p99: 227.036
+        filename_hist: Period_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay_callback_1_hist
+      Latency:
+        avg: 0.044
+        std: 0.060
+        min: 0.010
+        max: 1.354
+        p50: 0.031
+        p95: 0.107
+        p99: 0.161
+        filename_hist: Latency_planning_scenario_planning_lane_driving_motion_planning_obstacle_stop_relay_callback_1_hist
+/planning/scenario_planning/lane_driving/motion_planning/path_optimizer:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_lane_driving_motion_planning_path_optimizer
+    Period: Period_planning_scenario_planning_lane_driving_motion_planning_path_optimizer
+    Latency: Latency_planning_scenario_planning_lane_driving_motion_planning_path_optimizer
+  callbacks:
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_motion_planning_path_optimizer_callback_0_hist
+      Period:
+        avg: 999.899
+        std: 25.805
+        min: 908.173
+        max: 1086.726
+        p50: 1000.085
+        p95: 1042.939
+        p99: 1081.325
+        filename_hist: Period_planning_scenario_planning_lane_driving_motion_planning_path_optimizer_callback_0_hist
+      Latency:
+        avg: 0.356
+        std: 0.283
+        min: 0.092
+        max: 2.131
+        p50: 0.290
+        p95: 0.857
+        p99: 1.179
+        filename_hist: Latency_planning_scenario_planning_lane_driving_motion_planning_path_optimizer_callback_0_hist
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::path_optimizer::PathOptimizer::*(autoware::path_optimizer::PathOptimizer*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::Path_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/motion_planning/path_smoother/path
+      Frequency:
+        avg: 9.623
+        std: 0.788
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_lane_driving_motion_planning_path_optimizer_callback_2_hist
+      Period:
+        avg: 103.596
+        std: 32.405
+        min: 5.471
+        max: 269.906
+        p50: 101.670
+        p95: 156.588
+        p99: 221.196
+        filename_hist: Period_planning_scenario_planning_lane_driving_motion_planning_path_optimizer_callback_2_hist
+      Latency:
+        avg: 4.584
+        std: 4.733
+        min: 0.142
+        max: 34.863
+        p50: 2.696
+        p95: 14.454
+        p99: 21.887
+        filename_hist: Latency_planning_scenario_planning_lane_driving_motion_planning_path_optimizer_callback_2_hist
+/planning/scenario_planning/parking/costmap_generator:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_parking_costmap_generator
+    Period: Period_planning_scenario_planning_parking_costmap_generator
+    Latency: Latency_planning_scenario_planning_parking_costmap_generator
+  callbacks:
+    /planning/scenario_planning/parking/costmap_generator/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::costmap_generator::CostmapGenerator::*(autoware::costmap_generator::CostmapGenerator*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.835
+        std: 0.582
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.100
+        filename_hist: Frequency_planning_scenario_planning_parking_costmap_generator_callback_0_hist
+      Period:
+        avg: 101.624
+        std: 23.949
+        min: 11.043
+        max: 268.488
+        p50: 98.940
+        p95: 138.316
+        p99: 197.387
+        filename_hist: Period_planning_scenario_planning_parking_costmap_generator_callback_0_hist
+      Latency:
+        avg: 0.208
+        std: 0.177
+        min: 0.067
+        max: 2.290
+        p50: 0.158
+        p95: 0.481
+        p99: 0.878
+        filename_hist: Latency_planning_scenario_planning_parking_costmap_generator_callback_0_hist
+    /planning/scenario_planning/parking/costmap_generator/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/pointcloud
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/parking/costmap_generator/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::PredictedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/objects
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/parking/costmap_generator/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::Scenario_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::Scenario_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/scenario
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/planning/scenario_planning/parking/freespace_planner:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_parking_freespace_planner
+    Period: Period_planning_scenario_planning_parking_freespace_planner
+    Latency: Latency_planning_scenario_planning_parking_freespace_planner
+  callbacks:
+    /planning/scenario_planning/parking/freespace_planner/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::freespace_planner::FreespacePlannerNode::*(autoware::freespace_planner::FreespacePlannerNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.824
+        std: 0.607
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.100
+        filename_hist: Frequency_planning_scenario_planning_parking_freespace_planner_callback_0_hist
+      Period:
+        avg: 101.722
+        std: 25.213
+        min: 11.479
+        max: 286.227
+        p50: 99.042
+        p95: 141.094
+        p99: 206.289
+        filename_hist: Period_planning_scenario_planning_parking_freespace_planner_callback_0_hist
+      Latency:
+        avg: 0.099
+        std: 0.153
+        min: 0.020
+        max: 2.494
+        p50: 0.067
+        p95: 0.203
+        p99: 0.597
+        filename_hist: Latency_planning_scenario_planning_parking_freespace_planner_callback_0_hist
+    /planning/scenario_planning/parking/freespace_planner/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/parking/costmap_generator/occupancy_grid
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/parking/freespace_planner/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::Scenario_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::Scenario_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/scenario
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/parking/freespace_planner/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::All>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/parking/freespace_planner/callback_4:
+      callback_legend: subscription_3
+      callback_symbol: std::_Bind<void (autoware::freespace_planner::FreespacePlannerNode::*(autoware::freespace_planner::FreespacePlannerNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/planning/scenario_planning/parking/glog_component:
+  filename_timeseries: {}
+  callbacks: {}
+/planning/scenario_planning/scenario_selector:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_scenario_selector
+    Period: Period_planning_scenario_planning_scenario_selector
+    Latency: Latency_planning_scenario_planning_scenario_selector
+  callbacks:
+    /planning/scenario_planning/scenario_selector/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::scenario_selector::ScenarioSelectorNode::*(autoware::scenario_selector::ScenarioSelectorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.848
+        std: 0.490
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.090
+        filename_hist: Frequency_planning_scenario_planning_scenario_selector_callback_0_hist
+      Period:
+        avg: 101.481
+        std: 23.145
+        min: 6.139
+        max: 267.356
+        p50: 98.914
+        p95: 138.064
+        p99: 191.681
+        filename_hist: Period_planning_scenario_planning_scenario_selector_callback_0_hist
+      Latency:
+        avg: 0.713
+        std: 0.689
+        min: 0.027
+        max: 7.432
+        p50: 0.530
+        p95: 2.001
+        p99: 2.949
+        filename_hist: Latency_planning_scenario_planning_scenario_selector_callback_0_hist
+    /planning/scenario_planning/scenario_selector/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::scenario_selector::ScenarioSelectorNode::*(autoware::scenario_selector::ScenarioSelectorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/lane_driving/trajectory
+      Frequency:
+        avg: 9.618
+        std: 0.829
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.650
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_scenario_selector_callback_1_hist
+      Period:
+        avg: 103.645
+        std: 35.574
+        min: 2.567
+        max: 283.154
+        p50: 102.114
+        p95: 156.359
+        p99: 227.170
+        filename_hist: Period_planning_scenario_planning_scenario_selector_callback_1_hist
+      Latency:
+        avg: 0.069
+        std: 0.087
+        min: 0.023
+        max: 1.992
+        p50: 0.051
+        p95: 0.165
+        p99: 0.218
+        filename_hist: Latency_planning_scenario_planning_scenario_selector_callback_1_hist
+    /planning/scenario_planning/scenario_selector/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::scenario_selector::ScenarioSelectorNode::*(autoware::scenario_selector::ScenarioSelectorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/parking/trajectory
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/scenario_selector/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (autoware::scenario_selector::ScenarioSelectorNode::*(autoware::scenario_selector::ScenarioSelectorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/scenario_selector/callback_4:
+      callback_legend: subscription_3
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::All>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/scenario_selector/callback_5:
+      callback_legend: subscription_4
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<std_msgs::msg::Bool_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/parking/is_completed
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/scenario_selector/callback_6:
+      callback_legend: subscription_5
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/operation_mode/state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/planning/scenario_planning/velocity_smoother:
+  filename_timeseries:
+    Frequency: Frequency_planning_scenario_planning_velocity_smoother
+    Period: Period_planning_scenario_planning_velocity_smoother
+    Latency: Latency_planning_scenario_planning_velocity_smoother
+  callbacks:
+    /planning/scenario_planning/velocity_smoother/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/velocity_smoother/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/acceleration
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/velocity_smoother/callback_2:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Newest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_internal_planning_msgs::msg::VelocityLimit_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/max_velocity
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/velocity_smoother/callback_3:
+      callback_legend: subscription_3
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /system/operation_mode/state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /planning/scenario_planning/velocity_smoother/callback_4:
+      callback_legend: subscription_4
+      callback_symbol: std::_Bind<void (autoware::velocity_smoother::VelocitySmootherNode::*(autoware::velocity_smoother::VelocitySmootherNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::Trajectory_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/scenario_planning/scenario_selector/trajectory
+      Frequency:
+        avg: 9.632
+        std: 0.896
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_planning_scenario_planning_velocity_smoother_callback_4_hist
+      Period:
+        avg: 103.737
+        std: 35.498
+        min: 2.531
+        max: 283.372
+        p50: 102.060
+        p95: 156.447
+        p99: 227.327
+        filename_hist: Period_planning_scenario_planning_velocity_smoother_callback_4_hist
+      Latency:
+        avg: 2.830
+        std: 2.098
+        min: 0.505
+        max: 16.845
+        p50: 2.168
+        p95: 6.808
+        p99: 9.994
+        filename_hist: Latency_planning_scenario_planning_velocity_smoother_callback_4_hist

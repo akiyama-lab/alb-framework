@@ -1,0 +1,312 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Path: component_perception_0, report_cutin-30-10-2</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Path: component_perception_0</h1>
+      <h2>report_cutin-30-10-2</h2>
+      <p><a href="../index.html">Back to Top </a>, <a href="./index.html">Back to Path List</a></p>
+      <hr />
+
+      
+
+      
+
+      
+        
+      
+
+      <h4>Node list in the path</h4>
+      <ul>
+        
+        <li>/sensing/lidar/concatenate_data</li>
+        
+        <li>/perception/object_recognition/detection/centerpoint/lidar_centerpoint</li>
+        
+        <li>/perception/object_recognition/detection/object_association_merger_alpha</li>
+        
+        <li>/perception/object_recognition/detection/object_association_merger_beta</li>
+        
+        <li>/perception/object_recognition/detection/object_lanelet_filter</li>
+        
+        <li>/perception/object_recognition/tracking/multi_object_tracker</li>
+        
+        <li>/perception/object_recognition/prediction/map_based_prediction</li>
+        
+      </ul>
+
+      
+      <h4>Message Flow (obstacle_stopに注目)</h4>
+      <div class="alert alert-info" role="alert">
+        <strong>Time Window:</strong>
+        
+          Trigger: 1768893315058341120 (3.0s before/after)
+        
+      </div>
+      
+      
+      
+      <iframe src="component_perception_0_messageflow_short.html" frameborder="0" width="100%" height="402" scrolling="yes"></iframe>
+
+      <h4>Response Time</h4>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>component_perception_0</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">56.940</td>
+              <td class="text-end">37.616</td>
+              <td class="text-end">7.220</td>
+              <td class="text-end">162.575</td>
+              <td class="text-end">212.573</td>
+              <td class="text-end">297.571</td>
+              <td class="text-end">47.381</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      
+      <h5>Response Time (Message Flow Window)</h5>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>component_perception_0 (window)</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">38.725</td>
+              <td class="text-end">33.410</td>
+              <td class="text-end">9.890</td>
+              <td class="text-end">70.668</td>
+              <td class="text-end">109.974</td>
+              <td class="text-end">141.567</td>
+              <td class="text-end">21.380</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+
+      
+
+      <div class="row">
+        <div class="col">
+          
+          <iframe src="component_perception_0_timeseries_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="component_perception_0_timeseries_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+        <div class="col">
+          
+          <iframe src="component_perception_0_hist_best.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+          
+          <iframe src="component_perception_0_hist_best_window.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          
+        </div>
+      </div>
+
+
+      <h4>Response Time Details</h4>
+      <div>
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>Latency in Node / Topic </th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>/sensing/lidar/concatenated/pointcloud </td>
+              <td class="text-end">1.449</td>
+              <td class="text-end">0.104</td>
+              <td class="text-end">0.040</td>
+              <td class="text-end">1.495</td>
+              <td class="text-end">60.008</td>
+              <td class="text-end">91.580</td>
+              <td class="text-end">8.727</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_3 </td>
+              <td class="text-end">13.855</td>
+              <td class="text-end">8.951</td>
+              <td class="text-end">2.395</td>
+              <td class="text-end">52.225</td>
+              <td class="text-end">75.243</td>
+              <td class="text-end">86.172</td>
+              <td class="text-end">14.490</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/centerpoint/objects </td>
+              <td class="text-end">0.262</td>
+              <td class="text-end">0.170</td>
+              <td class="text-end">0.045</td>
+              <td class="text-end">0.600</td>
+              <td class="text-end">1.204</td>
+              <td class="text-end">3.002</td>
+              <td class="text-end">0.252</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_association_merger_alpha/callback_1 </td>
+              <td class="text-end">5.515</td>
+              <td class="text-end">4.119</td>
+              <td class="text-end">0.015</td>
+              <td class="text-end">16.967</td>
+              <td class="text-end">20.279</td>
+              <td class="text-end">24.307</td>
+              <td class="text-end">5.345</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/temporary_merged_objects </td>
+              <td class="text-end">0.170</td>
+              <td class="text-end">0.129</td>
+              <td class="text-end">0.046</td>
+              <td class="text-end">0.388</td>
+              <td class="text-end">0.519</td>
+              <td class="text-end">1.376</td>
+              <td class="text-end">0.118</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_association_merger_beta/callback_1 </td>
+              <td class="text-end">0.078</td>
+              <td class="text-end">0.030</td>
+              <td class="text-end">0.010</td>
+              <td class="text-end">0.307</td>
+              <td class="text-end">0.913</td>
+              <td class="text-end">1.580</td>
+              <td class="text-end">0.159</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/objects_before_filter </td>
+              <td class="text-end">0.198</td>
+              <td class="text-end">0.150</td>
+              <td class="text-end">0.063</td>
+              <td class="text-end">0.414</td>
+              <td class="text-end">0.535</td>
+              <td class="text-end">1.622</td>
+              <td class="text-end">0.130</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/object_lanelet_filter/callback_0 </td>
+              <td class="text-end">0.315</td>
+              <td class="text-end">0.240</td>
+              <td class="text-end">0.035</td>
+              <td class="text-end">0.778</td>
+              <td class="text-end">1.088</td>
+              <td class="text-end">1.264</td>
+              <td class="text-end">0.223</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/detection/objects </td>
+              <td class="text-end">0.207</td>
+              <td class="text-end">0.151</td>
+              <td class="text-end">0.064</td>
+              <td class="text-end">0.481</td>
+              <td class="text-end">0.629</td>
+              <td class="text-end">1.190</td>
+              <td class="text-end">0.144</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/tracking/multi_object_tracker/callback_3 </td>
+              <td class="text-end">33.634</td>
+              <td class="text-end">16.664</td>
+              <td class="text-end">0.315</td>
+              <td class="text-end">105.948</td>
+              <td class="text-end">161.400</td>
+              <td class="text-end">227.161</td>
+              <td class="text-end">37.039</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/tracking/objects </td>
+              <td class="text-end">0.373</td>
+              <td class="text-end">0.221</td>
+              <td class="text-end">0.078</td>
+              <td class="text-end">1.271</td>
+              <td class="text-end">2.558</td>
+              <td class="text-end">4.916</td>
+              <td class="text-end">0.475</td>
+            </tr>
+            
+            <tr>
+              <td>/perception/object_recognition/prediction/map_based_prediction/callback_1 </td>
+              <td class="text-end">0.883</td>
+              <td class="text-end">0.572</td>
+              <td class="text-end">0.222</td>
+              <td class="text-end">2.237</td>
+              <td class="text-end">3.448</td>
+              <td class="text-end">4.700</td>
+              <td class="text-end">0.701</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        
+        
+        <iframe src="component_perception_0_stacked_bar_best.html" frameborder="0" width="100%" height="820" scrolling="yes"></iframe>
+        
+      </div>
+
+    </div>  <!-- container -->
+
+  </body>
+</html>

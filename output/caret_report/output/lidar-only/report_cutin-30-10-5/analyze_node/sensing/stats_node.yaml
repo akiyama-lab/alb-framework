@@ -1,0 +1,1256 @@
+/sensing/imu/gyro_bias_validator:
+  filename_timeseries:
+    Frequency: Frequency_sensing_imu_gyro_bias_validator
+    Period: Period_sensing_imu_gyro_bias_validator
+    Latency: Latency_sensing_imu_gyro_bias_validator
+  callbacks:
+    /sensing/imu/gyro_bias_validator/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/imu/gyro_bias_validator/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 500000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 2.000
+        std: 0.000
+        min: 2.000
+        max: 2.000
+        p50: 2.000
+        p95: 2.000
+        p99: 2.000
+        filename_hist: Frequency_sensing_imu_gyro_bias_validator_callback_1_hist
+      Period:
+        avg: 500.002
+        std: 26.358
+        min: 392.917
+        max: 617.575
+        p50: 499.685
+        p95: 541.736
+        p99: 602.941
+        filename_hist: Period_sensing_imu_gyro_bias_validator_callback_1_hist
+      Latency:
+        avg: 0.437
+        std: 0.303
+        min: 0.077
+        max: 2.023
+        p50: 0.350
+        p95: 0.976
+        p99: 1.476
+        filename_hist: Latency_sensing_imu_gyro_bias_validator_callback_1_hist
+    /sensing/imu/gyro_bias_validator/callback_2:
+      callback_legend: timer_2
+      callback_symbol: std::_Bind<void (autoware::imu_corrector::GyroBiasEstimator::*(autoware::imu_corrector::GyroBiasEstimator*))()>
+      callback_type: timer_callback
+      period_ns: 500000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 2.000
+        std: 0.000
+        min: 2.000
+        max: 2.000
+        p50: 2.000
+        p95: 2.000
+        p99: 2.000
+        filename_hist: Frequency_sensing_imu_gyro_bias_validator_callback_2_hist
+      Period:
+        avg: 500.005
+        std: 26.406
+        min: 392.917
+        max: 615.699
+        p50: 499.872
+        p95: 542.476
+        p99: 602.761
+        filename_hist: Period_sensing_imu_gyro_bias_validator_callback_2_hist
+      Latency:
+        avg: 0.035
+        std: 0.060
+        min: 0.011
+        max: 0.779
+        p50: 0.024
+        p95: 0.060
+        p99: 0.148
+        filename_hist: Latency_sensing_imu_gyro_bias_validator_callback_2_hist
+    /sensing/imu/gyro_bias_validator/callback_3:
+      callback_legend: subscription_0
+      callback_symbol: autoware::imu_corrector::GyroBiasEstimator::GyroBiasEstimator(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/imu/tamagawa/imu_raw
+      Frequency:
+        avg: 20.000
+        std: 0.625
+        min: 17.000
+        max: 24.000
+        p50: 20.000
+        p95: 20.650
+        p99: 21.390
+        filename_hist: Frequency_sensing_imu_gyro_bias_validator_callback_3_hist
+      Period:
+        avg: 50.000
+        std: 14.845
+        min: 2.113
+        max: 222.605
+        p50: 49.490
+        p95: 73.744
+        p99: 93.766
+        filename_hist: Period_sensing_imu_gyro_bias_validator_callback_3_hist
+      Latency:
+        avg: 0.038
+        std: 0.024
+        min: 0.013
+        max: 0.561
+        p50: 0.032
+        p95: 0.076
+        p99: 0.120
+        filename_hist: Latency_sensing_imu_gyro_bias_validator_callback_3_hist
+    /sensing/imu/gyro_bias_validator/callback_4:
+      callback_legend: subscription_1
+      callback_symbol: autoware::imu_corrector::GyroBiasEstimator::GyroBiasEstimator(rclcpp::NodeOptions
+        const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#2}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: 43.568
+        std: 9.226
+        min: 14.000
+        max: 51.000
+        p50: 49.000
+        p95: 51.000
+        p99: 51.000
+        filename_hist: Frequency_sensing_imu_gyro_bias_validator_callback_4_hist
+      Period:
+        avg: 22.838
+        std: 16.266
+        min: 3.750
+        max: 238.179
+        p50: 21.170
+        p95: 39.469
+        p99: 103.358
+        filename_hist: Period_sensing_imu_gyro_bias_validator_callback_4_hist
+      Latency:
+        avg: 0.004
+        std: 0.005
+        min: 0.001
+        max: 0.163
+        p50: 0.003
+        p95: 0.008
+        p99: 0.017
+        filename_hist: Latency_sensing_imu_gyro_bias_validator_callback_4_hist
+/sensing/imu/imu_corrector:
+  filename_timeseries:
+    Frequency: Frequency_sensing_imu_imu_corrector
+    Period: Period_sensing_imu_imu_corrector
+    Latency: Latency_sensing_imu_imu_corrector
+  callbacks:
+    /sensing/imu/imu_corrector/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::imu_corrector::ImuCorrector::*(autoware::imu_corrector::ImuCorrector*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/imu/tamagawa/imu_raw
+      Frequency:
+        avg: 20.000
+        std: 0.303
+        min: 19.000
+        max: 21.000
+        p50: 20.000
+        p95: 20.000
+        p99: 21.000
+        filename_hist: Frequency_sensing_imu_imu_corrector_callback_0_hist
+      Period:
+        avg: 50.013
+        std: 14.860
+        min: 2.054
+        max: 222.638
+        p50: 49.497
+        p95: 73.891
+        p99: 93.805
+        filename_hist: Period_sensing_imu_imu_corrector_callback_0_hist
+      Latency:
+        avg: 0.268
+        std: 0.263
+        min: 0.074
+        max: 8.331
+        p50: 0.191
+        p95: 0.680
+        p99: 0.885
+        filename_hist: Latency_sensing_imu_imu_corrector_callback_0_hist
+/sensing/lidar/concatenate_data:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_concatenate_data
+    Period: Period_sensing_lidar_concatenate_data
+    Latency: Latency_sensing_lidar_concatenate_data
+  callbacks:
+    /sensing/lidar/concatenate_data/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 1.000
+        std: 0.000
+        min: 1.000
+        max: 1.000
+        p50: 1.000
+        p95: 1.000
+        p99: 1.000
+        filename_hist: Frequency_sensing_lidar_concatenate_data_callback_0_hist
+      Period:
+        avg: 1000.029
+        std: 27.810
+        min: 891.026
+        max: 1123.768
+        p50: 1000.346
+        p95: 1037.269
+        p99: 1076.888
+        filename_hist: Period_sensing_lidar_concatenate_data_callback_0_hist
+      Latency:
+        avg: 0.397
+        std: 0.341
+        min: 0.094
+        max: 1.609
+        p50: 0.247
+        p95: 1.049
+        p99: 1.568
+        filename_hist: Latency_sensing_lidar_concatenate_data_callback_0_hist
+    /sensing/lidar/concatenate_data/callback_1:
+      callback_legend: timer_1
+      callback_symbol: autoware::pointcloud_preprocessor::CloudCollector<autoware::pointcloud_preprocessor::PointCloud2Traits>::CloudCollector(std::shared_ptr<autoware::pointcloud_preprocessor::PointCloudConcatenateDataSynchronizerComponentTemplated<autoware::pointcloud_preprocessor::PointCloud2Traits>
+        >&&, std::shared_ptr<autoware::pointcloud_preprocessor::CombineCloudHandler<autoware::pointcloud_preprocessor::PointCloud2Traits>
+        >&, int, double, bool)::{lambda()#1}
+      callback_type: timer_callback
+      period_ns: 200000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/concatenate_data/callback_2:
+      callback_legend: timer_2
+      callback_symbol: autoware::pointcloud_preprocessor::CloudCollector<autoware::pointcloud_preprocessor::PointCloud2Traits>::CloudCollector(std::shared_ptr<autoware::pointcloud_preprocessor::PointCloudConcatenateDataSynchronizerComponentTemplated<autoware::pointcloud_preprocessor::PointCloud2Traits>
+        >&&, std::shared_ptr<autoware::pointcloud_preprocessor::CombineCloudHandler<autoware::pointcloud_preprocessor::PointCloud2Traits>
+        >&, int, double, bool)::{lambda()#1}
+      callback_type: timer_callback
+      period_ns: 200000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/concatenate_data/callback_3:
+      callback_legend: timer_3
+      callback_symbol: autoware::pointcloud_preprocessor::CloudCollector<autoware::pointcloud_preprocessor::PointCloud2Traits>::CloudCollector(std::shared_ptr<autoware::pointcloud_preprocessor::PointCloudConcatenateDataSynchronizerComponentTemplated<autoware::pointcloud_preprocessor::PointCloud2Traits>
+        >&&, std::shared_ptr<autoware::pointcloud_preprocessor::CombineCloudHandler<autoware::pointcloud_preprocessor::PointCloud2Traits>
+        >&, int, double, bool)::{lambda()#1}
+      callback_type: timer_callback
+      period_ns: 200000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/concatenate_data/callback_4:
+      callback_legend: subscription_0
+      callback_symbol: autoware::pointcloud_preprocessor::PointCloudConcatenateDataSynchronizerComponentTemplated<autoware::pointcloud_preprocessor::PointCloud2Traits>::initialize_pub_sub()::{lambda(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/right/pointcloud_before_sync
+      Frequency:
+        avg: 10.000
+        std: 0.160
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.220
+        filename_hist: Frequency_sensing_lidar_concatenate_data_callback_4_hist
+      Period:
+        avg: 99.990
+        std: 16.856
+        min: 9.061
+        max: 267.062
+        p50: 100.747
+        p95: 124.026
+        p99: 141.949
+        filename_hist: Period_sensing_lidar_concatenate_data_callback_4_hist
+      Latency:
+        avg: 0.042
+        std: 0.104
+        min: 0.004
+        max: 1.846
+        p50: 0.032
+        p95: 0.092
+        p99: 0.158
+        filename_hist: Latency_sensing_lidar_concatenate_data_callback_4_hist
+    /sensing/lidar/concatenate_data/callback_5:
+      callback_legend: subscription_1
+      callback_symbol: autoware::pointcloud_preprocessor::PointCloudConcatenateDataSynchronizerComponentTemplated<autoware::pointcloud_preprocessor::PointCloud2Traits>::initialize_pub_sub()::{lambda(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/top/pointcloud_before_sync
+      Frequency:
+        avg: 10.000
+        std: 0.160
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.220
+        filename_hist: Frequency_sensing_lidar_concatenate_data_callback_5_hist
+      Period:
+        avg: 99.990
+        std: 17.502
+        min: 12.628
+        max: 266.756
+        p50: 100.446
+        p95: 124.926
+        p99: 142.704
+        filename_hist: Period_sensing_lidar_concatenate_data_callback_5_hist
+      Latency:
+        avg: 1.903
+        std: 1.104
+        min: 0.005
+        max: 5.924
+        p50: 1.664
+        p95: 4.048
+        p99: 5.363
+        filename_hist: Latency_sensing_lidar_concatenate_data_callback_5_hist
+    /sensing/lidar/concatenate_data/callback_6:
+      callback_legend: subscription_2
+      callback_symbol: autoware::pointcloud_preprocessor::PointCloudConcatenateDataSynchronizerComponentTemplated<autoware::pointcloud_preprocessor::PointCloud2Traits>::initialize_pub_sub()::{lambda(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/left/pointcloud_before_sync
+      Frequency:
+        avg: 10.000
+        std: 0.160
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.220
+        filename_hist: Frequency_sensing_lidar_concatenate_data_callback_6_hist
+      Period:
+        avg: 99.992
+        std: 16.953
+        min: 10.557
+        max: 267.178
+        p50: 100.626
+        p95: 123.304
+        p99: 142.005
+        filename_hist: Period_sensing_lidar_concatenate_data_callback_6_hist
+      Latency:
+        avg: 0.086
+        std: 0.343
+        min: 0.004
+        max: 5.389
+        p50: 0.021
+        p95: 0.121
+        p99: 1.806
+        filename_hist: Latency_sensing_lidar_concatenate_data_callback_6_hist
+/sensing/lidar/left/crop_box_filter_mirror:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_left_crop_box_filter_mirror
+    Period: Period_sensing_lidar_left_crop_box_filter_mirror
+    Latency: Latency_sensing_lidar_left_crop_box_filter_mirror
+  callbacks:
+    /sensing/lidar/left/crop_box_filter_mirror/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/left/self_cropped/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.218
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_sensing_lidar_left_crop_box_filter_mirror_callback_0_hist
+      Period:
+        avg: 99.993
+        std: 16.184
+        min: 8.937
+        max: 267.338
+        p50: 100.823
+        p95: 121.582
+        p99: 140.523
+        filename_hist: Period_sensing_lidar_left_crop_box_filter_mirror_callback_0_hist
+      Latency:
+        avg: 0.198
+        std: 0.133
+        min: 0.071
+        max: 0.836
+        p50: 0.155
+        p95: 0.572
+        p99: 0.620
+        filename_hist: Latency_sensing_lidar_left_crop_box_filter_mirror_callback_0_hist
+/sensing/lidar/left/crop_box_filter_self:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_left_crop_box_filter_self
+    Period: Period_sensing_lidar_left_crop_box_filter_self
+    Latency: Latency_sensing_lidar_left_crop_box_filter_self
+  callbacks:
+    /sensing/lidar/left/crop_box_filter_self/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/left/pointcloud_raw_ex
+      Frequency:
+        avg: 10.000
+        std: 0.218
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_sensing_lidar_left_crop_box_filter_self_callback_0_hist
+      Period:
+        avg: 99.993
+        std: 16.120
+        min: 8.313
+        max: 267.177
+        p50: 100.788
+        p95: 121.404
+        p99: 140.951
+        filename_hist: Period_sensing_lidar_left_crop_box_filter_self_callback_0_hist
+      Latency:
+        avg: 0.512
+        std: 0.318
+        min: 0.202
+        max: 1.745
+        p50: 0.400
+        p95: 1.348
+        p99: 1.589
+        filename_hist: Latency_sensing_lidar_left_crop_box_filter_self_callback_0_hist
+/sensing/lidar/left/distortion_corrector_node:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_left_distortion_corrector_node
+    Period: Period_sensing_lidar_left_distortion_corrector_node
+    Latency: Latency_sensing_lidar_left_distortion_corrector_node
+  callbacks:
+    /sensing/lidar/left/distortion_corrector_node/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::All>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/vehicle_velocity_converter/twist_with_covariance
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/left/distortion_corrector_node/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<sensor_msgs::msg::Imu_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::All>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/imu/imu_data
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/left/distortion_corrector_node/callback_2:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::DistortionCorrectorComponent::*(autoware::pointcloud_preprocessor::DistortionCorrectorComponent*,
+        std::_Placeholder<1>))(std::unique_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        >, std::default_delete<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/left/mirror_cropped/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.218
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_sensing_lidar_left_distortion_corrector_node_callback_2_hist
+      Period:
+        avg: 99.993
+        std: 16.212
+        min: 9.204
+        max: 267.348
+        p50: 100.754
+        p95: 121.719
+        p99: 140.335
+        filename_hist: Period_sensing_lidar_left_distortion_corrector_node_callback_2_hist
+      Latency:
+        avg: 0.774
+        std: 0.621
+        min: 0.245
+        max: 3.335
+        p50: 0.511
+        p95: 2.539
+        p99: 2.614
+        filename_hist: Latency_sensing_lidar_left_distortion_corrector_node_callback_2_hist
+/sensing/lidar/left/glog_component:
+  filename_timeseries: {}
+  callbacks: {}
+/sensing/lidar/left/pointcloud_preprocessor/managed_tf_listener_impl_a96dd7124f1:
+  filename_timeseries: {}
+  callbacks: {}
+/sensing/lidar/left/ring_outlier_filter:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_left_ring_outlier_filter
+    Period: Period_sensing_lidar_left_ring_outlier_filter
+    Latency: Latency_sensing_lidar_left_ring_outlier_filter
+  callbacks:
+    /sensing/lidar/left/ring_outlier_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/left/rectified/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.218
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_sensing_lidar_left_ring_outlier_filter_callback_0_hist
+      Period:
+        avg: 99.993
+        std: 16.334
+        min: 10.199
+        max: 267.348
+        p50: 100.740
+        p95: 121.984
+        p99: 139.835
+        filename_hist: Period_sensing_lidar_left_ring_outlier_filter_callback_0_hist
+      Latency:
+        avg: 0.385
+        std: 0.288
+        min: 0.132
+        max: 1.473
+        p50: 0.269
+        p95: 1.087
+        p99: 1.241
+        filename_hist: Latency_sensing_lidar_left_ring_outlier_filter_callback_0_hist
+/sensing/lidar/right/crop_box_filter_mirror:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_right_crop_box_filter_mirror
+    Period: Period_sensing_lidar_right_crop_box_filter_mirror
+    Latency: Latency_sensing_lidar_right_crop_box_filter_mirror
+  callbacks:
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/right/self_cropped/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.218
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_sensing_lidar_right_crop_box_filter_mirror_callback_0_hist
+      Period:
+        avg: 99.993
+        std: 16.126
+        min: 8.255
+        max: 266.933
+        p50: 100.878
+        p95: 122.102
+        p99: 139.936
+        filename_hist: Period_sensing_lidar_right_crop_box_filter_mirror_callback_0_hist
+      Latency:
+        avg: 0.206
+        std: 0.140
+        min: 0.066
+        max: 0.890
+        p50: 0.158
+        p95: 0.582
+        p99: 0.641
+        filename_hist: Latency_sensing_lidar_right_crop_box_filter_mirror_callback_0_hist
+/sensing/lidar/right/crop_box_filter_self:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_right_crop_box_filter_self
+    Period: Period_sensing_lidar_right_crop_box_filter_self
+    Latency: Latency_sensing_lidar_right_crop_box_filter_self
+  callbacks:
+    /sensing/lidar/right/crop_box_filter_self/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/right/pointcloud_raw_ex
+      Frequency:
+        avg: 10.000
+        std: 0.218
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_sensing_lidar_right_crop_box_filter_self_callback_0_hist
+      Period:
+        avg: 99.993
+        std: 16.061
+        min: 7.910
+        max: 266.917
+        p50: 100.899
+        p95: 122.395
+        p99: 140.178
+        filename_hist: Period_sensing_lidar_right_crop_box_filter_self_callback_0_hist
+      Latency:
+        avg: 0.541
+        std: 0.328
+        min: 0.198
+        max: 1.838
+        p50: 0.422
+        p95: 1.422
+        p99: 1.697
+        filename_hist: Latency_sensing_lidar_right_crop_box_filter_self_callback_0_hist
+/sensing/lidar/right/distortion_corrector_node:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_right_distortion_corrector_node
+    Period: Period_sensing_lidar_right_distortion_corrector_node
+    Latency: Latency_sensing_lidar_right_distortion_corrector_node
+  callbacks:
+    /sensing/lidar/right/distortion_corrector_node/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::All>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/vehicle_velocity_converter/twist_with_covariance
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/right/distortion_corrector_node/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<sensor_msgs::msg::Imu_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::All>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/imu/imu_data
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::DistortionCorrectorComponent::*(autoware::pointcloud_preprocessor::DistortionCorrectorComponent*,
+        std::_Placeholder<1>))(std::unique_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        >, std::default_delete<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/right/mirror_cropped/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.218
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_sensing_lidar_right_distortion_corrector_node_callback_2_hist
+      Period:
+        avg: 99.993
+        std: 16.156
+        min: 8.389
+        max: 266.928
+        p50: 100.901
+        p95: 122.216
+        p99: 139.833
+        filename_hist: Period_sensing_lidar_right_distortion_corrector_node_callback_2_hist
+      Latency:
+        avg: 0.813
+        std: 0.630
+        min: 0.250
+        max: 3.430
+        p50: 0.548
+        p95: 2.582
+        p99: 2.676
+        filename_hist: Latency_sensing_lidar_right_distortion_corrector_node_callback_2_hist
+/sensing/lidar/right/glog_component:
+  filename_timeseries: {}
+  callbacks: {}
+/sensing/lidar/right/pointcloud_preprocessor/managed_tf_listener_impl_ebcdb3163907:
+  filename_timeseries: {}
+  callbacks: {}
+/sensing/lidar/right/ring_outlier_filter:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_right_ring_outlier_filter
+    Period: Period_sensing_lidar_right_ring_outlier_filter
+    Latency: Latency_sensing_lidar_right_ring_outlier_filter
+  callbacks:
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/right/rectified/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.218
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_sensing_lidar_right_ring_outlier_filter_callback_0_hist
+      Period:
+        avg: 99.994
+        std: 16.290
+        min: 8.891
+        max: 266.957
+        p50: 100.773
+        p95: 122.451
+        p99: 139.359
+        filename_hist: Period_sensing_lidar_right_ring_outlier_filter_callback_0_hist
+      Latency:
+        avg: 0.397
+        std: 0.299
+        min: 0.134
+        max: 3.330
+        p50: 0.277
+        p95: 1.076
+        p99: 1.263
+        filename_hist: Latency_sensing_lidar_right_ring_outlier_filter_callback_0_hist
+/sensing/lidar/top/crop_box_filter_mirror:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_top_crop_box_filter_mirror
+    Period: Period_sensing_lidar_top_crop_box_filter_mirror
+    Latency: Latency_sensing_lidar_top_crop_box_filter_mirror
+  callbacks:
+    /sensing/lidar/top/crop_box_filter_mirror/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/top/self_cropped/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.154
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.160
+        filename_hist: Frequency_sensing_lidar_top_crop_box_filter_mirror_callback_0_hist
+      Period:
+        avg: 100.015
+        std: 16.537
+        min: 11.351
+        max: 266.778
+        p50: 100.756
+        p95: 123.482
+        p99: 139.486
+        filename_hist: Period_sensing_lidar_top_crop_box_filter_mirror_callback_0_hist
+      Latency:
+        avg: 0.315
+        std: 0.263
+        min: 0.091
+        max: 1.426
+        p50: 0.188
+        p95: 0.944
+        p99: 1.092
+        filename_hist: Latency_sensing_lidar_top_crop_box_filter_mirror_callback_0_hist
+/sensing/lidar/top/crop_box_filter_self:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_top_crop_box_filter_self
+    Period: Period_sensing_lidar_top_crop_box_filter_self
+    Latency: Latency_sensing_lidar_top_crop_box_filter_self
+  callbacks:
+    /sensing/lidar/top/crop_box_filter_self/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/top/pointcloud_raw_ex
+      Frequency:
+        avg: 10.000
+        std: 0.154
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.160
+        filename_hist: Frequency_sensing_lidar_top_crop_box_filter_self_callback_0_hist
+      Period:
+        avg: 100.014
+        std: 16.440
+        min: 10.901
+        max: 266.778
+        p50: 100.744
+        p95: 122.448
+        p99: 139.515
+        filename_hist: Period_sensing_lidar_top_crop_box_filter_self_callback_0_hist
+      Latency:
+        avg: 0.483
+        std: 0.343
+        min: 0.180
+        max: 1.901
+        p50: 0.339
+        p95: 1.297
+        p99: 1.505
+        filename_hist: Latency_sensing_lidar_top_crop_box_filter_self_callback_0_hist
+/sensing/lidar/top/distortion_corrector_node:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_top_distortion_corrector_node
+    Period: Period_sensing_lidar_top_distortion_corrector_node
+    Latency: Latency_sensing_lidar_top_distortion_corrector_node
+  callbacks:
+    /sensing/lidar/top/distortion_corrector_node/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::All>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::TwistWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/vehicle_velocity_converter/twist_with_covariance
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/top/distortion_corrector_node/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<sensor_msgs::msg::Imu_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::All>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/imu/imu_data
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /sensing/lidar/top/distortion_corrector_node/callback_2:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::DistortionCorrectorComponent::*(autoware::pointcloud_preprocessor::DistortionCorrectorComponent*,
+        std::_Placeholder<1>))(std::unique_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        >, std::default_delete<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/top/mirror_cropped/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.154
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.160
+        filename_hist: Frequency_sensing_lidar_top_distortion_corrector_node_callback_2_hist
+      Period:
+        avg: 100.016
+        std: 16.614
+        min: 11.628
+        max: 266.778
+        p50: 100.819
+        p95: 123.939
+        p99: 139.519
+        filename_hist: Period_sensing_lidar_top_distortion_corrector_node_callback_2_hist
+      Latency:
+        avg: 1.525
+        std: 1.149
+        min: 0.414
+        max: 5.057
+        p50: 1.012
+        p95: 3.984
+        p99: 4.858
+        filename_hist: Latency_sensing_lidar_top_distortion_corrector_node_callback_2_hist
+/sensing/lidar/top/glog_component:
+  filename_timeseries: {}
+  callbacks: {}
+/sensing/lidar/top/pointcloud_preprocessor/managed_tf_listener_impl_f918634d11c2:
+  filename_timeseries: {}
+  callbacks: {}
+/sensing/lidar/top/ring_outlier_filter:
+  filename_timeseries:
+    Frequency: Frequency_sensing_lidar_top_ring_outlier_filter
+    Period: Period_sensing_lidar_top_ring_outlier_filter
+    Latency: Latency_sensing_lidar_top_ring_outlier_filter
+  callbacks:
+    /sensing/lidar/top/ring_outlier_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/top/rectified/pointcloud_ex
+      Frequency:
+        avg: 10.000
+        std: 0.154
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.160
+        filename_hist: Frequency_sensing_lidar_top_ring_outlier_filter_callback_0_hist
+      Period:
+        avg: 100.016
+        std: 16.907
+        min: 12.516
+        max: 266.796
+        p50: 100.602
+        p95: 123.794
+        p99: 139.674
+        filename_hist: Period_sensing_lidar_top_ring_outlier_filter_callback_0_hist
+      Latency:
+        avg: 0.799
+        std: 0.574
+        min: 0.201
+        max: 2.923
+        p50: 0.618
+        p95: 2.013
+        p99: 2.552
+        filename_hist: Latency_sensing_lidar_top_ring_outlier_filter_callback_0_hist
+/sensing/vehicle_velocity_converter:
+  filename_timeseries:
+    Frequency: Frequency_sensing_vehicle_velocity_converter
+    Period: Period_sensing_vehicle_velocity_converter
+    Latency: Latency_sensing_vehicle_velocity_converter
+  callbacks:
+    /sensing/vehicle_velocity_converter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::vehicle_velocity_converter::VehicleVelocityConverter::*(autoware::vehicle_velocity_converter::VehicleVelocityConverter*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_vehicle_msgs::msg::VelocityReport_<std::allocator<void>
+        > >)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /vehicle/status/velocity_status
+      Frequency:
+        avg: 20.000
+        std: 0.339
+        min: 19.000
+        max: 21.000
+        p50: 20.000
+        p95: 20.650
+        p99: 21.000
+        filename_hist: Frequency_sensing_vehicle_velocity_converter_callback_0_hist
+      Period:
+        avg: 50.019
+        std: 15.007
+        min: 1.774
+        max: 221.259
+        p50: 49.453
+        p95: 74.400
+        p99: 93.280
+        filename_hist: Period_sensing_vehicle_velocity_converter_callback_0_hist
+      Latency:
+        avg: 0.233
+        std: 0.308
+        min: 0.067
+        max: 10.262
+        p50: 0.155
+        p95: 0.619
+        p99: 0.892
+        filename_hist: Latency_sensing_vehicle_velocity_converter_callback_0_hist
