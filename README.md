@@ -25,9 +25,9 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
 1. ALB-Frameworkのクローン
 
     ```bash
-    git clone https://github.com/akiyama-lab/alb-framework.git
-    cd alb-framework
-    git submodule update --init --recursive
+    $ git clone https://github.com/akiyama-lab/alb-framework.git
+    $ cd alb-framework
+    $ git submodule update --init --recursive
     ```
 
 2. Autowareのソースコードの取得
@@ -36,22 +36,22 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     ワークツリーとして追加したディレクトリに移動し，ソースコードを取得します．
 
     ```bash
-    cd autoware
-    ./setup-dev-env.sh
-    mkdir src
-    vcs import src < autoware.repos
+    $ cd autoware
+    $ ./setup-dev-env.sh
+    $ mkdir src
+    $ vcs import src < autoware.repos
     ```
 
     複数バージョンの Autoware で計測する場合には，ワークツリーを利用して別ディレクトリにソースコードを取得します．
     以下は Autoware 1.5.0 をワークツリーとして追加する例です．
 
     ```bash
-    cd autoware
-    git worktree add ../autoware-1.5.0 1.5.0
-    cd ../autoware-1.5.0
-    ./setup-dev-env.sh
-    mkdir src
-    vcs import src < autoware.repos
+    $ cd autoware
+    $ git worktree add ../autoware-1.5.0 1.5.0
+    $ cd ../autoware-1.5.0
+    $ ./setup-dev-env.sh
+    $ mkdir src
+    $ vcs import src < autoware.repos
     ```
 
 3. CARETのセットアップ
@@ -60,14 +60,14 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     [caret#217](https://github.com/tier4/caret/issues/217) にあるように，agnocast パッケージのトレースポイントを追加するために，[agnocast ブランチ](https://github.com/tier4/caret/tree/agnocast)を指定しています．
 
     ```bash
-    cd caret
-    mkdir src
-    vcs import src < caret.repos
-    ./setup_caret.sh
-    source /opt/ros/humble/setup.bash
-    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
-    source ~/alb-framework/caret/install/local_setup.bash
-    ros2 run tracetools status # return Tracing enabled
+    $ cd caret
+    $ mkdir src
+    $ vcs import src < caret.repos
+    $ ./setup_caret.sh
+    $ source /opt/ros/humble/setup.bash
+    $ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+    $ source ~/alb-framework/caret/install/local_setup.bash
+    $ ros2 run tracetools status # return Tracing enabled
     ```
 
 4. Autowareのビルド
@@ -76,12 +76,12 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     [caret known issues](https://tier4.github.io/caret_doc/main/faq/known_issues/#build)に記載されている手順に従います．
 
     ```bash
-    cd autoware-1.5.0
-    source ~/alb-framework/caret/install/local_setup.bash
-    sudo cp /opt/ros/humble/share/pcl_ros/cmake/export_pcl_rosExport.cmake /opt/ros/humble/share/pcl_ros/cmake/export_pcl_rosExport.cmake.bak
-    sudo sed -i -e 's/\/opt\/ros\/humble\/lib\/libtracetools.so;//g' /opt/ros/humble/share/pcl_ros/cmake/export_pcl_rosExport.cmake
-    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=Off -DCMAKE_CXX_FLAGS="-w"
-    ros2 caret check_caret_rclcpp ./
+    $ cd autoware-1.5.0
+    $ source ~/alb-framework/caret/install/local_setup.bash
+    $ sudo cp /opt/ros/humble/share/pcl_ros/cmake/export_pcl_rosExport.cmake /opt/ros/humble/share/pcl_ros/cmake/export_pcl_rosExport.cmake.bak
+    $ sudo sed -i -e 's/\/opt\/ros\/humble\/lib\/libtracetools.so;//g' /opt/ros/humble/share/pcl_ros/cmake/export_pcl_rosExport.cmake
+    $ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=Off -DCMAKE_CXX_FLAGS="-w"
+    $ ros2 caret check_caret_rclcpp ./
     ```
 
 5. AWSIM Labsのビルド
@@ -123,9 +123,9 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     CARETで無視するトピックやノードを設定し，Autowareを起動します．
 
     ```bash
-    source ~/alb-framework/caret/setenv_caret.bash
-    source ~/alb-framework/autoware-1.5.0/install/local_setup.bash
-    ros2 launch autoware_launch e2e_simulator.launch.xml vehicle_model:=awsim_labs_vehicle sensor_model:=awsim_labs_sensor_kit map_path:=/home/akilab/autoware_map/nishishinjuku_autoware_map launch_vehicle_interface:=true
+    $ source ~/alb-framework/caret/setenv_caret.bash
+    $ source ~/alb-framework/autoware-1.5.0/install/local_setup.bash
+    $ ros2 launch autoware_launch e2e_simulator.launch.xml vehicle_model:=awsim_labs_vehicle sensor_model:=awsim_labs_sensor_kit map_path:=/home/akilab/autoware_map/nishishinjuku_autoware_map launch_vehicle_interface:=true
     ```
 
 2. AWSIM Labsの実行
@@ -134,8 +134,8 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     自車両が表示され，Autowareで自己位置が認識されるまで待ちます．
 
     ```bash
-    cd ~/alb-framework/AWSIM-Labs
-    ./awsim_labs.x86_64 -script ../AW-Runtime-Verification/AWSIM-Script/cutin/cutin20-10-6.script -output ../output/AW-runtime-Verification/Traces
+    $ cd ~/alb-framework/AWSIM-Labs
+    $ ./awsim_labs.x86_64 -script ../AW-Runtime-Verification/AWSIM-Script/cutin/cutin20-10-6.script -output ../output/AW-runtime-Verification/Traces
     ```
 
 3. CARETでトレース
@@ -143,9 +143,9 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     Autowareの動作中に，CARETでトレースを開始します．
 
     ```bash
-    source ~/alb-framework/caret/install/local_setup.bash
-    export ROS_TRACE_DIR=~/alb-framework/output/caret_trace_data
-    ros2 caret record -s cutin-20-10-6
+    $ source ~/alb-framework/caret/install/local_setup.bash
+    $ export ROS_TRACE_DIR=~/alb-framework/output/caret_trace_data
+    $ ros2 caret record -s cutin-20-10-6
     ```
 
 4. Autowareの停止イベントの取得
@@ -154,7 +154,7 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     停止イベントの時間は分析で使用します．
 
     ```bash
-    python3 ./tools/autoware_event_capture.py | tee output/topic/aw-runtime-verification/cutin30-20-1.yaml
+    $ python3 ./tools/autoware_event_capture.py | tee output/topic/aw-runtime-verification/cutin30-20-1.yaml
     ```
 
 5. AWSIM Labsのシナリオを再開
@@ -163,7 +163,7 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     シナリオを再開するために，以下のコマンドを実行します．
 
     ```bash
-    ros2 topic pub --once /awsim/set_goal_trigger std_msgs/msg/Bool "{data: true}"
+    $ ros2 topic pub --once /awsim/set_goal_trigger std_msgs/msg/Bool "{data: true}"
     ```
 
 5. トレースの停止
@@ -178,8 +178,8 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     以下のコマンドで，シナリオスクリプトとトレースデータを指定して評価を実行します．
 
     ```bash
-    cd ~/alb-framework/AW-Runtime-Verification
-    maude AW-Checker/propositions.maude
+    $ cd ~/alb-framework/AW-Runtime-Verification
+    $ maude AW-Checker/propositions.maude
     Maude> load ../output/aw-runtime-verification/Traces/lidar/cutin/cutin20-10-1.maude .
     Maude> load AW-Checker/metacom.maude .
     Maude> load ../output/aw-runtime-verification/Traces/lidar/cutin/properties-checking.maude .
@@ -212,8 +212,8 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     以下のコマンドで，トレースデータを指定して分析を実行します．
 
     ```bash
-    cd ~/alb-framework/output/caret_report
-    ./run.sh ../caret_trace_data/lidar-only/cutin-20-10-6
+    $ cd ~/alb-framework/output/caret_report
+    $ ./run.sh ../caret_trace_data/lidar-only/cutin-20-10-6
     ```
 
 参考までに，レポートは <https://akiyama-lab.github.io/alb-framework/> で公開しています．
