@@ -128,6 +128,12 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     $ ros2 launch autoware_launch e2e_simulator.launch.xml vehicle_model:=awsim_labs_vehicle sensor_model:=awsim_labs_sensor_kit map_path:=/home/akilab/autoware_map/nishishinjuku_autoware_map launch_vehicle_interface:=true
     ```
 
+    Autowareのデフォルトではlidar-onlyになっています．camera-lidar-fusionで計測する場合には，以下のように `sensor_model` を変更してください．
+
+    ```bash
+    $ ros2 launch autoware_launch e2e_simulator.launch.xml vehicle_model:=awsim_labs_vehicle sensor_model:=awsim_labs_sensor_kit map_path:=/home/akilab/autoware_map/nishishinjuku_autoware_map launch_vehicle_interface:=true perception_mode:=camera_lidar_fusion
+    ```
+
 2. AWSIM Labsの実行
 
     AWSIM Labsの実行ファイルを起動します．
