@@ -1,0 +1,145 @@
+
+=== Autoware Topic Capture Node ===
+Press Enter to start
+
+=== Node STARTED ===
+
+Press Enter to exit
+
+[operation_mode/state] autonomous mode started (mode: 2)
+---
+stamp:
+  sec: 1768896801
+  nanosec: 611251968
+mode: 2
+is_autoware_control_enabled: true
+is_in_transition: false
+is_stop_mode_available: true
+is_autonomous_mode_available: true
+is_local_mode_available: true
+is_remote_mode_available: true
+
+[velocity_status] decelerating start: 8.376432 -> 8.376323 m/s
+---
+header:
+  stamp:
+    sec: 1768896817
+    nanosec: 371799808
+  frame_id: base_link
+longitudinal_velocity: 8.376322746276855
+lateral_velocity: 0.005592942237854004
+heading_rate: 0.0008255799184553325
+
+[obstacle_stop/virtual_walls] first match
+---
+header:
+  stamp:
+    sec: 1768896817
+    nanosec: 622224128
+  frame_id: map
+ns: stop_factor_text
+id: 0
+type: 9
+action: 0
+pose:
+  position:
+    x: 81651.73675288586
+    y: 50490.98329980419
+    z: 42.060760484784026
+  orientation:
+    x: 0.0038746178911626982
+    y: 0.004656122564418526
+    z: -0.639638187648191
+    w: 0.7686522599726096
+scale:
+  x: 0.0
+  y: 0.0
+  z: 1.0
+color:
+  r: 1.0
+  g: 1.0
+  b: 1.0
+  a: 1.0
+lifetime:
+  sec: 0
+  nanosec: 500000000
+frame_locked: true
+points: []
+colors: []
+texture_resource: ''
+texture:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: ''
+  format: ''
+  data: []
+uv_coordinates: []
+text: obstacle stop
+mesh_resource: ''
+mesh_file:
+  filename: ''
+  data: []
+mesh_use_embedded_materials: false
+
+[obstacle_cruise/virtual_walls] first match
+---
+header:
+  stamp:
+    sec: 1768896821
+    nanosec: 230387712
+  frame_id: map
+ns: slow_down_factor_text
+id: 0
+type: 9
+action: 0
+pose:
+  position:
+    x: 81654.33011427618
+    y: 50476.94261176233
+    z: 42.28174393167561
+  orientation:
+    x: 0.0017140892737330063
+    y: 0.0020592669992687937
+    z: -0.6397488327061202
+    w: 0.768579372848728
+scale:
+  x: 0.0
+  y: 0.0
+  z: 1.0
+color:
+  r: 1.0
+  g: 1.0
+  b: 1.0
+  a: 1.0
+lifetime:
+  sec: 0
+  nanosec: 500000000
+frame_locked: true
+points: []
+colors: []
+texture_resource: ''
+texture:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: ''
+  format: ''
+  data: []
+uv_coordinates: []
+text: obstacle cruise
+mesh_resource: ''
+mesh_file:
+  filename: ''
+  data: []
+mesh_use_embedded_materials: false
+
+=== Shutting down... ===
+
+=== Captured Topics Summary (sorted) ===
+autonomous_mode: 1768896801611251968
+decelerate: 1768896817371799808
+obstacle_stop: 1768896817622224128
+obstacle_cruise: 1768896821230387712
