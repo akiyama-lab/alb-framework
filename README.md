@@ -18,15 +18,17 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
 
   Autoware と連携可能なシミュレーション環境で，様々な走行シナリオを実行可能
 
+![ALB-Framework Overview](./overview.png "ALB-Framework Overview")
+
 ## セットアップ方法
 
 1. ALB-Frameworkのクローン
 
-```bash
-git clone https://github.com/akiyama-lab/alb-framework.git
-cd alb-framework
-git submodule update --init --recursive
-```
+    ```bash
+    git clone https://github.com/akiyama-lab/alb-framework.git
+    cd alb-framework
+    git submodule update --init --recursive
+    ```
 
 2. Autowareのソースコードの取得
 
@@ -146,7 +148,16 @@ git submodule update --init --recursive
     ros2 caret record -s cutin-20-10-6
     ```
 
-4. AWSIM Labsのシナリオを再開
+4. Autowareの停止イベントの取得
+
+    Autowareの停止などのイベントを取得するために，[`tools/autoware_event_capture.py](./tools/autoware_event_capture.py) を実行します．
+    停止イベントの時間は分析で使用します．
+
+    ```bash
+    python3 ./tools/autoware_event_capture.py | tee output/topic/aw-runtime-verification/cutin30-20-1.yaml
+    ```
+
+5. AWSIM Labsのシナリオを再開
 
     AWSIM Labsは，初期位置に自車両を配置した後，シナリオが一時停止状態になります．
     シナリオを再開するために，以下のコマンドを実行します．
@@ -158,3 +169,51 @@ git submodule update --init --recursive
 5. トレースの停止
 
     シナリオが終了したら，CARETでトレースを停止します．
+
+## 分析
+
+1. AW-Checkerによる走行挙動の評価
+
+    AW-Runtime-VerificationのAW-Checkerを使用して，AWSIM Labsでの走行挙動を評価します．
+    以下のコマンドで，シナリオスクリプトとトレースデータを指定して評価を実行します．
+
+    ```bash
+    cd ~/alb-framework/AW-Runtime-Verification
+    maude AW-Checker/propositions.maude
+    Maude> load ../output/aw-runtime-verification/Traces/lidar/cutin/cutin20-10-1.maude .
+    Maude> load AW-Checker/metacom.maude .
+    Maude> load ../output/aw-runtime-verification/Traces/lidar/cutin/properties-checking.maude .
+    ```
+
+2. 時間窓の指定
+
+    `tools/autoware_event_capture.py` で取得した停止イベントの時間をもとに，分析する時間窓を指定します．
+    停止イベントは，トレースフェーズで出力されるYAMLファイルで確認できます．[tools/autoware_event_capture.py](./tools/extract_topic_timestamps.py) を使うとより簡単にイベントの時間を抽出できます．
+
+    これらの時間を `run.sh` で `start_ns` と `end_ns` の環境変数を設定することで，特定の時間窓に基づいて分析を行うことができます．
+    例えば，停止イベントが 1234567890123456789 ナノ秒のタイムスタンプを持つ場合，以下のように時間窓を指定します．
+
+    ```bash
+    export START_NS=1234567890123456789
+    export END_NS=1234567890123456789
+    ```
+
+    `message_flow_trigger` と `message_flow_margin_s` の環境変数を設定することで，停止イベントの前後に一定の時間を追加して分析することもできます．
+    例えば，停止イベントの前後に3秒を切り出す場合，以下のように時間窓を指定します．
+
+    ```bash
+    export message_flow_trigger=1234567890123456789
+    export message_flow_margin_s=3
+    ```
+
+3. caret_reportによる内部処理遅延の分析
+
+    caret_reportを使用して，Autowareの内部処理遅延を分析します．
+    以下のコマンドで，トレースデータを指定して分析を実行します．
+
+    ```bash
+    cd ~/alb-framework/output/caret_report
+    ./run.sh ../caret_trace_data/lidar-only/cutin-20-10-6
+    ```
+
+参考までに，レポートは <https://akiyama-lab.github.io/alb-framework/> で公開しています．
