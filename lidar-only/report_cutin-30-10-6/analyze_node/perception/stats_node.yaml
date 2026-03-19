@@ -1,0 +1,2735 @@
+/perception/object_recognition/detection/centerpoint/lidar_centerpoint:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_centerpoint_lidar_centerpoint
+    Period: Period_perception_object_recognition_detection_centerpoint_lidar_centerpoint
+    Latency: Latency_perception_object_recognition_detection_centerpoint_lidar_centerpoint
+  callbacks:
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.653
+        std: 0.830
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_centerpoint_lidar_centerpoint_callback_1_hist
+      Period:
+        avg: 103.444
+        std: 27.879
+        min: 1.176
+        max: 310.661
+        p50: 99.699
+        p95: 154.269
+        p99: 208.049
+        filename_hist: Period_perception_object_recognition_detection_centerpoint_lidar_centerpoint_callback_1_hist
+      Latency:
+        avg: 0.390
+        std: 0.286
+        min: 0.076
+        max: 2.361
+        p50: 0.273
+        p95: 0.945
+        p99: 1.320
+        filename_hist: Latency_perception_object_recognition_detection_centerpoint_lidar_centerpoint_callback_1_hist
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (negotiated::NegotiatedSubscription::*(negotiated::NegotiatedSubscription*,
+        std::_Placeholder<1>))(negotiated_interfaces::msg::NegotiatedTopicsInfo_<std::allocator<void>
+        > const&)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/concatenated/pointcloud/cuda
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_3:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (cuda_blackboard::CudaBlackboardSubscriber<cuda_blackboard::CudaPointCloud2>::*(cuda_blackboard::CudaBlackboardSubscriber<cuda_blackboard::CudaPointCloud2>*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const> const&)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/concatenated/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.435
+        min: 8.000
+        max: 12.000
+        p50: 10.000
+        p95: 10.300
+        p99: 11.260
+        filename_hist: Frequency_perception_object_recognition_detection_centerpoint_lidar_centerpoint_callback_3_hist
+      Period:
+        avg: 100.013
+        std: 24.103
+        min: 2.961
+        max: 300.257
+        p50: 101.011
+        p95: 130.548
+        p99: 159.222
+        filename_hist: Period_perception_object_recognition_detection_centerpoint_lidar_centerpoint_callback_3_hist
+      Latency:
+        avg: 20.448
+        std: 28.325
+        min: 2.735
+        max: 257.852
+        p50: 12.982
+        p95: 75.989
+        p99: 137.384
+        filename_hist: Latency_perception_object_recognition_detection_centerpoint_lidar_centerpoint_callback_3_hist
+/perception/object_recognition/detection/clustering/detected_object_feature_remover:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_clustering_detected_object_feature_remover
+    Period: Period_perception_object_recognition_detection_clustering_detected_object_feature_remover
+    Latency: Latency_perception_object_recognition_detection_clustering_detected_object_feature_remover
+  callbacks:
+    /perception/object_recognition/detection/clustering/detected_object_feature_remover/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::detected_object_feature_remover::DetectedObjectFeatureRemover::*(autoware::detected_object_feature_remover::DetectedObjectFeatureRemover*,
+        std::_Placeholder<1>))(std::shared_ptr<tier4_perception_msgs::msg::DetectedObjectsWithFeature_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/clustering/objects_with_feature
+      Frequency:
+        avg: 9.952
+        std: 0.619
+        min: 8.000
+        max: 12.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.170
+        filename_hist: Frequency_perception_object_recognition_detection_clustering_detected_object_feature_remover_callback_0_hist
+      Period:
+        avg: 100.460
+        std: 35.960
+        min: 1.668
+        max: 312.794
+        p50: 100.537
+        p95: 152.096
+        p99: 225.118
+        filename_hist: Period_perception_object_recognition_detection_clustering_detected_object_feature_remover_callback_0_hist
+      Latency:
+        avg: 0.135
+        std: 0.104
+        min: 0.033
+        max: 0.930
+        p50: 0.096
+        p95: 0.342
+        p99: 0.422
+        filename_hist: Latency_perception_object_recognition_detection_clustering_detected_object_feature_remover_callback_0_hist
+/perception/object_recognition/detection/clustering/euclidean_cluster:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_clustering_euclidean_cluster
+    Period: Period_perception_object_recognition_detection_clustering_euclidean_cluster
+    Latency: Latency_perception_object_recognition_detection_clustering_euclidean_cluster
+  callbacks:
+    /perception/object_recognition/detection/clustering/euclidean_cluster/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::euclidean_cluster::VoxelGridBasedEuclideanClusterNode::*(autoware::euclidean_cluster::VoxelGridBasedEuclideanClusterNode*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/pointcloud_map_filtered/pointcloud
+      Frequency:
+        avg: 9.947
+        std: 0.517
+        min: 8.000
+        max: 12.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.260
+        filename_hist: Frequency_perception_object_recognition_detection_clustering_euclidean_cluster_callback_0_hist
+      Period:
+        avg: 100.530
+        std: 36.966
+        min: 1.803
+        max: 312.412
+        p50: 100.680
+        p95: 159.084
+        p99: 227.685
+        filename_hist: Period_perception_object_recognition_detection_clustering_euclidean_cluster_callback_0_hist
+      Latency:
+        avg: 1.522
+        std: 1.032
+        min: 0.208
+        max: 4.864
+        p50: 1.191
+        p95: 3.523
+        p99: 4.114
+        filename_hist: Latency_perception_object_recognition_detection_clustering_euclidean_cluster_callback_0_hist
+/perception/object_recognition/detection/clustering/shape_estimation:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_clustering_shape_estimation
+    Period: Period_perception_object_recognition_detection_clustering_shape_estimation
+    Latency: Latency_perception_object_recognition_detection_clustering_shape_estimation
+  callbacks:
+    /perception/object_recognition/detection/clustering/shape_estimation/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::shape_estimation::ShapeEstimationNode::*(autoware::shape_estimation::ShapeEstimationNode*,
+        std::_Placeholder<1>))(std::shared_ptr<tier4_perception_msgs::msg::DetectedObjectsWithFeature_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/clustering/clusters
+      Frequency:
+        avg: 9.952
+        std: 0.463
+        min: 9.000
+        max: 12.000
+        p50: 10.000
+        p95: 10.850
+        p99: 11.170
+        filename_hist: Frequency_perception_object_recognition_detection_clustering_shape_estimation_callback_0_hist
+      Period:
+        avg: 100.462
+        std: 35.789
+        min: 1.699
+        max: 312.737
+        p50: 100.496
+        p95: 152.000
+        p99: 224.905
+        filename_hist: Period_perception_object_recognition_detection_clustering_shape_estimation_callback_0_hist
+      Latency:
+        avg: 0.633
+        std: 0.430
+        min: 0.142
+        max: 3.013
+        p50: 0.473
+        p95: 1.447
+        p99: 1.769
+        filename_hist: Latency_perception_object_recognition_detection_clustering_shape_estimation_callback_0_hist
+/perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node
+    Period: Period_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node
+    Latency: Latency_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node
+  callbacks:
+    /perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::detection_by_tracker::TrackerHandler::*(autoware::detection_by_tracker::TrackerHandler*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_perception_msgs::msg::TrackedObjects_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/tracking/objects
+      Frequency:
+        avg: 9.429
+        std: 1.144
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node_callback_0_hist
+      Period:
+        avg: 105.825
+        std: 24.709
+        min: 82.144
+        max: 310.818
+        p50: 98.579
+        p95: 157.622
+        p99: 213.530
+        filename_hist: Period_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node_callback_0_hist
+      Latency:
+        avg: 0.005
+        std: 0.008
+        min: 0.001
+        max: 0.193
+        p50: 0.004
+        p95: 0.009
+        p99: 0.016
+        filename_hist: Latency_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node_callback_0_hist
+    /perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::detection_by_tracker::DetectionByTracker::*(autoware::detection_by_tracker::DetectionByTracker*,
+        std::_Placeholder<1>))(std::shared_ptr<tier4_perception_msgs::msg::DetectedObjectsWithFeature_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/clustering/objects_with_feature
+      Frequency:
+        avg: 9.952
+        std: 0.489
+        min: 8.000
+        max: 12.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.170
+        filename_hist: Frequency_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node_callback_1_hist
+      Period:
+        avg: 100.464
+        std: 35.951
+        min: 1.645
+        max: 312.909
+        p50: 100.553
+        p95: 152.168
+        p99: 225.116
+        filename_hist: Period_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node_callback_1_hist
+      Latency:
+        avg: 0.308
+        std: 0.294
+        min: 0.063
+        max: 3.172
+        p50: 0.212
+        p95: 0.691
+        p99: 1.556
+        filename_hist: Latency_perception_object_recognition_detection_detection_by_tracker_detection_by_tracker_node_callback_1_hist
+/perception/object_recognition/detection/object_association_merger_alpha:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_object_association_merger_alpha
+    Period: Period_perception_object_recognition_detection_object_association_merger_alpha
+    Latency: Latency_perception_object_recognition_detection_object_association_merger_alpha
+  callbacks:
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::object_merger::ObjectAssociationMergerNode::*(autoware::object_merger::ObjectAssociationMergerNode*))()>
+      callback_type: timer_callback
+      period_ns: 500000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 2.000
+        std: 0.000
+        min: 2.000
+        max: 2.000
+        p50: 2.000
+        p95: 2.000
+        p99: 2.000
+        filename_hist: Frequency_perception_object_recognition_detection_object_association_merger_alpha_callback_0_hist
+      Period:
+        avg: 500.008
+        std: 0.106
+        min: 499.338
+        max: 500.673
+        p50: 500.006
+        p95: 500.092
+        p99: 500.310
+        filename_hist: Period_perception_object_recognition_detection_object_association_merger_alpha_callback_0_hist
+      Latency:
+        avg: 0.317
+        std: 0.229
+        min: 0.086
+        max: 1.074
+        p50: 0.230
+        p95: 0.801
+        p99: 0.935
+        filename_hist: Latency_perception_object_recognition_detection_object_association_merger_alpha_callback_0_hist
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: message_filters::Subscriber<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/centerpoint/objects
+      Frequency:
+        avg: 10.000
+        std: 0.411
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_object_association_merger_alpha_callback_1_hist
+      Period:
+        avg: 99.986
+        std: 33.770
+        min: 2.988
+        max: 309.563
+        p50: 99.848
+        p95: 152.113
+        p99: 222.734
+        filename_hist: Period_perception_object_recognition_detection_object_association_merger_alpha_callback_1_hist
+      Latency:
+        avg: 0.037
+        std: 0.067
+        min: 0.003
+        max: 0.576
+        p50: 0.013
+        p95: 0.173
+        p99: 0.319
+        filename_hist: Latency_perception_object_recognition_detection_object_association_merger_alpha_callback_1_hist
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/clustering/objects
+      Frequency:
+        avg: 9.952
+        std: 0.344
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_object_association_merger_alpha_callback_2_hist
+      Period:
+        avg: 100.477
+        std: 36.107
+        min: 1.574
+        max: 312.767
+        p50: 100.610
+        p95: 152.165
+        p99: 225.690
+        filename_hist: Period_perception_object_recognition_detection_object_association_merger_alpha_callback_2_hist
+      Latency:
+        avg: 0.170
+        std: 0.155
+        min: 0.004
+        max: 1.909
+        p50: 0.126
+        p95: 0.459
+        p99: 0.609
+        filename_hist: Latency_perception_object_recognition_detection_object_association_merger_alpha_callback_2_hist
+/perception/object_recognition/detection/object_association_merger_beta:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_object_association_merger_beta
+    Period: Period_perception_object_recognition_detection_object_association_merger_beta
+    Latency: Latency_perception_object_recognition_detection_object_association_merger_beta
+  callbacks:
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::object_merger::ObjectAssociationMergerNode::*(autoware::object_merger::ObjectAssociationMergerNode*))()>
+      callback_type: timer_callback
+      period_ns: 500000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 2.000
+        std: 0.000
+        min: 2.000
+        max: 2.000
+        p50: 2.000
+        p95: 2.000
+        p99: 2.000
+        filename_hist: Frequency_perception_object_recognition_detection_object_association_merger_beta_callback_0_hist
+      Period:
+        avg: 500.008
+        std: 0.052
+        min: 499.846
+        max: 500.232
+        p50: 500.007
+        p95: 500.081
+        p99: 500.135
+        filename_hist: Period_perception_object_recognition_detection_object_association_merger_beta_callback_0_hist
+      Latency:
+        avg: 0.336
+        std: 0.305
+        min: 0.072
+        max: 2.894
+        p50: 0.215
+        p95: 0.842
+        p99: 0.961
+        filename_hist: Latency_perception_object_recognition_detection_object_association_merger_beta_callback_0_hist
+    /perception/object_recognition/detection/object_association_merger_beta/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: message_filters::Subscriber<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/temporary_merged_objects
+      Frequency:
+        avg: 9.952
+        std: 0.536
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_object_association_merger_beta_callback_1_hist
+      Period:
+        avg: 100.501
+        std: 35.808
+        min: 3.196
+        max: 312.740
+        p50: 100.621
+        p95: 151.738
+        p99: 227.312
+        filename_hist: Period_perception_object_recognition_detection_object_association_merger_beta_callback_1_hist
+      Latency:
+        avg: 0.168
+        std: 0.137
+        min: 0.003
+        max: 0.837
+        p50: 0.126
+        p95: 0.459
+        p99: 0.567
+        filename_hist: Latency_perception_object_recognition_detection_object_association_merger_beta_callback_1_hist
+    /perception/object_recognition/detection/object_association_merger_beta/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/detection_by_tracker/objects
+      Frequency:
+        avg: 9.952
+        std: 0.513
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_object_association_merger_beta_callback_2_hist
+      Period:
+        avg: 100.501
+        std: 36.143
+        min: 1.579
+        max: 312.874
+        p50: 100.581
+        p95: 152.109
+        p99: 225.964
+        filename_hist: Period_perception_object_recognition_detection_object_association_merger_beta_callback_2_hist
+      Latency:
+        avg: 0.039
+        std: 0.102
+        min: 0.003
+        max: 0.841
+        p50: 0.009
+        p95: 0.224
+        p99: 0.534
+        filename_hist: Latency_perception_object_recognition_detection_object_association_merger_beta_callback_2_hist
+/perception/object_recognition/detection/object_lanelet_filter:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_object_lanelet_filter
+    Period: Period_perception_object_recognition_detection_object_lanelet_filter
+    Latency: Latency_perception_object_recognition_detection_object_lanelet_filter
+  callbacks:
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::detected_object_validation::lanelet_filter::ObjectLaneletFilterNode::*(autoware::detected_object_validation::lanelet_filter::ObjectLaneletFilterNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/objects_before_filter
+      Frequency:
+        avg: 9.952
+        std: 0.408
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_object_lanelet_filter_callback_0_hist
+      Period:
+        avg: 100.486
+        std: 35.966
+        min: 3.322
+        max: 312.760
+        p50: 100.594
+        p95: 151.708
+        p99: 227.621
+        filename_hist: Period_perception_object_recognition_detection_object_lanelet_filter_callback_0_hist
+      Latency:
+        avg: 0.718
+        std: 0.493
+        min: 0.106
+        max: 3.837
+        p50: 0.562
+        p95: 1.692
+        p99: 2.127
+        filename_hist: Latency_perception_object_recognition_detection_object_lanelet_filter_callback_0_hist
+/perception/object_recognition/detection/obstacle_pointcloud_based_validator_node:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node
+    Period: Period_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node
+    Latency: Latency_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node
+  callbacks:
+    /perception/object_recognition/detection/obstacle_pointcloud_based_validator_node/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: message_filters::Subscriber<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/centerpoint/objects
+      Frequency:
+        avg: 10.000
+        std: 0.439
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node_callback_0_hist
+      Period:
+        avg: 99.991
+        std: 33.818
+        min: 3.003
+        max: 309.503
+        p50: 99.868
+        p95: 152.188
+        p99: 222.855
+        filename_hist: Period_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node_callback_0_hist
+      Latency:
+        avg: 0.050
+        std: 0.091
+        min: 0.004
+        max: 0.870
+        p50: 0.014
+        p95: 0.231
+        p99: 0.402
+        filename_hist: Latency_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node_callback_0_hist
+    /perception/object_recognition/detection/obstacle_pointcloud_based_validator_node/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/pointcloud_map_filtered/pointcloud
+      Frequency:
+        avg: 9.952
+        std: 0.408
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node_callback_1_hist
+      Period:
+        avg: 100.438
+        std: 35.247
+        min: 1.873
+        max: 312.323
+        p50: 100.704
+        p95: 151.102
+        p99: 224.051
+        filename_hist: Period_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node_callback_1_hist
+      Latency:
+        avg: 0.153
+        std: 0.142
+        min: 0.004
+        max: 1.273
+        p50: 0.111
+        p95: 0.415
+        p99: 0.607
+        filename_hist: Latency_perception_object_recognition_detection_obstacle_pointcloud_based_validator_node_callback_1_hist
+/perception/object_recognition/detection/voxel_based_compare_map_filter:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_voxel_based_compare_map_filter
+    Period: Period_perception_object_recognition_detection_voxel_based_compare_map_filter
+    Latency: Latency_perception_object_recognition_detection_voxel_based_compare_map_filter
+  callbacks:
+    /perception/object_recognition/detection/voxel_based_compare_map_filter/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/object_recognition/detection/voxel_based_compare_map_filter/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.747
+        std: 0.773
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_detection_voxel_based_compare_map_filter_callback_1_hist
+      Period:
+        avg: 102.508
+        std: 26.826
+        min: 6.519
+        max: 401.507
+        p50: 99.231
+        p95: 147.955
+        p99: 197.093
+        filename_hist: Period_perception_object_recognition_detection_voxel_based_compare_map_filter_callback_1_hist
+      Latency:
+        avg: 0.362
+        std: 0.270
+        min: 0.080
+        max: 1.936
+        p50: 0.249
+        p95: 0.873
+        p99: 1.253
+        filename_hist: Latency_perception_object_recognition_detection_voxel_based_compare_map_filter_callback_1_hist
+    /perception/object_recognition/detection/voxel_based_compare_map_filter/callback_2:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/pointcloud_map_filtered/downsampled/pointcloud
+      Frequency:
+        avg: 9.947
+        std: 0.517
+        min: 8.000
+        max: 12.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.260
+        filename_hist: Frequency_perception_object_recognition_detection_voxel_based_compare_map_filter_callback_2_hist
+      Period:
+        avg: 100.529
+        std: 36.509
+        min: 1.971
+        max: 312.075
+        p50: 100.234
+        p95: 158.628
+        p99: 225.549
+        filename_hist: Period_perception_object_recognition_detection_voxel_based_compare_map_filter_callback_2_hist
+      Latency:
+        avg: 1.473
+        std: 0.876
+        min: 0.279
+        max: 5.460
+        p50: 1.231
+        p95: 3.120
+        p99: 3.485
+        filename_hist: Latency_perception_object_recognition_detection_voxel_based_compare_map_filter_callback_2_hist
+/perception/object_recognition/detection/voxel_grid_downsample_filter:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_detection_voxel_grid_downsample_filter
+    Period: Period_perception_object_recognition_detection_voxel_grid_downsample_filter
+    Latency: Latency_perception_object_recognition_detection_voxel_grid_downsample_filter
+  callbacks:
+    /perception/object_recognition/detection/voxel_grid_downsample_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/pointcloud
+      Frequency:
+        avg: 9.947
+        std: 0.517
+        min: 8.000
+        max: 12.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.260
+        filename_hist: Frequency_perception_object_recognition_detection_voxel_grid_downsample_filter_callback_0_hist
+      Period:
+        avg: 100.529
+        std: 36.060
+        min: 1.859
+        max: 311.481
+        p50: 100.121
+        p95: 158.087
+        p99: 225.093
+        filename_hist: Period_perception_object_recognition_detection_voxel_grid_downsample_filter_callback_0_hist
+      Latency:
+        avg: 1.258
+        std: 0.860
+        min: 0.210
+        max: 4.555
+        p50: 0.895
+        p95: 2.748
+        p99: 3.216
+        filename_hist: Latency_perception_object_recognition_detection_voxel_grid_downsample_filter_callback_0_hist
+/perception/object_recognition/prediction/map_based_prediction:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_prediction_map_based_prediction
+    Period: Period_perception_object_recognition_prediction_map_based_prediction
+    Latency: Latency_perception_object_recognition_prediction_map_based_prediction
+  callbacks:
+    /perception/object_recognition/prediction/map_based_prediction/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_signals
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::map_based_prediction::MapBasedPredictionNode::*(autoware::map_based_prediction::MapBasedPredictionNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_perception_msgs::msg::TrackedObjects_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/tracking/objects
+      Frequency:
+        avg: 9.429
+        std: 1.090
+        min: 6.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.850
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_prediction_map_based_prediction_callback_1_hist
+      Period:
+        avg: 105.831
+        std: 24.732
+        min: 81.097
+        max: 307.432
+        p50: 98.508
+        p95: 157.007
+        p99: 213.869
+        filename_hist: Period_perception_object_recognition_prediction_map_based_prediction_callback_1_hist
+      Latency:
+        avg: 0.995
+        std: 0.817
+        min: 0.248
+        max: 5.618
+        p50: 0.664
+        p95: 2.326
+        p99: 4.415
+        filename_hist: Latency_perception_object_recognition_prediction_map_based_prediction_callback_1_hist
+/perception/object_recognition/tracking/multi_object_tracker:
+  filename_timeseries:
+    Frequency: Frequency_perception_object_recognition_tracking_multi_object_tracker
+    Period: Period_perception_object_recognition_tracking_multi_object_tracker
+    Latency: Latency_perception_object_recognition_tracking_multi_object_tracker
+  callbacks:
+    /perception/object_recognition/tracking/multi_object_tracker/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::multi_object_tracker::MultiObjectTracker::*(autoware::multi_object_tracker::MultiObjectTracker*))()>
+      callback_type: timer_callback
+      period_ns: 10000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 73.655
+        std: 22.054
+        min: 22.000
+        max: 96.000
+        p50: 82.500
+        p95: 94.000
+        p99: 95.170
+        filename_hist: Frequency_perception_object_recognition_tracking_multi_object_tracker_callback_0_hist
+      Period:
+        avg: 13.450
+        std: 14.236
+        min: 7.780
+        max: 310.003
+        p50: 10.698
+        p95: 20.304
+        p99: 84.663
+        filename_hist: Period_perception_object_recognition_tracking_multi_object_tracker_callback_0_hist
+      Latency:
+        avg: 0.129
+        std: 0.398
+        min: 0.001
+        max: 4.049
+        p50: 0.006
+        p95: 0.803
+        p99: 2.193
+        filename_hist: Latency_perception_object_recognition_tracking_multi_object_tracker_callback_0_hist
+    /perception/object_recognition/tracking/multi_object_tracker/callback_1:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 1000000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/object_recognition/tracking/multi_object_tracker/callback_2:
+      callback_legend: timer_2
+      callback_symbol: std::_Bind<void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.774
+        std: 0.499
+        min: 8.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_perception_object_recognition_tracking_multi_object_tracker_callback_2_hist
+      Period:
+        avg: 102.233
+        std: 25.580
+        min: 8.416
+        max: 401.586
+        p50: 99.071
+        p95: 144.881
+        p99: 192.208
+        filename_hist: Period_perception_object_recognition_tracking_multi_object_tracker_callback_2_hist
+      Latency:
+        avg: 0.417
+        std: 0.285
+        min: 0.039
+        max: 2.549
+        p50: 0.316
+        p95: 0.966
+        p99: 1.404
+        filename_hist: Latency_perception_object_recognition_tracking_multi_object_tracker_callback_2_hist
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::multi_object_tracker::InputStream::*(std::shared_ptr<autoware::multi_object_tracker::InputStream>,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_perception_msgs::msg::DetectedObjects_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/object_recognition/detection/objects
+      Frequency:
+        avg: 9.952
+        std: 0.693
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_perception_object_recognition_tracking_multi_object_tracker_callback_3_hist
+      Period:
+        avg: 100.501
+        std: 36.192
+        min: 2.840
+        max: 312.635
+        p50: 100.759
+        p95: 151.812
+        p99: 227.715
+        filename_hist: Period_perception_object_recognition_tracking_multi_object_tracker_callback_3_hist
+      Latency:
+        avg: 0.181
+        std: 0.199
+        min: 0.032
+        max: 1.709
+        p50: 0.116
+        p95: 0.635
+        p99: 0.963
+        filename_hist: Latency_perception_object_recognition_tracking_multi_object_tracker_callback_3_hist
+/perception/obstacle_segmentation/common_ground_filter:
+  filename_timeseries:
+    Frequency: Frequency_perception_obstacle_segmentation_common_ground_filter
+    Period: Period_perception_obstacle_segmentation_common_ground_filter
+    Latency: Latency_perception_obstacle_segmentation_common_ground_filter
+  callbacks:
+    /perception/obstacle_segmentation/common_ground_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/range_cropped/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.232
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_obstacle_segmentation_common_ground_filter_callback_0_hist
+      Period:
+        avg: 100.013
+        std: 20.695
+        min: 13.893
+        max: 299.701
+        p50: 100.903
+        p95: 128.398
+        p99: 144.725
+        filename_hist: Period_perception_obstacle_segmentation_common_ground_filter_callback_0_hist
+      Latency:
+        avg: 4.119
+        std: 2.611
+        min: 1.449
+        max: 15.596
+        p50: 3.126
+        p95: 9.988
+        p99: 12.537
+        filename_hist: Latency_perception_obstacle_segmentation_common_ground_filter_callback_0_hist
+/perception/obstacle_segmentation/crop_box_filter:
+  filename_timeseries:
+    Frequency: Frequency_perception_obstacle_segmentation_crop_box_filter
+    Period: Period_perception_obstacle_segmentation_crop_box_filter
+    Latency: Latency_perception_obstacle_segmentation_crop_box_filter
+  callbacks:
+    /perception/obstacle_segmentation/crop_box_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::pointcloud_preprocessor::Filter::*(autoware::pointcloud_preprocessor::Filter*,
+        std::_Placeholder<1>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>, std::shared_ptr<pcl_msgs::msg::PointIndices_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/concatenated/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.164
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.260
+        filename_hist: Frequency_perception_obstacle_segmentation_crop_box_filter_callback_0_hist
+      Period:
+        avg: 100.013
+        std: 20.450
+        min: 13.447
+        max: 300.240
+        p50: 100.893
+        p95: 127.852
+        p99: 144.898
+        filename_hist: Period_perception_obstacle_segmentation_crop_box_filter_callback_0_hist
+      Latency:
+        avg: 0.681
+        std: 0.435
+        min: 0.184
+        max: 2.465
+        p50: 0.539
+        p95: 1.676
+        p99: 2.045
+        filename_hist: Latency_perception_obstacle_segmentation_crop_box_filter_callback_0_hist
+/perception/obstacle_segmentation/occupancy_grid_based_outlier_filter:
+  filename_timeseries:
+    Frequency: Frequency_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter
+    Period: Period_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter
+    Latency: Latency_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter
+  callbacks:
+    /perception/obstacle_segmentation/occupancy_grid_based_outlier_filter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: message_filters::Subscriber<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/single_frame/pointcloud
+      Frequency:
+        avg: 10.000
+        std: 0.000
+        min: 10.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter_callback_0_hist
+      Period:
+        avg: 100.014
+        std: 22.288
+        min: 16.227
+        max: 299.560
+        p50: 101.598
+        p95: 131.161
+        p99: 144.883
+        filename_hist: Period_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter_callback_0_hist
+      Latency:
+        avg: 0.012
+        std: 0.010
+        min: 0.004
+        max: 0.120
+        p50: 0.008
+        p95: 0.025
+        p99: 0.045
+        filename_hist: Latency_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter_callback_0_hist
+    /perception/obstacle_segmentation/occupancy_grid_based_outlier_filter/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/occupancy_grid_map/map
+      Frequency:
+        avg: 9.947
+        std: 0.590
+        min: 8.000
+        max: 12.000
+        p50: 10.000
+        p95: 11.000
+        p99: 12.000
+        filename_hist: Frequency_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter_callback_1_hist
+      Period:
+        avg: 100.529
+        std: 35.631
+        min: 2.294
+        max: 311.583
+        p50: 99.771
+        p95: 157.192
+        p99: 227.286
+        filename_hist: Period_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter_callback_1_hist
+      Latency:
+        avg: 2.317
+        std: 1.586
+        min: 0.408
+        max: 7.443
+        p50: 1.670
+        p95: 5.299
+        p99: 5.942
+        filename_hist: Latency_perception_obstacle_segmentation_occupancy_grid_based_outlier_filter_callback_1_hist
+/perception/occupancy_grid_map/occupancy_grid_map_node:
+  filename_timeseries:
+    Frequency: Frequency_perception_occupancy_grid_map_occupancy_grid_map_node
+    Period: Period_perception_occupancy_grid_map_occupancy_grid_map_node
+    Latency: Latency_perception_occupancy_grid_map_occupancy_grid_map_node
+  callbacks:
+    /perception/occupancy_grid_map/occupancy_grid_map_node/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::occupancy_grid_map::PointcloudBasedOccupancyGridMapNode::*(autoware::occupancy_grid_map::PointcloudBasedOccupancyGridMapNode*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const> const&)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/obstacle_segmentation/single_frame/pointcloud
+      Frequency:
+        avg: 9.947
+        std: 0.364
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_occupancy_grid_map_occupancy_grid_map_node_callback_0_hist
+      Period:
+        avg: 100.531
+        std: 23.591
+        min: 31.943
+        max: 299.578
+        p50: 101.556
+        p95: 132.447
+        p99: 157.850
+        filename_hist: Period_perception_occupancy_grid_map_occupancy_grid_map_node_callback_0_hist
+      Latency:
+        avg: 14.812
+        std: 28.438
+        min: 0.024
+        max: 256.541
+        p50: 3.378
+        p95: 74.091
+        p99: 135.460
+        filename_hist: Latency_perception_occupancy_grid_map_occupancy_grid_map_node_callback_0_hist
+    /perception/occupancy_grid_map/occupancy_grid_map_node/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::occupancy_grid_map::PointcloudBasedOccupancyGridMapNode::*(autoware::occupancy_grid_map::PointcloudBasedOccupancyGridMapNode*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const> const&)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/concatenated/pointcloud
+      Frequency:
+        avg: 9.947
+        std: 0.399
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_occupancy_grid_map_occupancy_grid_map_node_callback_1_hist
+      Period:
+        avg: 100.529
+        std: 22.453
+        min: 33.996
+        max: 300.256
+        p50: 101.018
+        p95: 130.679
+        p99: 157.455
+        filename_hist: Period_perception_occupancy_grid_map_occupancy_grid_map_node_callback_1_hist
+      Latency:
+        avg: 0.285
+        std: 0.612
+        min: 0.055
+        max: 5.879
+        p50: 0.156
+        p95: 0.483
+        p99: 3.818
+        filename_hist: Latency_perception_occupancy_grid_map_occupancy_grid_map_node_callback_1_hist
+/perception/traffic_light_recognition/crosswalk_traffic_light_estimator:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_crosswalk_traffic_light_estimator
+    Period: Period_perception_traffic_light_recognition_crosswalk_traffic_light_estimator
+    Latency: Latency_perception_traffic_light_recognition_crosswalk_traffic_light_estimator
+  callbacks:
+    /perception/traffic_light_recognition/crosswalk_traffic_light_estimator/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::crosswalk_traffic_light_estimator::CrosswalkTrafficLightEstimatorNode::*(autoware::crosswalk_traffic_light_estimator::CrosswalkTrafficLightEstimatorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/traffic_light_recognition/crosswalk_traffic_light_estimator/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::crosswalk_traffic_light_estimator::CrosswalkTrafficLightEstimatorNode::*(autoware::crosswalk_traffic_light_estimator::CrosswalkTrafficLightEstimatorNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/judged/traffic_signals
+      Frequency:
+        avg: 17.964
+        std: 0.857
+        min: 16.000
+        max: 20.000
+        p50: 18.000
+        p95: 19.000
+        p99: 20.000
+        filename_hist: Frequency_perception_traffic_light_recognition_crosswalk_traffic_light_estimator_callback_1_hist
+      Period:
+        avg: 55.589
+        std: 30.255
+        min: 0.860
+        max: 297.306
+        p50: 54.524
+        p95: 103.876
+        p99: 117.469
+        filename_hist: Period_perception_traffic_light_recognition_crosswalk_traffic_light_estimator_callback_1_hist
+      Latency:
+        avg: 1.244
+        std: 0.955
+        min: 0.191
+        max: 5.197
+        p50: 0.836
+        p95: 3.464
+        p99: 3.965
+        filename_hist: Latency_perception_traffic_light_recognition_crosswalk_traffic_light_estimator_callback_1_hist
+/perception/traffic_light_recognition/traffic_light/classification/car_traffic_light_classifier:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier
+    Period: Period_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light/classification/car_traffic_light_classifier/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::traffic_light::TrafficLightClassifierNodelet::*(autoware::traffic_light::TrafficLightClassifierNodelet*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.725
+        std: 0.746
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 11.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_0_hist
+      Period:
+        avg: 102.683
+        std: 26.917
+        min: 9.123
+        max: 308.983
+        p50: 99.443
+        p95: 151.488
+        p99: 204.914
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_0_hist
+      Latency:
+        avg: 0.007
+        std: 0.010
+        min: 0.001
+        max: 0.139
+        p50: 0.005
+        p95: 0.014
+        p99: 0.043
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_0_hist
+    /perception/traffic_light_recognition/traffic_light/classification/car_traffic_light_classifier/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: image_transport::SimpleSubscriberPlugin<sensor_msgs::msg::Image_<std::allocator<void>
+        > >::subscribeImplWithOptions(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, std::function<void
+        (std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > const> const&)>
+        const&, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void>
+        >)::{lambda(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/image_raw
+      Frequency:
+        avg: 7.963
+        std: 0.849
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_1_hist
+      Period:
+        avg: 125.415
+        std: 20.065
+        min: 92.609
+        max: 328.720
+        p50: 123.206
+        p95: 158.039
+        p99: 180.158
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_1_hist
+      Latency:
+        avg: 0.105
+        std: 0.684
+        min: 0.006
+        max: 9.395
+        p50: 0.016
+        p95: 0.136
+        p99: 4.736
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_1_hist
+    /perception/traffic_light_recognition/traffic_light/classification/car_traffic_light_classifier/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/detection/rois
+      Frequency:
+        avg: 7.963
+        std: 0.834
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_2_hist
+      Period:
+        avg: 125.369
+        std: 33.301
+        min: 0.650
+        max: 437.125
+        p50: 122.104
+        p95: 167.965
+        p99: 232.837
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_2_hist
+      Latency:
+        avg: 0.844
+        std: 2.074
+        min: 0.001
+        max: 13.913
+        p50: 0.081
+        p95: 5.898
+        p99: 9.281
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_car_traffic_light_classifier_callback_2_hist
+/perception/traffic_light_recognition/traffic_light/classification/pedestrian_traffic_light_classifier:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier
+    Period: Period_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light/classification/pedestrian_traffic_light_classifier/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::traffic_light::TrafficLightClassifierNodelet::*(autoware::traffic_light::TrafficLightClassifierNodelet*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.738
+        std: 0.725
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.050
+        p99: 11.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_0_hist
+      Period:
+        avg: 102.578
+        std: 25.537
+        min: 5.629
+        max: 311.121
+        p50: 99.174
+        p95: 143.783
+        p99: 214.661
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_0_hist
+      Latency:
+        avg: 0.009
+        std: 0.024
+        min: 0.001
+        max: 0.537
+        p50: 0.006
+        p95: 0.016
+        p99: 0.061
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_0_hist
+    /perception/traffic_light_recognition/traffic_light/classification/pedestrian_traffic_light_classifier/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: image_transport::SimpleSubscriberPlugin<sensor_msgs::msg::Image_<std::allocator<void>
+        > >::subscribeImplWithOptions(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, std::function<void
+        (std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > const> const&)>
+        const&, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void>
+        >)::{lambda(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/image_raw
+      Frequency:
+        avg: 7.963
+        std: 0.863
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_1_hist
+      Period:
+        avg: 125.423
+        std: 20.410
+        min: 90.082
+        max: 331.168
+        p50: 123.380
+        p95: 158.718
+        p99: 177.375
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_1_hist
+      Latency:
+        avg: 0.051
+        std: 0.209
+        min: 0.003
+        max: 2.733
+        p50: 0.014
+        p95: 0.164
+        p99: 1.335
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_1_hist
+    /perception/traffic_light_recognition/traffic_light/classification/pedestrian_traffic_light_classifier/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/detection/rois
+      Frequency:
+        avg: 7.963
+        std: 0.834
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_2_hist
+      Period:
+        avg: 125.369
+        std: 33.278
+        min: 0.583
+        max: 437.118
+        p50: 122.215
+        p95: 167.849
+        p99: 232.889
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_2_hist
+      Latency:
+        avg: 0.278
+        std: 0.635
+        min: 0.003
+        max: 5.621
+        p50: 0.079
+        p95: 1.465
+        p99: 3.606
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_pedestrian_traffic_light_classifier_callback_2_hist
+/perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor
+    Period: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_00:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*))()>
+      callback_type: timer_callback
+      period_ns: 50000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_01:
+      callback_legend: timer_1
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*))()>
+      callback_type: timer_callback
+      period_ns: 50000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_02:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*, std::_Placeholder<1>))(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/classification/car/traffic_signals
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_02_hist
+      Period:
+        avg: 125.205
+        std: 32.679
+        min: 0.769
+        max: 436.908
+        p50: 122.083
+        p95: 167.756
+        p99: 232.181
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_02_hist
+      Latency:
+        avg: 0.749
+        std: 0.771
+        min: 0.119
+        max: 4.093
+        p50: 0.497
+        p95: 2.651
+        p99: 3.798
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_02_hist
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_03:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*, std::_Placeholder<1>))(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/detection/rois
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_03_hist
+      Period:
+        avg: 125.238
+        std: 32.807
+        min: 0.827
+        max: 437.130
+        p50: 122.247
+        p95: 167.459
+        p99: 232.894
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_03_hist
+      Latency:
+        avg: 0.010
+        std: 0.012
+        min: 0.001
+        max: 0.206
+        p50: 0.007
+        p95: 0.017
+        p99: 0.062
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_03_hist
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_04:
+      callback_legend: subscription_2
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*, std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/camera_info
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_04_hist
+      Period:
+        avg: 125.253
+        std: 19.768
+        min: 94.694
+        max: 328.306
+        p50: 123.018
+        p95: 157.138
+        p99: 178.514
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_04_hist
+      Latency:
+        avg: 0.008
+        std: 0.006
+        min: 0.003
+        max: 0.070
+        p50: 0.007
+        p95: 0.015
+        p99: 0.031
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_04_hist
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_05:
+      callback_legend: subscription_3
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*, std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/top/pointcloud_raw_ex
+      Frequency:
+        avg: 10.012
+        std: 0.649
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_05_hist
+      Period:
+        avg: 99.989
+        std: 18.280
+        min: 13.924
+        max: 297.546
+        p50: 100.709
+        p95: 124.955
+        p99: 143.929
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_05_hist
+      Latency:
+        avg: 0.007
+        std: 0.004
+        min: 0.002
+        max: 0.032
+        p50: 0.006
+        p95: 0.016
+        p99: 0.020
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_05_hist
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_06:
+      callback_legend: subscription_4
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*, std::_Placeholder<1>))(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/classification/pedestrian/traffic_signals
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_06_hist
+      Period:
+        avg: 125.210
+        std: 32.364
+        min: 1.777
+        max: 437.114
+        p50: 122.455
+        p95: 166.187
+        p99: 232.609
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_06_hist
+      Latency:
+        avg: 0.590
+        std: 0.439
+        min: 0.120
+        max: 2.844
+        p50: 0.431
+        p95: 1.441
+        p99: 1.855
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_06_hist
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_07:
+      callback_legend: subscription_5
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*, std::_Placeholder<1>))(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/detection/rois
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_07_hist
+      Period:
+        avg: 125.238
+        std: 32.803
+        min: 1.338
+        max: 437.100
+        p50: 122.217
+        p95: 167.468
+        p99: 232.881
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_07_hist
+      Latency:
+        avg: 0.004
+        std: 0.004
+        min: 0.001
+        max: 0.068
+        p50: 0.003
+        p95: 0.008
+        p99: 0.016
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_07_hist
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_08:
+      callback_legend: subscription_6
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*, std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/camera_info
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_08_hist
+      Period:
+        avg: 125.253
+        std: 19.767
+        min: 94.692
+        max: 328.307
+        p50: 123.015
+        p95: 157.130
+        p99: 178.526
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_08_hist
+      Latency:
+        avg: 0.003
+        std: 0.004
+        min: 0.000
+        max: 0.059
+        p50: 0.002
+        p95: 0.007
+        p99: 0.011
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_08_hist
+    /perception/traffic_light_recognition/traffic_light/classification/traffic_light_occlusion_predictor/callback_09:
+      callback_legend: subscription_7
+      callback_symbol: std::_Bind<void (perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >::*(perception_utils::PrimeSynchronizer<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > >*, std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/lidar/top/pointcloud_raw_ex
+      Frequency:
+        avg: 10.012
+        std: 0.630
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 11.000
+        p99: 11.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_09_hist
+      Period:
+        avg: 99.989
+        std: 18.324
+        min: 13.847
+        max: 297.778
+        p50: 100.663
+        p95: 125.039
+        p99: 143.894
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_09_hist
+      Latency:
+        avg: 0.004
+        std: 0.003
+        min: 0.001
+        max: 0.030
+        p50: 0.003
+        p95: 0.010
+        p99: 0.014
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_classification_traffic_light_occlusion_predictor_callback_09_hist
+/perception/traffic_light_recognition/traffic_light/detection/traffic_light_fine_detector:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector
+    Period: Period_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light/detection/traffic_light_fine_detector/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::traffic_light::TrafficLightFineDetectorNode::*(autoware::traffic_light::TrafficLightFineDetectorNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.753
+        std: 0.537
+        min: 8.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.200
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_0_hist
+      Period:
+        avg: 102.449
+        std: 25.502
+        min: 7.349
+        max: 308.983
+        p50: 99.154
+        p95: 145.119
+        p99: 209.462
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_0_hist
+      Latency:
+        avg: 0.009
+        std: 0.030
+        min: 0.001
+        max: 0.583
+        p50: 0.005
+        p95: 0.015
+        p99: 0.023
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_0_hist
+    /perception/traffic_light_recognition/traffic_light/detection/traffic_light_fine_detector/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: image_transport::SimpleSubscriberPlugin<sensor_msgs::msg::Image_<std::allocator<void>
+        > >::subscribeImplWithOptions(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, std::function<void
+        (std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > const> const&)>
+        const&, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void>
+        >)::{lambda(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/image_raw
+      Frequency:
+        avg: 7.963
+        std: 0.843
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_1_hist
+      Period:
+        avg: 125.414
+        std: 20.175
+        min: 93.472
+        max: 330.742
+        p50: 123.205
+        p95: 158.312
+        p99: 181.542
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_1_hist
+      Latency:
+        avg: 0.030
+        std: 0.031
+        min: 0.009
+        max: 0.706
+        p50: 0.025
+        p95: 0.057
+        p99: 0.069
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_1_hist
+    /perception/traffic_light_recognition/traffic_light/detection/traffic_light_fine_detector/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/detection/rough/rois
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /perception/traffic_light_recognition/traffic_light/detection/traffic_light_fine_detector/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: message_filters::Subscriber<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/detection/expect/rois
+      Frequency:
+        avg: 7.963
+        std: 0.887
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_3_hist
+      Period:
+        avg: 125.368
+        std: 33.019
+        min: 0.727
+        max: 436.921
+        p50: 122.252
+        p95: 166.926
+        p99: 232.718
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_3_hist
+      Latency:
+        avg: 0.012
+        std: 0.007
+        min: 0.002
+        max: 0.066
+        p50: 0.010
+        p95: 0.022
+        p99: 0.036
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_fine_detector_callback_3_hist
+/perception/traffic_light_recognition/traffic_light/detection/traffic_light_map_based_detector:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_map_based_detector
+    Period: Period_perception_traffic_light_recognition_traffic_light_detection_traffic_light_map_based_detector
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_map_based_detector
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light/detection/traffic_light_map_based_detector/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::traffic_light::MapBasedDetector::*(autoware::traffic_light::MapBasedDetector*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/camera_info
+      Frequency:
+        avg: 7.976
+        std: 0.850
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_map_based_detector_callback_0_hist
+      Period:
+        avg: 125.222
+        std: 21.150
+        min: 29.720
+        max: 328.288
+        p50: 122.860
+        p95: 157.602
+        p99: 191.292
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_detection_traffic_light_map_based_detector_callback_0_hist
+      Latency:
+        avg: 17.791
+        std: 21.157
+        min: 0.174
+        max: 282.986
+        p50: 12.057
+        p95: 31.157
+        p99: 121.786
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_detection_traffic_light_map_based_detector_callback_0_hist
+    /perception/traffic_light_recognition/traffic_light/detection/traffic_light_map_based_detector/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::traffic_light::MapBasedDetector::*(autoware::traffic_light::MapBasedDetector*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_planning_msgs::msg::LaneletRoute_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /planning/mission_planning/route
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/perception/traffic_light_recognition/traffic_light/traffic_light_camera_info_relay:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay
+    Period: Period_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light/traffic_light_camera_info_relay/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (topic_tools::ToolBaseNode::*(topic_tools::RelayNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 10.000
+        std: 0.000
+        min: 10.000
+        max: 10.000
+        p50: 10.000
+        p95: 10.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay_callback_0_hist
+      Period:
+        avg: 100.002
+        std: 0.177
+        min: 97.916
+        max: 102.115
+        p50: 100.001
+        p95: 100.106
+        p99: 100.387
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay_callback_0_hist
+      Latency:
+        avg: 0.532
+        std: 0.261
+        min: 0.211
+        max: 1.557
+        p50: 0.452
+        p95: 1.027
+        p99: 1.261
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay_callback_0_hist
+    /perception/traffic_light_recognition/traffic_light/traffic_light_camera_info_relay/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (topic_tools::ToolBaseNode::*(topic_tools::ToolBaseNode*,
+        std::_Placeholder<1>))(std::shared_ptr<rclcpp::SerializedMessage>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/camera_info
+      Frequency:
+        avg: 7.963
+        std: 0.909
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay_callback_1_hist
+      Period:
+        avg: 125.305
+        std: 19.895
+        min: 94.897
+        max: 328.311
+        p50: 123.001
+        p95: 157.301
+        p99: 178.991
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay_callback_1_hist
+      Latency:
+        avg: 0.053
+        std: 0.034
+        min: 0.015
+        max: 0.251
+        p50: 0.041
+        p95: 0.119
+        p99: 0.176
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_traffic_light_camera_info_relay_callback_1_hist
+/perception/traffic_light_recognition/traffic_light/traffic_light_image_decompressor:
+  filename_timeseries: {}
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light/traffic_light_image_decompressor/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::image_preprocessor::ImageTransportDecompressor::*(autoware::image_preprocessor::ImageTransportDecompressor*,
+        std::_Placeholder<1>))(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/image_raw/compressed
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+/perception/traffic_light_recognition/traffic_light/traffic_light_roi_visualizer:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer
+    Period: Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light/traffic_light_roi_visualizer/callback_0:
+      callback_legend: timer_0
+      callback_symbol: std::_Bind<void (autoware::traffic_light::TrafficLightRoiVisualizerNode::*(autoware::traffic_light::TrafficLightRoiVisualizerNode*))()>
+      callback_type: timer_callback
+      period_ns: 100000000.000
+      subscribe_topic_name: ''
+      Frequency:
+        avg: 9.688
+        std: 0.805
+        min: 7.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.050
+        p99: 11.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_0_hist
+      Period:
+        avg: 103.082
+        std: 26.497
+        min: 7.586
+        max: 310.204
+        p50: 99.453
+        p95: 151.402
+        p99: 212.247
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_0_hist
+      Latency:
+        avg: 0.016
+        std: 0.022
+        min: 0.004
+        max: 0.546
+        p50: 0.012
+        p95: 0.029
+        p99: 0.046
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_0_hist
+    /perception/traffic_light_recognition/traffic_light/traffic_light_roi_visualizer/callback_1:
+      callback_legend: subscription_0
+      callback_symbol: image_transport::SimpleSubscriberPlugin<sensor_msgs::msg::Image_<std::allocator<void>
+        > >::subscribeImplWithOptions(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, std::function<void
+        (std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > const> const&)>
+        const&, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void>
+        >)::{lambda(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /sensing/camera/traffic_light/image_raw
+      Frequency:
+        avg: 7.963
+        std: 0.863
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_1_hist
+      Period:
+        avg: 125.427
+        std: 20.901
+        min: 88.967
+        max: 333.184
+        p50: 122.961
+        p95: 160.491
+        p99: 181.191
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_1_hist
+      Latency:
+        avg: 0.064
+        std: 0.668
+        min: 0.004
+        max: 10.305
+        p50: 0.011
+        p95: 0.026
+        p99: 0.038
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_1_hist
+    /perception/traffic_light_recognition/traffic_light/traffic_light_roi_visualizer/callback_2:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/detection/rois
+      Frequency:
+        avg: 7.963
+        std: 0.834
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_2_hist
+      Period:
+        avg: 125.369
+        std: 33.237
+        min: 0.552
+        max: 436.294
+        p50: 122.278
+        p95: 168.059
+        p99: 232.905
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_2_hist
+      Latency:
+        avg: 0.011
+        std: 0.008
+        min: 0.003
+        max: 0.109
+        p50: 0.009
+        p95: 0.021
+        p99: 0.035
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_2_hist
+    /perception/traffic_light_recognition/traffic_light/traffic_light_roi_visualizer/callback_3:
+      callback_legend: subscription_2
+      callback_symbol: message_filters::Subscriber<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/classification/traffic_signals
+      Frequency:
+        avg: 7.963
+        std: 0.834
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_3_hist
+      Period:
+        avg: 125.355
+        std: 32.693
+        min: 8.337
+        max: 437.446
+        p50: 122.302
+        p95: 167.778
+        p99: 232.257
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_3_hist
+      Latency:
+        avg: 7.190
+        std: 3.816
+        min: 0.013
+        max: 20.484
+        p50: 6.187
+        p95: 15.180
+        p99: 17.759
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_3_hist
+/perception/traffic_light_recognition/traffic_light_arbiter:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_arbiter
+    Period: Period_perception_traffic_light_recognition_traffic_light_arbiter
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_arbiter
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light_arbiter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::traffic_light::TrafficLightArbiter::*(autoware::traffic_light::TrafficLightArbiter*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/internal/traffic_signals
+      Frequency:
+        avg: 7.976
+        std: 0.957
+        min: 5.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_arbiter_callback_0_hist
+      Period:
+        avg: 125.202
+        std: 32.539
+        min: 0.730
+        max: 436.833
+        p50: 122.210
+        p95: 166.963
+        p99: 231.946
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_arbiter_callback_0_hist
+      Latency:
+        avg: 0.222
+        std: 0.129
+        min: 0.052
+        max: 1.195
+        p50: 0.178
+        p95: 0.458
+        p99: 0.563
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_arbiter_callback_0_hist
+    /perception/traffic_light_recognition/traffic_light_arbiter/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: std::_Bind<void (autoware::traffic_light::TrafficLightArbiter::*(autoware::traffic_light::TrafficLightArbiter*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/external/traffic_signals
+      Frequency:
+        avg: 10.000
+        std: 0.347
+        min: 9.000
+        max: 11.000
+        p50: 10.000
+        p95: 10.850
+        p99: 11.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_arbiter_callback_1_hist
+      Period:
+        avg: 100.021
+        std: 18.172
+        min: 14.586
+        max: 297.227
+        p50: 100.838
+        p95: 124.977
+        p99: 144.281
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_arbiter_callback_1_hist
+      Latency:
+        avg: 0.123
+        std: 0.085
+        min: 0.044
+        max: 0.509
+        p50: 0.094
+        p95: 0.305
+        p99: 0.436
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_arbiter_callback_1_hist
+/perception/traffic_light_recognition/traffic_light_map_visualizer:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_map_visualizer
+    Period: Period_perception_traffic_light_recognition_traffic_light_map_visualizer
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_map_visualizer
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light_map_visualizer/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: std::_Bind<void (autoware::traffic_light::TrafficLightMapVisualizerNode::*(autoware::traffic_light::TrafficLightMapVisualizerNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_perception_msgs::msg::TrafficLightGroupArray_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_signals
+      Frequency:
+        avg: 17.976
+        std: 1.029
+        min: 15.000
+        max: 20.000
+        p50: 18.000
+        p95: 20.000
+        p99: 20.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_map_visualizer_callback_0_hist
+      Period:
+        avg: 55.656
+        std: 30.525
+        min: 0.671
+        max: 297.904
+        p50: 54.280
+        p95: 104.566
+        p99: 118.768
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_map_visualizer_callback_0_hist
+      Latency:
+        avg: 1.331
+        std: 1.022
+        min: 0.286
+        max: 6.493
+        p50: 0.967
+        p95: 3.456
+        p99: 5.019
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_map_visualizer_callback_0_hist
+/perception/traffic_light_recognition/traffic_light_multi_camera_fusion:
+  filename_timeseries:
+    Frequency: Frequency_perception_traffic_light_recognition_traffic_light_multi_camera_fusion
+    Period: Period_perception_traffic_light_recognition_traffic_light_multi_camera_fusion
+    Latency: Latency_perception_traffic_light_recognition_traffic_light_multi_camera_fusion
+  callbacks:
+    /perception/traffic_light_recognition/traffic_light_multi_camera_fusion/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: message_filters::Subscriber<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightRoiArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/detection/rois
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 9.170
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_0_hist
+      Period:
+        avg: 125.207
+        std: 32.761
+        min: 0.576
+        max: 437.161
+        p50: 122.258
+        p95: 167.362
+        p99: 232.878
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_0_hist
+      Latency:
+        avg: 0.014
+        std: 0.014
+        min: 0.002
+        max: 0.248
+        p50: 0.010
+        p95: 0.025
+        p99: 0.064
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_0_hist
+    /perception/traffic_light_recognition/traffic_light_multi_camera_fusion/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: message_filters::Subscriber<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<tier4_perception_msgs::msg::TrafficLightArray_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/classification/traffic_signals
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 9.170
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_1_hist
+      Period:
+        avg: 125.187
+        std: 32.499
+        min: 1.407
+        max: 437.336
+        p50: 122.238
+        p95: 166.687
+        p99: 231.809
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_1_hist
+      Latency:
+        avg: 0.109
+        std: 0.091
+        min: 0.024
+        max: 1.337
+        p50: 0.086
+        p95: 0.259
+        p99: 0.342
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_1_hist
+    /perception/traffic_light_recognition/traffic_light_multi_camera_fusion/callback_2:
+      callback_legend: subscription_2
+      callback_symbol: message_filters::Subscriber<sensor_msgs::msg::CameraInfo_<std::allocator<void>
+        >, rclcpp::Node>::subscribe(rclcpp::Node*, std::__cxx11::basic_string<char,
+        std::char_traits<char>, std::allocator<char> > const&, rmw_qos_profile_s,
+        rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >)::{lambda(std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /perception/traffic_light_recognition/traffic_light/camera_info
+      Frequency:
+        avg: 7.976
+        std: 0.836
+        min: 6.000
+        max: 10.000
+        p50: 8.000
+        p95: 9.000
+        p99: 10.000
+        filename_hist: Frequency_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_2_hist
+      Period:
+        avg: 125.217
+        std: 19.719
+        min: 94.862
+        max: 328.533
+        p50: 123.009
+        p95: 157.159
+        p99: 178.372
+        filename_hist: Period_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_2_hist
+      Latency:
+        avg: 0.013
+        std: 0.006
+        min: 0.005
+        max: 0.072
+        p50: 0.011
+        p95: 0.025
+        p99: 0.033
+        filename_hist: Latency_perception_traffic_light_recognition_traffic_light_multi_camera_fusion_callback_2_hist

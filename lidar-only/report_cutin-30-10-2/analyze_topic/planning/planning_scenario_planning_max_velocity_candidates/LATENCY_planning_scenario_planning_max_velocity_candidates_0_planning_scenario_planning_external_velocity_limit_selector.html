@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>graph</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="c2f69426-aafd-4b6f-a340-bae6939af049" data-root-id="p241188" style="display: contents;"></div>
+  
+    <script type="application/json" id="a1d30b1c-8a73-4a79-aefd-d3b7b32b735a">
+      {"4d38201b-4784-4c33-9ff2-1d8a67da5c42":{"version":"3.6.3","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p241188","attributes":{"x_range":{"type":"object","name":"Range1d","id":"p241222","attributes":{"end":0.280235559}},"y_range":{"type":"object","name":"DataRange1d","id":"p241190","attributes":{"start":0}},"x_scale":{"type":"object","name":"LinearScale","id":"p241198"},"y_scale":{"type":"object","name":"LinearScale","id":"p241199"},"title":{"type":"object","name":"Title","id":"p241191","attributes":{"text":"Timeseries of latency"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p241233","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p241224","attributes":{"selected":{"type":"object","name":"Selection","id":"p241225","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p241226"},"data":{"type":"map","entries":[["x",[0.0,0.08047025000000001,0.21337055800000002,0.280235559]],["y",[0.34989899999999996,0.051281,0.09262999999999999,0.089598]],["legend_label",["legend_label = communication0","legend_label = communication0","legend_label = communication0","legend_label = communication0"]],["topic_name",["topic_name = /planning/scenario_planning/max_velocity_candidates","topic_name = /planning/scenario_planning/max_velocity_candidates","topic_name = /planning/scenario_planning/max_velocity_candidates","topic_name = /planning/scenario_planning/max_velocity_candidates"]],["publish_node_name",["publish_node_name = /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner","publish_node_name = /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner","publish_node_name = /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner","publish_node_name = /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner"]],["subscribe_node_name",["subscribe_node_name = /planning/scenario_planning/external_velocity_limit_selector","subscribe_node_name = /planning/scenario_planning/external_velocity_limit_selector","subscribe_node_name = /planning/scenario_planning/external_velocity_limit_selector","subscribe_node_name = /planning/scenario_planning/external_velocity_limit_selector"]]]}}},"view":{"type":"object","name":"CDSView","id":"p241234","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p241235"}}},"glyph":{"type":"object","name":"Line","id":"p241230","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"rgb(214, 0, 0)"}},"nonselection_glyph":{"type":"object","name":"Line","id":"p241231","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"rgb(214, 0, 0)","line_alpha":0.1}},"muted_glyph":{"type":"object","name":"Line","id":"p241232","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"rgb(214, 0, 0)","line_alpha":0.2}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p241197","attributes":{"tools":[{"type":"object","name":"WheelZoomTool","id":"p241210","attributes":{"renderers":"auto"}},{"type":"object","name":"PanTool","id":"p241211"},{"type":"object","name":"BoxZoomTool","id":"p241212","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p241213","attributes":{"syncable":false,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","handles":{"type":"object","name":"BoxInteractionHandles","id":"p241219","attributes":{"all":{"type":"object","name":"AreaVisuals","id":"p241218","attributes":{"fill_color":"white","hover_fill_color":"lightgray"}}}}}}}},{"type":"object","name":"SaveTool","id":"p241220"},{"type":"object","name":"ResetTool","id":"p241221"},{"type":"object","name":"HoverTool","id":"p241236","attributes":{"visible":false,"renderers":[{"id":"p241233"}],"tooltips":"&lt;div style=\"width:400px; word-wrap: break-word;\"&gt;@legend_label &lt;br&gt;@topic_name &lt;br&gt;@publish_node_name &lt;br&gt;@subscribe_node_name &lt;br&gt;&lt;/div&gt;","point_policy":"follow_mouse"}}],"active_scroll":{"id":"p241210"}}},"left":[{"type":"object","name":"LinearAxis","id":"p241205","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p241206","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p241207"},"axis_label":"latency [ms]","major_label_policy":{"type":"object","name":"AllLabels","id":"p241208"}}}],"right":[{"type":"object","name":"Legend","id":"p241237","attributes":{"click_policy":"hide","items":[{"type":"object","name":"LegendItem","id":"p241238","attributes":{"label":{"type":"value","value":"communication0"},"renderers":[{"id":"p241233"}]}}]}},{"type":"object","name":"Legend","id":"p241239","attributes":{"click_policy":"hide"}}],"below":[{"type":"object","name":"LinearAxis","id":"p241200","attributes":{"ticker":{"type":"object","name":"AdaptiveTicker","id":"p241223","attributes":{"mantissas":[1,2,5],"min_interval":0.1}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p241202"},"axis_label":"system time [s]","major_label_overrides":{"type":"map","entries":[[0,"2026-01-20 16:15:14"]]},"major_label_policy":{"type":"object","name":"AllLabels","id":"p241203"}}}],"center":[{"type":"object","name":"Grid","id":"p241204","attributes":{"axis":{"id":"p241200"},"minor_grid_line_color":"black","minor_grid_line_alpha":0.1}},{"type":"object","name":"Grid","id":"p241209","attributes":{"dimension":1,"axis":{"id":"p241205"}}}],"frame_width":800,"frame_height":270}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('a1d30b1c-8a73-4a79-aefd-d3b7b32b735a').textContent;
+              const render_items = [{"docid":"4d38201b-4784-4c33-9ff2-1d8a67da5c42","roots":{"p241188":"c2f69426-aafd-4b6f-a340-bae6939af049"},"root_ids":["p241188"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

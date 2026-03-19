@@ -1,0 +1,479 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Node: /sensing/imu/gyro_bias_validator, report_cutin-30-20-5</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Node: /sensing/imu/gyro_bias_validator</h1>
+      <h2>report_cutin-30-20-5</h2>
+
+      <p><a href="../../index.html">Back to Top</a>, <a href="./index.html">Back to Node List</a></p>
+      <hr />
+
+      
+        <h3>Frequency</h3>
+
+        
+          <iframe src="Frequency_sensing_imu_gyro_bias_validator.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [Hz]</th>
+            <th>Median [Hz]</th>
+            <th>Min [Hz]</th>
+            <th>95%ile [Hz]</th>
+            <th>99%ile [Hz]</th>
+            <th>Max [Hz]</th>
+            <th>Std [Hz]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>500.0 [ms]</td>
+                  
+                
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">0.000</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::imu_corrector::GyroBiasEstimator::*(autoware::imu_corrector::GyroBiasEstimator*))()&gt;">
+                <td>timer_2</td>
+                
+                    <td>500.0 [ms]</td>
+                  
+                
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">2.000</td>
+                  <td class="text-end">0.000</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::imu_corrector::GyroBiasEstimator::GyroBiasEstimator(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;sensor_msgs::msg::Imu_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/sensing/imu/tamagawa/imu_raw</td>
+                  
+                
+                  <td class="text-end">20.000</td>
+                  <td class="text-end">20.000</td>
+                  <td class="text-end">16.000</td>
+                  <td class="text-end">21.000</td>
+                  <td class="text-end">21.540</td>
+                  <td class="text-end">24.000</td>
+                  <td class="text-end">0.781</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::imu_corrector::GyroBiasEstimator::GyroBiasEstimator(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#2}">
+                <td>subscription_1</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">44.048</td>
+                  <td class="text-end">49.000</td>
+                  <td class="text-end">18.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">8.698</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Frequency" aria-expanded="false" aria-controls="collapse_Frequency">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Frequency">
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_sensing_imu_gyro_bias_validator_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_sensing_imu_gyro_bias_validator_callback_2_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_sensing_imu_gyro_bias_validator_callback_3_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_sensing_imu_gyro_bias_validator_callback_4_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+        <h3>Period</h3>
+
+        
+          <iframe src="Period_sensing_imu_gyro_bias_validator.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [ms]</th>
+            <th>Median [ms]</th>
+            <th>Min [ms]</th>
+            <th>95%ile [ms]</th>
+            <th>99%ile [ms]</th>
+            <th>Max [ms]</th>
+            <th>Std [ms]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>500.0 [ms]</td>
+                  
+                
+                  <td class="text-end">500.004</td>
+                  <td class="text-end">500.019</td>
+                  <td class="text-end">426.223</td>
+                  <td class="text-end">547.510</td>
+                  <td class="text-end">574.288</td>
+                  <td class="text-end">593.488</td>
+                  <td class="text-end">24.137</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::imu_corrector::GyroBiasEstimator::*(autoware::imu_corrector::GyroBiasEstimator*))()&gt;">
+                <td>timer_2</td>
+                
+                    <td>500.0 [ms]</td>
+                  
+                
+                  <td class="text-end">500.048</td>
+                  <td class="text-end">500.061</td>
+                  <td class="text-end">389.543</td>
+                  <td class="text-end">550.299</td>
+                  <td class="text-end">589.029</td>
+                  <td class="text-end">603.529</td>
+                  <td class="text-end">27.530</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::imu_corrector::GyroBiasEstimator::GyroBiasEstimator(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;sensor_msgs::msg::Imu_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/sensing/imu/tamagawa/imu_raw</td>
+                  
+                
+                  <td class="text-end">50.004</td>
+                  <td class="text-end">48.424</td>
+                  <td class="text-end">2.467</td>
+                  <td class="text-end">74.258</td>
+                  <td class="text-end">96.015</td>
+                  <td class="text-end">336.083</td>
+                  <td class="text-end">16.533</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::imu_corrector::GyroBiasEstimator::GyroBiasEstimator(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#2}">
+                <td>subscription_1</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">22.569</td>
+                  <td class="text-end">21.102</td>
+                  <td class="text-end">3.292</td>
+                  <td class="text-end">33.373</td>
+                  <td class="text-end">110.739</td>
+                  <td class="text-end">169.447</td>
+                  <td class="text-end">15.214</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Period" aria-expanded="false" aria-controls="collapse_Period">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Period">
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_sensing_imu_gyro_bias_validator_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_sensing_imu_gyro_bias_validator_callback_2_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_sensing_imu_gyro_bias_validator_callback_3_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_sensing_imu_gyro_bias_validator_callback_4_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+        <h3>Latency</h3>
+
+        
+          <iframe src="Latency_sensing_imu_gyro_bias_validator.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [ms]</th>
+            <th>Median [ms]</th>
+            <th>Min [ms]</th>
+            <th>95%ile [ms]</th>
+            <th>99%ile [ms]</th>
+            <th>Max [ms]</th>
+            <th>Std [ms]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>500.0 [ms]</td>
+                  
+                
+                  <td class="text-end">0.426</td>
+                  <td class="text-end">0.313</td>
+                  <td class="text-end">0.116</td>
+                  <td class="text-end">1.108</td>
+                  <td class="text-end">1.421</td>
+                  <td class="text-end">1.980</td>
+                  <td class="text-end">0.305</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::imu_corrector::GyroBiasEstimator::*(autoware::imu_corrector::GyroBiasEstimator*))()&gt;">
+                <td>timer_2</td>
+                
+                    <td>500.0 [ms]</td>
+                  
+                
+                  <td class="text-end">0.035</td>
+                  <td class="text-end">0.028</td>
+                  <td class="text-end">0.014</td>
+                  <td class="text-end">0.067</td>
+                  <td class="text-end">0.124</td>
+                  <td class="text-end">0.296</td>
+                  <td class="text-end">0.027</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::imu_corrector::GyroBiasEstimator::GyroBiasEstimator(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;sensor_msgs::msg::Imu_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/sensing/imu/tamagawa/imu_raw</td>
+                  
+                
+                  <td class="text-end">0.036</td>
+                  <td class="text-end">0.031</td>
+                  <td class="text-end">0.014</td>
+                  <td class="text-end">0.072</td>
+                  <td class="text-end">0.114</td>
+                  <td class="text-end">0.365</td>
+                  <td class="text-end">0.021</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::imu_corrector::GyroBiasEstimator::GyroBiasEstimator(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#2}">
+                <td>subscription_1</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">0.004</td>
+                  <td class="text-end">0.003</td>
+                  <td class="text-end">0.001</td>
+                  <td class="text-end">0.008</td>
+                  <td class="text-end">0.018</td>
+                  <td class="text-end">0.275</td>
+                  <td class="text-end">0.006</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Latency" aria-expanded="false" aria-controls="collapse_Latency">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Latency">
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_sensing_imu_gyro_bias_validator_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_sensing_imu_gyro_bias_validator_callback_2_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_sensing_imu_gyro_bias_validator_callback_3_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_sensing_imu_gyro_bias_validator_callback_4_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+    </div>  <!-- container -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        // collapse after getting height (two clicks are needed for some reasons...)
+        $('.btn_collapse').click();
+        setTimeout(function(){
+          $('.btn_collapse').click();
+            }, 500);
+      }
+    </script>
+  </body>
+</html>

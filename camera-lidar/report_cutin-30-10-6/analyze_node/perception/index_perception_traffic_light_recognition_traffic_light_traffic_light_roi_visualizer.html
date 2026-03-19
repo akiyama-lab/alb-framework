@@ -1,0 +1,431 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Node: /perception/traffic_light_recognition/traffic_light/traffic_light_roi_visualizer, report_cutin-30-10-6</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Node: /perception/traffic_light_recognition/traffic_light/traffic_light_roi_visualizer</h1>
+      <h2>report_cutin-30-10-6</h2>
+
+      <p><a href="../../index.html">Back to Top</a>, <a href="./index.html">Back to Node List</a></p>
+      <hr />
+
+      
+        <h3>Frequency</h3>
+
+        
+          <iframe src="Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [Hz]</th>
+            <th>Median [Hz]</th>
+            <th>Min [Hz]</th>
+            <th>95%ile [Hz]</th>
+            <th>99%ile [Hz]</th>
+            <th>Max [Hz]</th>
+            <th>Std [Hz]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::traffic_light::TrafficLightRoiVisualizerNode::*(autoware::traffic_light::TrafficLightRoiVisualizerNode*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">9.769</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">7.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">0.579</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="image_transport::SimpleSubscriberPlugin&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; &gt;::subscribeImplWithOptions(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::function&lt;void (std::shared_ptr&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; const&gt; const&amp;)&gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/sensing/camera/traffic_light/image_raw</td>
+                  
+                
+                  <td class="text-end">7.885</td>
+                  <td class="text-end">8.000</td>
+                  <td class="text-end">5.000</td>
+                  <td class="text-end">9.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">1.006</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="message_filters::Subscriber&lt;tier4_perception_msgs::msg::TrafficLightRoiArray_&lt;std::allocator&lt;void&gt; &gt;, rclcpp::Node&gt;::subscribe(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;tier4_perception_msgs::msg::TrafficLightRoiArray_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/perception/traffic_light_recognition/traffic_light/detection/rois</td>
+                  
+                
+                  <td class="text-end">7.885</td>
+                  <td class="text-end">8.000</td>
+                  <td class="text-end">5.000</td>
+                  <td class="text-end">9.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">1.057</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="message_filters::Subscriber&lt;tier4_perception_msgs::msg::TrafficLightArray_&lt;std::allocator&lt;void&gt; &gt;, rclcpp::Node&gt;::subscribe(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;tier4_perception_msgs::msg::TrafficLightArray_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/perception/traffic_light_recognition/traffic_light/classification/traffic_signals</td>
+                  
+                
+                  <td class="text-end">7.885</td>
+                  <td class="text-end">8.000</td>
+                  <td class="text-end">5.000</td>
+                  <td class="text-end">9.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">1.057</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Frequency" aria-expanded="false" aria-controls="collapse_Frequency">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Frequency">
+          
+            
+              <div class="col">
+                <iframe src="Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_0_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_2_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_3_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+        <h3>Period</h3>
+
+        
+          <iframe src="Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [ms]</th>
+            <th>Median [ms]</th>
+            <th>Min [ms]</th>
+            <th>95%ile [ms]</th>
+            <th>99%ile [ms]</th>
+            <th>Max [ms]</th>
+            <th>Std [ms]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::traffic_light::TrafficLightRoiVisualizerNode::*(autoware::traffic_light::TrafficLightRoiVisualizerNode*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">102.277</td>
+                  <td class="text-end">99.510</td>
+                  <td class="text-end">9.139</td>
+                  <td class="text-end">152.187</td>
+                  <td class="text-end">206.135</td>
+                  <td class="text-end">274.575</td>
+                  <td class="text-end">28.859</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="image_transport::SimpleSubscriberPlugin&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; &gt;::subscribeImplWithOptions(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::function&lt;void (std::shared_ptr&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; const&gt; const&amp;)&gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/sensing/camera/traffic_light/image_raw</td>
+                  
+                
+                  <td class="text-end">126.466</td>
+                  <td class="text-end">123.915</td>
+                  <td class="text-end">86.903</td>
+                  <td class="text-end">164.633</td>
+                  <td class="text-end">188.616</td>
+                  <td class="text-end">235.021</td>
+                  <td class="text-end">22.271</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="message_filters::Subscriber&lt;tier4_perception_msgs::msg::TrafficLightRoiArray_&lt;std::allocator&lt;void&gt; &gt;, rclcpp::Node&gt;::subscribe(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;tier4_perception_msgs::msg::TrafficLightRoiArray_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/perception/traffic_light_recognition/traffic_light/detection/rois</td>
+                  
+                
+                  <td class="text-end">126.454</td>
+                  <td class="text-end">121.694</td>
+                  <td class="text-end">0.183</td>
+                  <td class="text-end">177.803</td>
+                  <td class="text-end">233.424</td>
+                  <td class="text-end">333.738</td>
+                  <td class="text-end">31.298</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="message_filters::Subscriber&lt;tier4_perception_msgs::msg::TrafficLightArray_&lt;std::allocator&lt;void&gt; &gt;, rclcpp::Node&gt;::subscribe(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;tier4_perception_msgs::msg::TrafficLightArray_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/perception/traffic_light_recognition/traffic_light/classification/traffic_signals</td>
+                  
+                
+                  <td class="text-end">126.445</td>
+                  <td class="text-end">122.523</td>
+                  <td class="text-end">3.916</td>
+                  <td class="text-end">177.072</td>
+                  <td class="text-end">231.870</td>
+                  <td class="text-end">333.567</td>
+                  <td class="text-end">30.862</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Period" aria-expanded="false" aria-controls="collapse_Period">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Period">
+          
+            
+              <div class="col">
+                <iframe src="Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_0_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_2_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_3_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+        <h3>Latency</h3>
+
+        
+          <iframe src="Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [ms]</th>
+            <th>Median [ms]</th>
+            <th>Min [ms]</th>
+            <th>95%ile [ms]</th>
+            <th>99%ile [ms]</th>
+            <th>Max [ms]</th>
+            <th>Std [ms]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::traffic_light::TrafficLightRoiVisualizerNode::*(autoware::traffic_light::TrafficLightRoiVisualizerNode*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">0.016</td>
+                  <td class="text-end">0.012</td>
+                  <td class="text-end">0.004</td>
+                  <td class="text-end">0.029</td>
+                  <td class="text-end">0.071</td>
+                  <td class="text-end">0.231</td>
+                  <td class="text-end">0.014</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="image_transport::SimpleSubscriberPlugin&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; &gt;::subscribeImplWithOptions(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::function&lt;void (std::shared_ptr&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; const&gt; const&amp;)&gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;sensor_msgs::msg::Image_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/sensing/camera/traffic_light/image_raw</td>
+                  
+                
+                  <td class="text-end">0.114</td>
+                  <td class="text-end">0.011</td>
+                  <td class="text-end">0.004</td>
+                  <td class="text-end">0.028</td>
+                  <td class="text-end">1.504</td>
+                  <td class="text-end">24.398</td>
+                  <td class="text-end">1.193</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="message_filters::Subscriber&lt;tier4_perception_msgs::msg::TrafficLightRoiArray_&lt;std::allocator&lt;void&gt; &gt;, rclcpp::Node&gt;::subscribe(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;tier4_perception_msgs::msg::TrafficLightRoiArray_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/perception/traffic_light_recognition/traffic_light/detection/rois</td>
+                  
+                
+                  <td class="text-end">0.011</td>
+                  <td class="text-end">0.010</td>
+                  <td class="text-end">0.003</td>
+                  <td class="text-end">0.021</td>
+                  <td class="text-end">0.026</td>
+                  <td class="text-end">0.096</td>
+                  <td class="text-end">0.007</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="message_filters::Subscriber&lt;tier4_perception_msgs::msg::TrafficLightArray_&lt;std::allocator&lt;void&gt; &gt;, rclcpp::Node&gt;::subscribe(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rmw_qos_profile_s, rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt; &gt;)::{lambda(std::shared_ptr&lt;tier4_perception_msgs::msg::TrafficLightArray_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/perception/traffic_light_recognition/traffic_light/classification/traffic_signals</td>
+                  
+                
+                  <td class="text-end">7.204</td>
+                  <td class="text-end">6.429</td>
+                  <td class="text-end">0.006</td>
+                  <td class="text-end">14.722</td>
+                  <td class="text-end">17.280</td>
+                  <td class="text-end">27.498</td>
+                  <td class="text-end">3.911</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Latency" aria-expanded="false" aria-controls="collapse_Latency">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Latency">
+          
+            
+              <div class="col">
+                <iframe src="Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_0_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_1_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_2_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_perception_traffic_light_recognition_traffic_light_traffic_light_roi_visualizer_callback_3_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+    </div>  <!-- container -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        // collapse after getting height (two clicks are needed for some reasons...)
+        $('.btn_collapse').click();
+        setTimeout(function(){
+          $('.btn_collapse').click();
+            }, 500);
+      }
+    </script>
+  </body>
+</html>
