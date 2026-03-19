@@ -129,6 +129,7 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     ```
 
 2. AWSIM Labsの実行
+
     AWSIM Labsの実行ファイルを起動します．
     `-script`でシナリオスクリプトを指定し，`-output`でトレースデータの出力先を指定します．
     自車両が表示され，Autowareで自己位置が認識されるまで待ちます．
@@ -150,7 +151,7 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
 
 4. Autowareの停止イベントの取得
 
-    Autowareの停止などのイベントを取得するために，[`tools/autoware_event_capture.py](./tools/autoware_event_capture.py) を実行します．
+    Autowareの停止などのイベントを取得するために，[tools/autoware_event_capture.py](./tools/autoware_event_capture.py) を実行します．
     停止イベントの時間は分析で使用します．
 
     ```bash
@@ -166,7 +167,7 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
     $ ros2 topic pub --once /awsim/set_goal_trigger std_msgs/msg/Bool "{data: true}"
     ```
 
-5. トレースの停止
+6. トレースの停止
 
     シナリオが終了したら，CARETでトレースを停止します．
 
@@ -187,10 +188,10 @@ ALB-Framework は，[Autoware](https://autoware.org/)の 内部処理遅延（in
 
 2. 時間窓の指定
 
-    `tools/autoware_event_capture.py` で取得した停止イベントの時間をもとに，分析する時間窓を指定します．
+    [tools/autoware_event_capture.py](./tools/autoware_event_capture.py) で取得した停止イベントの時間をもとに，分析する時間窓を指定します．
     停止イベントは，トレースフェーズで出力されるYAMLファイルで確認できます．[tools/autoware_event_capture.py](./tools/extract_topic_timestamps.py) を使うとより簡単にイベントの時間を抽出できます．
 
-    これらの時間を `run.sh` で `start_ns` と `end_ns` の環境変数を設定することで，特定の時間窓に基づいて分析を行うことができます．
+    これらの時間を[run.sh](./output/caret_report/run.sh)で `start_ns` と `end_ns` の環境変数を設定することで，特定の時間窓に基づいて分析を行うことができます．
     例えば，停止イベントが 1234567890123456789 ナノ秒のタイムスタンプを持つ場合，以下のように時間窓を指定します．
 
     ```bash
